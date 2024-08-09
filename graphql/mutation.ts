@@ -42,3 +42,20 @@ export const LOGIN_USER = gql`
     }
   }
 `;
+
+export const RECOVERY_PASSWORD = gql`
+  mutation RecoveryPassword($email: String!) {
+    recoveryPassword(email: $email) {
+      success
+      successSendCode
+    }
+  }
+`;
+
+export const VALIDATE_OTP = gql`
+  mutation validateOtp($email: String!, $otpCode: String!, $action: String!) {
+    validOtpUser(input: { otpCode: $otpCode, email: $email, action: $action }) {
+      success
+    }
+  }
+`;
