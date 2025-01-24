@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Popup/Popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Popup/Popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-8/Susbcribe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-8/Susbcribe.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Transparency/questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Transparency/questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/Section-8" />
       <recent name="$PROJECT_DIR$/images/Popup" />
       <recent name="$PROJECT_DIR$/images/About/Section-1" />
       <recent name="$PROJECT_DIR$/app/components" />
@@ -78,11 +82,27 @@
       <workItem from="1733626625527" duration="200000" />
       <workItem from="1734991122753" duration="6414000" />
       <workItem from="1735056481182" duration="1824000" />
-      <workItem from="1736728067549" duration="14845000" />
+      <workItem from="1736728067549" duration="17030000" />
+      <workItem from="1737040986459" duration="15097000" />
+      <workItem from="1737125813319" duration="7198000" />
+      <workItem from="1737357591075" duration="67000" />
+      <workItem from="1737479046512" duration="2656000" />
+      <workItem from="1737651052096" duration="8891000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

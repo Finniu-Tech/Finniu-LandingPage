@@ -1,4 +1,5 @@
 import Link from "next/dist/client/link";
+import React from "react";
 
 const textStyle = "md:text-lg font-normal text-black xs:text-xs";
 const textListStyle = "md:text-lg font-normal text-black xs:text-xs";
@@ -130,20 +131,25 @@ export const questionIdInformation = (
 export const questionIdBack = (
     <div className={containerStyle}>
         <p className={textStyle}>
-        Finniu ha iniciado recientemente el proceso de inscripción
-para operar bajo la regulación de la SBS como casa de préstamos y cambio de
-divisas, y se espera que la resolución se emita en durante el primer trimestre
-del 2025. Si bien actualmente, Finniu no está supervisada por la SBS, pero
-cumple con el marco legal peruano y está autorizada para administrar fondos de
-inversión privados, donde los inversionistas eligen de manera independiente
-cómo invertir su dinero.
+            Sí, está regulada, supervisada, y registrada por la Superintendencia de Banca, Seguros y AFP (SBS). Puedes
+            verlo directamente desde la página de la SBS, coloca Finniu en el campo de Nombre o Razón Social y podrás
+            vernos en el listado.
+
         </p>
+        <button
+            onClick={() => window.open("https://www.sbs.gob.pe/supervisados-y-registros/registros/otros-registros/casas-de-cambio-prestamos-y-empenos/empresas-de-prestamos-y-o-empeno", "_blank")}
+            className="mt-5 px-6 py-3 bg-[#0D3A5C] text-white rounded-lg hover:bg-[#104D7C] font-bold"
+        >
+            Ver
+            Aquí
+        </button>
     </div>
 );
 export const questionIdLocation = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Sí, contamos con oficinas ubicadas en Av. San Luis 2076, San Borja, Lima ¡Nos encantaría recibirte si deseas conocer más sobre Finniu!
+            Sí, contamos con oficinas ubicadas en Av. San Luis 2076, San Borja, Lima ¡Nos encantaría recibirte si deseas
+            conocer más sobre Finniu!
         </p>
         <div className="h-4"></div>
         <p className={textStyle}>
