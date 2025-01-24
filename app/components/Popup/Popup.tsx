@@ -58,7 +58,7 @@ export default function Popup() {
             onClick={() => window.open("https://calendly.com/finniumeet/30min", "_blank")}
             className="w-full px-6 py-3 bg-[#0D3A5C] text-white rounded-lg hover:bg-[#104D7C] font-bold"
           >
-            Agenda con nosotros
+            Conversemos
           </button>
         </div>
       </div>

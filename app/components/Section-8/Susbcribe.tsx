@@ -9,7 +9,7 @@ const Susbcribe = () => {
         <section
             className="container flex flex-col p-8 md:p-0 md:flex-row min-h-full justify-center items-center bg-white mx-auto">
             {/* Imagen de la llama */}
-            <div className="flex justify-center md:w-1/2">
+            <div className="flex justify-center md:w-1/4">
                 <Image
                     src={Llama}
                     alt="Finniu-innovacion"
@@ -23,12 +23,12 @@ const Susbcribe = () => {
             </div>
 
             {/* Contenido de texto */}
-            <div className="text-center md:text-left md:w-1/2 mt-6 md:mt-0 md:ml-6">
+            <div className="text-center md:text-left md:w-3/4 mt-6 md:mt-0 md:ml-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#0D3A5C]">
-                    🔒 Invierte con confianza: Estamos regulados por la SBS.
+                    🔒Invierte con confianza: Estamos regulados por la SBS.
                 </h2>
                 <p className="mt-4 text-gray-700 text-base md:text-lg">
-                    Con Finniu es una fintech registrada en la Superintendencia de Banca, Seguros y AFP (SBS), lo que garantiza la seguridad y transparencia en tus inversiones.
+                    Finniu es una fintech registrada en la Superintendencia de Banca, Seguros y AFP (SBS), lo que garantiza la seguridad y transparencia en tus inversiones.
                 </p>
                 <p className="mt-4 text-gray-700 text-base md:text-lg">
                     💬 Si tienes dudas, agenda una videollamada con uno de nuestros asesores y descubre cómo puedes hacer crecer tu dinero de manera segura.
