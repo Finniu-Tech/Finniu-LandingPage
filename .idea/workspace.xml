@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/Popup/logosbs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Popup/pig.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Popup/Popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Popup/Popup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/Section-8" />
       <recent name="$PROJECT_DIR$/images/Popup" />
+      <recent name="$PROJECT_DIR$/images/Section-8" />
       <recent name="$PROJECT_DIR$/images/About/Section-1" />
       <recent name="$PROJECT_DIR$/app/components" />
       <recent name="$PROJECT_DIR$/app/about/components" />
@@ -85,7 +86,8 @@
       <workItem from="1737125813319" duration="7198000" />
       <workItem from="1737357591075" duration="67000" />
       <workItem from="1737479046512" duration="2656000" />
-      <workItem from="1737651052096" duration="13551000" />
+      <workItem from="1737651052096" duration="15095000" />
+      <workItem from="1737829793511" duration="13039000" />
     </task>
     <servers />
   </component>
