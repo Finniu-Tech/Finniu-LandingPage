@@ -13,7 +13,7 @@ export default function Popup() {
     // Mostrar el popup después de 45 segundos
     const timer = setTimeout(() => {
       setIsPopupOpen(true);
-    }, 450);
+    }, 45000);
 
     return () => clearTimeout(timer); // Limpiar el temporizador cuando el componente se desmonte
   }, []);
