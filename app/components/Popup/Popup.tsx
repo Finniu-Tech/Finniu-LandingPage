@@ -91,26 +91,26 @@ export default function Popup() {
         {/* Imagen del cerdito y texto */}
 
           {/* Imagen del cerdito */}
-        <div className="hidden md:flex flex-row items-center justify-center px-4 mb-6">
-          {/* Texto */}
-          <div className="w-1/2 text-center md:text-left">
-            <p className="text-xs md:text-sm text-white mt-4 md:mt-0">
-              Tu futuro financiero está en buenas manos.
-            </p>
-            <p className="text-sm md:text-xl font-extrabold text-white mt-2">
-              ¡Súmate al cambio con Finniu!
-            </p>
-          </div>
+        {/*<div className="hidden md:flex flex-row items-center justify-center px-4 mb-6">*/}
+        {/*  /!* Texto *!/*/}
+        {/*  <div className="w-1/2 text-center md:text-left">*/}
+        {/*    <p className="text-xs md:text-sm text-white mt-4 md:mt-0">*/}
+        {/*      Tu futuro financiero está en buenas manos.*/}
+        {/*    </p>*/}
+        {/*    <p className="text-sm md:text-xl font-extrabold text-white mt-2">*/}
+        {/*      ¡Súmate al cambio con Finniu!*/}
+        {/*    </p>*/}
+        {/*  </div>*/}
 
-          {/* Imagen */}
-          <div className="w-1/2 flex justify-center">
-            <Image
-                src={PigImage}
-                alt="Finniu Piggy Bank"
-                className="rounded-lg w-[60%]"
-            />
-          </div>
-        </div>
+        {/*  /!* Imagen *!/*/}
+        {/*  <div className="w-1/2 flex justify-center">*/}
+        {/*    <Image*/}
+        {/*        src={PigImage}*/}
+        {/*        alt="Finniu Piggy Bank"*/}
+        {/*        className="rounded-lg w-[60%]"*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         {/* Texto */}
 
