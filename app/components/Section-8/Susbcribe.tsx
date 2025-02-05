@@ -25,13 +25,13 @@ const Susbcribe = () => {
             {/* Contenido de texto */}
             <div className="text-center md:text-left md:w-3/4 mt-6 md:mt-0 md:ml-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#0D3A5C]">
-                    🔒Invierte con confianza: Estamos regulados por la SBS.
+                   🔒 Invierte con confianza: Cumplimos con los más altos estándares de seguridad.
                 </h2>
                 <p className="mt-4 text-gray-700 text-base md:text-lg">
-                    Finniu es una fintech registrada en la Superintendencia de Banca, Seguros y AFP (SBS), lo que garantiza la seguridad y transparencia en tus inversiones.
+                    En Finniu, nos aseguramos de operar bajo parámetros estrictos que garantizan la transparencia y confianza en cada inversión.
                 </p>
                 <p className="mt-4 text-gray-700 text-base md:text-lg">
-                    💬 Si tienes dudas, agenda una videollamada con uno de nuestros asesores y descubre cómo puedes hacer crecer tu dinero de manera segura.
+                    💬 Si tienes dudas, agenda una videollamada con uno de nuestros asesores y descubre cómo puedes hacer crecer tu dinero de manera segura y estratégica. 🚀
                 </p>
                 {/* Botón */}
                 <button

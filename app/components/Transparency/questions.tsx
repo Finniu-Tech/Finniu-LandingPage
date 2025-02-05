@@ -131,9 +131,8 @@ export const questionIdInformation = (
 export const questionIdBack = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Sí, está regulada, supervisada, y registrada por la Superintendencia de Banca, Seguros y AFP (SBS). Puedes
-            verlo directamente desde la página de la SBS, coloca Finniu en el campo de Nombre o Razón Social y podrás
-            vernos en el listado.
+            Finniu Capital SAC está inscrita en la Superintendencia de Banca, Seguros y AFP (SBS).
+            Puedes verificar esta información directamente en la página oficial de la SBS buscando "Finniu Capital SAC" en el campo de Nombre o Razón Social.
 
         </p>
         <button

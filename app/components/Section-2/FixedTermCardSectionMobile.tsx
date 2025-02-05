@@ -49,7 +49,7 @@ const FixedTermCardSectionMobile = () => {
 
       <div className=" m-3">
         <h1 className="text-[28px] text-textSupport text-center mt-5 font-bold">
-          Invierte con confianza
+          y mas si es con Finniu
         </h1>
         <div className="flex flex-row justify-center">
           <Image src={Key} alt="business-money" width={25} height={35} />

@@ -63,7 +63,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={DMSans.className}>
         <NavComponent />
         {children}
-        <Popup />
         <FloatingWhatsappButton />
         <FooterPageComponent />
       </body>

@@ -37,7 +37,7 @@ const FixedTermSectionDesktop = () => {
             }`}
           onClick={handleTextClick}
         >
-          Invierte con confianza
+          y mas si es con Finniu
         </p>
       </div>
 
