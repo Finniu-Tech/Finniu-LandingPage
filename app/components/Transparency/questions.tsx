@@ -132,7 +132,7 @@ export const questionIdBack = (
     <div className={containerStyle}>
         <p className={textStyle}>
             Finniu Capital SAC está inscrita en la Superintendencia de Banca, Seguros y AFP (SBS).
-            Puedes verificar esta información directamente en la página oficial de la SBS buscando "Finniu Capital SAC" en el campo de Nombre o Razón Social.
+            Puedes verificar esta información directamente en la página oficial de la SBS buscando Finniu Capital SAC en el campo de Nombre o Razón Social.
 
         </p>
         <button
