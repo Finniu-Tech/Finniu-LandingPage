@@ -23,7 +23,7 @@ export default function Popup() {
   if (!isPopupOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm ">
       <div
         className="relative flex flex-col items-center rounded-lg shadow-xl w-11/12 max-w-lg md:max-w-xl bg-gradient-to-b from-[#006389] to-white p-6 "
       >
