@@ -71,7 +71,7 @@ const DownloadAppSectionDesktop = () => {
             </div>
           </div>
           <p className="text-justify leading-10 text-[24px]">
-            Somos un fondo de inversión privado con un producto de renta fija. En Finniu invertimos en las empresas de nuestro propio holding.
+            Somos Empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu impulsamos el crecimiento de las empresas de nuestro propio portafolio
           </p>
         </div>
       </div>
