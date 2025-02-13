@@ -66,7 +66,7 @@ export default function Popup() {
             onClick={() =>
               window.open(
                 isAfter7PM
-                  ? "https://nuevo-link.com/unirme" // Nuevo enlace después de las 7 PM
+                  ? "https://meet.google.com/cvo-giyv-okh" // Nuevo enlace después de las 7 PM
                   : "https://docs.google.com/forms/d/e/1FAIpQLSdZdo26B3j6rZMWZxgNEy9E1bh0Inw-xgPHp0pRDJSBZeRrMQ/viewform",
                 "_blank"
               )
