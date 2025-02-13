@@ -42,7 +42,6 @@ const faqData: Question[] = [
     { id: 5, question: "¿Qué riesgo existe al invertir con ustedes?", answer: questionIdRisk, tag: tagsRisk },
     { id: 6, question: "¿Qué empresas componen el holding?", answer: questionIdHolding, tag: tagsHolding },
     { id: 7, question: "¿Comparten información financiera de las empresas del holding?", answer: questionIdInformation, tag: tagsInformation },
-    { id: 8, question: "¿Cuentan con el respaldo de la SBS?", answer: questionIdBack, tag: tagsBack },
     { id: 9, question: "¿Dónde se ubican sus oficinas?", answer: questionIdLocation, tag: tagsLocation },
     { id: 10, question: "💡¿Puedo retirar mi capital en caso de emergencia?", answer: questionIdCapital, tag: tagsIdCapital },
 ];
