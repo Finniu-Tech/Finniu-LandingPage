@@ -21,11 +21,7 @@ const HistoryCircle = () => {
         <div className=" w-[529px] flex justify-center items-center ">
           <div className=" w-[287px]     2xl:w-[407px]">
             <p className=" text-[18px]  2xl:text-[20px] text-center mt-16  2xl:mt-[50%]  leading-9  2xl:leading-10 ">
-              Somos un fondo de inversión latinoamericano con la misión de
-              democratizar el acceso a las oportunidades financieras. Nuestra
-              prioridad es cuidar tu futuro brindándote experiencia y
-              tranquilidad, por eso nos esforzamos para invertir sea lo más
-              sencillo y transparente posible.
+              Somos una gestora de fondos privados con la misión de democratizar el acceso a las oportunidades financieras. Nuestra prioridad es cuidar tu futuro brindándote experiencia y tranquilidad, por eso nos esforzamos para que crecer financieramente sea lo más sencillo y transparente posible.
             </p>
           </div>
         </div>

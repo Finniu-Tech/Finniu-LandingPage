@@ -12,9 +12,8 @@ const DownloadAppMobileSection = () => {
 
 
         <p className="text-white text-[34px] leading-tight">
-          Haz crecer tus <span className="text-lightTextNavBar">Ahorros</span> y logra tus
+          Haz crecer tu <span className="text-lightTextNavBar">Patrimonio</span> y logra tus
           <span className="text-lilaColor "> metas </span>
-          <span className="text-lilaColor capitalize"> Financieras </span>
           con Finniu
         </p>
         <div className="h-[20px]">
@@ -28,11 +27,11 @@ const DownloadAppMobileSection = () => {
             className="ml-20 m-8"
         />
         <div className="text-center text-white px-8 py-5">
-          Somos un Fondo de Inversión Privado, con un Producto de Renta Fija
+          Somos una gestora de fondos privados, con un Producto de Renta Fija
         </div>
         <Link href={"/#simulatorInvestment"}
               className="w-[314px] h-[55px] flex flex-row justify-center items-center border rounded-lg border-lightTextNavBar  ">
-          <p className=" text-[25px] mr-4 text-lightBlueColor">Simula tu inversión</p>
+          <p className=" text-[25px] mr-4 text-lightBlueColor">Proyecta tus metas</p>
           <FontAwesomeIcon icon={faCalculator} className="text-lightTextNavBar text-2xl"/>
         </Link>
       </div>

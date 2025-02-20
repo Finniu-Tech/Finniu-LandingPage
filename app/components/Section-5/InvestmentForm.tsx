@@ -219,7 +219,7 @@ const InvestmentForm = () => {
 
 
           <ButtonComponent
-            text="Quiero invertir"
+            text="Me interesa"
             onClick={handleInvestClick}
             className="w-[314px] 2xl:w-[441px] 2xl:h-[77px] h-12 text-[16px] mt-3 2xl:mt-0 2xl:text-[24px] bg-blueColorButton text-white rounded-xl mb-4"
           />
@@ -233,9 +233,9 @@ const InvestmentForm = () => {
         </div>
       ) : (
         <div>
-          <div className="flex flex-row items-center gap-2 xl:hidden absolute -top-[55px] z-20">
-            <h1 className="  text-[28px] lg:text-[30px] font-bold">
-              Simula tu inversión
+          <div className=" flex flex-row items-center gap-2 xl:hidden absolute -top-[55px] z-20">
+            <h1 className=" text-[28px] lg:text-[30px] font-bold">
+              Proyecta tus metas
             </h1>
             <div className="h-[38px] mb-3">
               <Image src={Bill} alt="bill" height={38} />
@@ -244,7 +244,7 @@ const InvestmentForm = () => {
 
           <div className="flex flex-row justify-between items-center w-full">
             <h2 className="text-[16px] 2xl:text-[26px] font-bold text-black">
-              Quiero invertir en
+              Quiero simular en
             </h2>
 
             <div
@@ -277,7 +277,7 @@ const InvestmentForm = () => {
               className="block text-black text-[15px] xl:text-[20px] font-bold mb-0 2xl:mb-2"
               htmlFor="investmentAmount"
             >
-              ¿Cuánto quiero invertir?
+              ¿Cuál es el monto?
             </label>
             <div className="relative">
               <span className="absolute mt-2 left-0 pl-3  text-lg 2xl:text-2xl text-grayColorBackground flex items-center">

@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/components/Section-1/HistoryCircle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/components/Section-1/HistoryCircle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/components/Section-4/SolidStrategySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/components/Section-4/SolidStrategySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-1/DownloadAppMobileSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-1/DownloadAppMobileSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-1/DownloadAppSectionDesktop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-1/DownloadAppSectionDesktop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-2/FixedTermCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-2/FixedTermCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-2/FixedTermCardSectionMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-2/FixedTermCardSectionMobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-3/HowItWorksSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-3/HowItWorksSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-4/StepInvestmentGuideSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-4/StepInvestmentGuideSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-5/SimulatorInvestmentSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-5/SimulatorInvestmentSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-6/TestimonialsMobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-6/TestimonialsMobile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Section-8/Susbcribe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-8/Susbcribe.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Transparency/TransparencyBody.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Transparency/TransparencyBody.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Transparency/questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Transparency/questions.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +111,7 @@
       <workItem from="1739471567474" duration="3110000" />
       <workItem from="1739487528128" duration="6225000" />
       <workItem from="1739810951980" duration="1233000" />
-      <workItem from="1740069173649" duration="109000" />
+      <workItem from="1740069173649" duration="12418000" />
     </task>
     <servers />
   </component>

@@ -13,14 +13,14 @@ const SimulatorInvestmentSection = () => {
         <div className="flex flex-col items-center  justify-center ">
           <div className=" w-[650px] text-left  hidden xl:block">
             <p className=" text-[18px] sm:text-[20px]     md:text-[30px] xl:text-[40px] font-bold text-white  ">
-              Simula tu inversión
+              Proyecta
             </p>
             <p className=" text-[18px] sm:text-[20px] md:text-[30px] xl:text-[40px] font-bold text-white">
-              y proyecta tus
+              tus metas
             </p>
             <div className="flex flex-row gap-4">
               <p className="text-[18px] sm:text-[20px]  md:text-[30px] xl:text-[40px] font-bold text-white">
-                metas
+                con nuestro simulador
               </p>
               <Image
                 src={Bill}

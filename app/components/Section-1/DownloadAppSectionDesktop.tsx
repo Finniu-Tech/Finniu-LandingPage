@@ -14,14 +14,13 @@ const DownloadAppSectionDesktop = () => {
 
 
         <p className="text-white text-[43px] leading-tight">
-          Haz crecer tus <span className="text-lightTextNavBar">Ahorros</span> y logra tus
+          Haz crecer tu <span className="text-lightTextNavBar">Patrimonio</span> y logra tus
           <span className="text-lilaColor "> metas </span>
-          <span className="text-lilaColor capitalize"> Financieras </span>
           con Finniu
         </p>
         <div className="h-[30px]"></div>
         <Link href={"/#simulatorInvestment"} className="w-[314px] h-[55px] flex flex-row justify-center items-center border rounded-lg border-lightTextNavBar  ">
-          <p className=" text-[25px] mr-4 text-lightBlueColor">Simula tu inversión</p>
+          <p className=" text-[25px] mr-4 text-lightBlueColor">Proyecta tus metas</p>
           <FontAwesomeIcon icon={faCalculator} className="text-lightTextNavBar text-2xl" />
         </Link>
 

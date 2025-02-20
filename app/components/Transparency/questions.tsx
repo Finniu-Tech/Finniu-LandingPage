@@ -32,14 +32,14 @@ export const questionCapital = (
         <div className="h-4"></div>
         <ul className={listStyle}>
             <li>
-                El contrato de administración de capital, el cual es un documento legal que asegura el monto de tu inversión. En caso de incumplimiento, puedes hacer valer tus derechos a través de vías legales, este se genera automáticamente a través de la app.
+                El contrato de administración de capital, el cual es un documento legal que asegura el monto de tu patrimonio transferido. En caso de incumplimiento, puedes hacer valer tus derechos a través de vías legales, este se genera automáticamente a través de la app.
             </li>
         </ul>
 
         <div className="h-4"></div>
         <ul className={listStyle}>
             <li>
-                El contrato con cheque diferido se otorga a inversiones de montos desde S/.50,000 soles, su función es la misma que el de administración de capital, pero adicional a ello se otorga un cheque por el monto del capital invertido añadiendo una capa adicional de seguridad sobre tu capital.
+                El contrato con cheque diferido se otorga a clientes de montos desde S/.50,000 soles, su función es la misma que el de administración de capital, pero adicional a ello se otorga un cheque por el monto del capital invertido añadiendo una capa adicional de seguridad sobre tu capital.
             </li>
         </ul>
 
@@ -61,24 +61,25 @@ export const questionIdTeam = (
 export const questionIdClient = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Contamos con más de 350 inversionistas que han depositado su confianza en Finniu a lo largo del tiempo. Con más de 700 inversiones realizadas en nuestros primeros dos años manejando más de S/10 millones, seguimos creciendo y ofreciendo oportunidades seguras y rentables para nuestros inversionistas.
+            En Finniu, más de personas han confiado en nuestra gestión a lo largo del tiempo. Con más de 700 operaciones realizadas en nuestros primeros dos años y un volumen gestionado que supera los S/10 millones, seguimos creciendo y desarrollando soluciones financieras estratégicas para quienes buscan optimizar su capital de manera segura y eficiente.
         </p>
     </div>
 );
 export const questionIdRisk = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Toda inversión conlleva riesgos. Sin embargo, contamos con contratos de mutuo dinerario que respaldan cada inversión y aseguran la devolución del capital al final del plazo. En estos 3 años, hemos cumplido con el 100% de rentabilidad, logrando un historial sólido de cumplimiento. Además, nuestra estrategia de diversificación nos permite mantener un buen equilibrio entre rentabilidad y seguridad, minimizando riesgos y ofreciendo estabilidad a nuestros inversionistas.        </p>
+            Toda decisión financiera conlleva un nivel de riesgo. En Finniu, gestionamos cada operación bajo estructuras claras y acuerdos contractuales que establecen los términos y condiciones de cada operación.
+A lo largo de estos tres años, hemos mantenido un historial sólido de cumplimiento, asegurando que cada operación siga criterios estratégicos para optimizar resultados. Además, nuestra estrategia de diversificación permite mantener un equilibrio entre estabilidad y rendimiento, reduciendo la exposición a riesgos y brindando mayor tranquilidad a quienes confían en nuestra gestión.        </p>
         <div className="h-4"></div>
         <p className={textStyle}>
-            Revisa las garantias <Link href={riskLink} className={linkStyle} target="_blank" rel="noopener noreferrer">aquí.</Link>
+            Revisa las garantías <Link href={riskLink} className={linkStyle} target="_blank" rel="noopener noreferrer">aquí.</Link>
         </p>
     </div>
 );
 export const questionIdHolding = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            En Finniu, diversificamos tu inversión en sectores como alimentos, agroindustria, energía y servicios industriales, maximizando rentabilidad y reduciendo riesgos. Te presentamos las empresas de nuestro holding</p>
+            En Finniu, diversificamos tu capital en sectores como alimentos, agroindustria, energía y servicios industriales, maximizando rentabilidad y reduciendo riesgos. Te presentamos las empresas de nuestro holding</p>
         <div className="h-4"></div>
         <ul className={listStyle}>
             <li>
@@ -125,25 +126,10 @@ export const questionIdHolding = (
 export const questionIdInformation = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Sí, cada trimestre enviamos un informe a los inversionistas, detallando el avance del fondo y cómo estamos implementando las estrategias de inversión. Haz una simulación desde el Home de nuestra web y recibirás esta información en nuestro newsletter.        </p>
+            Sí, cada trimestre enviamos un informe, detallando el avance del fondo privado y cómo estamos implementando las estrategias. Haz una simulación desde el Home de nuestra web y recibirás esta información en nuestro newsletter.</p>
     </div>
 );
-export const questionIdBack = (
-    <div className={containerStyle}>
-        <p className={textStyle}>
-            Finniu Capital SAC está inscrita en la Superintendencia de Banca, Seguros y AFP (SBS).
-            Puedes verificar esta información directamente en la página oficial de la SBS buscando Finniu Capital SAC en el campo de Nombre o Razón Social.
 
-        </p>
-        <button
-            onClick={() => window.open("https://www.sbs.gob.pe/supervisados-y-registros/registros/otros-registros/casas-de-cambio-prestamos-y-empenos/empresas-de-prestamos-y-o-empeno", "_blank")}
-            className="mt-5 px-6 py-3 bg-[#0D3A5C] text-white rounded-lg hover:bg-[#104D7C] font-bold"
-        >
-            Ver
-            Aquí
-        </button>
-    </div>
-);
 export const questionIdLocation = (
     <div className={containerStyle}>
         <p className={textStyle}>
@@ -160,32 +146,16 @@ export const questionIdLocation = (
 export const questionIdCapital = (
     <div className={containerStyle}>
         <p className={textStyle}>
-            Actualmente no es posible hacer el retiro del capital en caso de emergencia debido a los acuerdos
-            establecidos en el contrato generado al inicio de la inversión.
-
-
+            Actualmente, los retiros anticipados no están contemplados dentro de los acuerdos establecidos en el contrato, ya que estos determinan los plazos y condiciones bajo los cuales se gestiona el capital.
         </p>
         <div className="py-4">
             <p className={textStyle}>
-                Estos acuerdos están diseñados para asegurar que todos los compromisos se cumplan de manera adecuada,
-                tanto para el inversionista como para la entidad que gestiona los fondos.
-
+                Estos acuerdos están diseñados para garantizar el cumplimiento de los compromisos asumidos y mantener la estabilidad de cada operación. Respetar los plazos establecidos permite optimizar los resultados y asegurar el cumplimiento de las condiciones pactadas.
             </p>
         </div>
         <div className="py-4">
             <p className={textStyle}>
-                Al mantener el capital invertido durante
-                el tiempo estipulado, se protege el rendimiento esperado y la estabilidad de las inversiones.
-
-            </p>
-        </div>
-        <div className="py-4">
-            <p className={textStyle}>
-                Entendemos
-                que
-                pueden surgir situaciones inesperadas, pero estas reglas existen para garantizar que todo funcione de
-                manera
-                segura y equitativa para todos los participantes.
+                Entendemos que pueden surgir imprevistos, por lo que, si necesitas evaluar alternativas, nuestro equipo está disponible para brindarte orientación y acompañamiento en el proceso.
             </p>
         </div>
     </div>

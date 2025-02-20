@@ -35,8 +35,7 @@ const SolidStrategySection = () => {
                 </h1>
 
                 <p className=" text-[18px] xl:text-[24px] text-center mt-[10px]">
-                  Sabemos encontrar las mejores oportunidades de inversión y
-                  creamos productos sencillos para que todos puedan invertir.
+                  Diseñamos soluciones financieras estratégicas y fáciles de entender, permitiendo que más personas puedan gestionar su capital de manera eficiente y sin complicaciones.
                 </p>
               </div>
             </div>
@@ -52,13 +51,11 @@ const SolidStrategySection = () => {
                 </div>
 
                 <h1 className=" text-center  text-blueColorButton  text-[24px] mt-5 xl:text-[32px]">
-                  Invierte sin paltas
+                  Tu tranquilidad es nuestra prioridad
                 </h1>
 
                 <p className=" text-[18px]    xl:text-[24px] text-center mt-[10px]">
-                  Velamos por tu seguridad, por eso ofrecemos
-                  diversificación,información y transparencia en nuestra
-                  comunicación .
+                  Nos enfocamos en brindarte seguridad a través de estrategias diversificadas, información clara y una comunicación 100% transparente.
                 </p>
               </div>
             </div>
