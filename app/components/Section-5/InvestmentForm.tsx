@@ -148,7 +148,7 @@ const InvestmentForm = () => {
   const handleInvestClick = () => {
     const userAgent = navigator.userAgent || navigator.vendor;
 
-    let url = "https://calendly.com/finniumeet/30min";
+    let url = "https://calendly.com/finniumeet/20min";
 
     // if (/iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream) {
     //   // iOS

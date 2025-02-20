@@ -11,7 +11,7 @@ const capitalLink = "https://finniu.tawk.help/article/%C2%BFcomo-aseguramos-el-c
 const teamLink = "/about";
 const riskLink = "https://finniu.tawk.help/article/%C2%BFcomo-aseguramos-el-capital-de-nuestros-inversionistas";
 const holdingLink = "https://finniu.tawk.help/article/%C2%BFa-d%C3%B3nde-va-el-dinero-de-tu-inversi%C3%B3n";
-const calendarLink = "https://calendly.com/finniumeet/30min";
+const calendarLink = "https://calendly.com/finniumeet/20min";
 
 export const questionIdRate = (
     <div className={containerStyle}>
@@ -152,7 +152,7 @@ export const questionIdLocation = (
         </p>
         <div className="h-4"></div>
         <p className={textStyle}>
-            Agenda tu visita en este link: <Link href={calendarLink} className={linkStyle} target="_blank" rel="noopener noreferrer">https://calendly.com/finniumeet/30min</Link>
+            Agenda tu visita en este link: <Link href={calendarLink} className={linkStyle} target="_blank" rel="noopener noreferrer">https://calendly.com/finniumeet/20min</Link>
         </p>
     </div>
 );

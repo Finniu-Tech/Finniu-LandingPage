@@ -35,7 +35,7 @@ const Susbcribe = () => {
                 </p>
                 {/* Botón */}
                 <button
-                    onClick={() => window.open("https://calendly.com/finniumeet/30min", "_blank")}
+                    onClick={() => window.open("https://calendly.com/finniumeet/20min", "_blank")}
                     className="mt-6 px-8 py-3 bg-[#0D3A5C] text-white font-bold rounded-full hover:bg-[#104D7C] transition duration-300"
                 >
                     ¡Agenda ahora!
