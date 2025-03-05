@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import ListQuestions from "./ListQuestions";
 import {
     questionCapital,
-    questionIdBack,
     questionIdCapital,
     questionIdClient,
     questionIdHolding,
