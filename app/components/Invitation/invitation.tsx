@@ -6,7 +6,7 @@ import Fondo2 from "@/images/Evento/landing-bg2.png";
 import Fondo3 from "@/images/Evento/landing-bg3.jpg";
 import Copas from "@/images/Evento/copas.png";
 import evolve from "@/images/Evento/cuadrados web/evolveweb.png";
-
+import evolvemovil from "@/images/Evento/cuadrados mobile/movil-evento.png";
 interface InvitadoInput {
   tipoInvitado: string;
   nombre: string;
@@ -149,8 +149,24 @@ export default function Invitacion() {
         <div className="relative bg-black bg-opacity-90 py-16 px-8">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-5xl font-bold mb-6">FINNIU EVOLVE</h2>
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
-              <Image src={evolve} alt="Fondo de invitación" className="rounded-lg w-3/4 md:w-full" />
+            <div className="grid md:grid-cols-1 gap-6 justify-center items-center">
+              {/* Imagen para Desktop */}
+              <div className="hidden md:flex justify-center">
+                <Image
+                  src={evolve}
+                  alt="Fondo de invitación"
+                  className="rounded-lg w-3/4 md:w-full"
+                />
+              </div>
+
+              {/* Imagen para Mobile */}
+              <div className="flex md:hidden justify-center">
+                <Image
+                  src={evolvemovil}
+                  alt="Fondo de invitación"
+                  className="rounded-lg w-3/4 md:w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
