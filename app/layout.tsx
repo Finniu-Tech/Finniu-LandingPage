@@ -56,17 +56,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-    <head>
-      <GTM />
-    </head>
-      <body className={DMSans.className}>
-        <NavComponent />
-        {children}
-        <Popup />
-        <FloatingWhatsappButton />
-        <FooterPageComponent />
-      </body>
-    </html>
+
+        <html lang="en">
+        <head>
+          <GTM />
+        </head>
+          <body className={DMSans.className}>
+            <NavComponent />
+            {children}
+            <Popup />
+            <FloatingWhatsappButton />
+            <FooterPageComponent />
+          </body>
+        </html>
+
   );
 }

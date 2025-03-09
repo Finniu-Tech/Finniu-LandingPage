@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Transparency/TransparencyBody.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Transparency/TransparencyBody.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2mI97batSy0KscpRsi46WQT0zAS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
@@ -44,11 +49,11 @@
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/images/Evento/cuadrados web" />
+      <recent name="$PROJECT_DIR$/images/Evento" />
       <recent name="$PROJECT_DIR$/images/Popup" />
       <recent name="$PROJECT_DIR$/images/Section-8" />
-      <recent name="$PROJECT_DIR$/images/About/Section-1" />
-      <recent name="$PROJECT_DIR$/app/components" />
-      <recent name="$PROJECT_DIR$/app/about/components" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -105,6 +110,9 @@
       <workItem from="1740961383483" duration="1227000" />
       <workItem from="1741097216640" duration="2401000" />
       <workItem from="1741132354115" duration="5697000" />
+      <workItem from="1741294637642" duration="641000" />
+      <workItem from="1741355750801" duration="597000" />
+      <workItem from="1741437426572" duration="19362000" />
     </task>
     <servers />
   </component>
