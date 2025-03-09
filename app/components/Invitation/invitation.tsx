@@ -77,7 +77,7 @@ export default function Invitacion() {
     };
 
     try {
-      const response = await fetch("http://0.0.0.0:8000/api/v1/graph/finniu/", {
+      const response = await fetch("https://manage.finniu.com/api/v1/graph/finniu/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query, variables }),
