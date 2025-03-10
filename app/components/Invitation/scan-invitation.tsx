@@ -1,30 +1,49 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Html5QrcodeScanner } from "html5-qrcode";
+import { Html5QrcodeScanner, Html5QrcodeSupportedFormats } from "html5-qrcode";
 
 export default function QRScanner() {
   const scannerRef = useRef<Html5QrcodeScanner | null>(null);
   const [qrData, setQrData] = useState<string | null>(null);
   const [isScanning, setIsScanning] = useState(false);
+  const [cameraError, setCameraError] = useState<string | null>(null);
 
-  // Función para iniciar la cámara
-  const startScanner = () => {
-    if (!isScanning) {
-      setIsScanning(true);
-      scannerRef.current = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, false);
+  const startScanner = async () => {
+    try {
+      // **✅ Verificar permisos de cámara antes de iniciar el escáner**
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      stream.getTracks().forEach(track => track.stop()); // Cerrar el stream inmediatamente
 
-      scannerRef.current.render(
-        (decodedText) => {
-          setQrData(decodedText);
-          stopScanner(); // 🚀 Detiene la cámara automáticamente al escanear
-          sendToAPI(decodedText); // 📡 Envía el código al API
-        },
-        (error) => console.error(error)
-      );
+      if (!isScanning) {
+        setIsScanning(true);
+        setCameraError(null);
+
+        scannerRef.current = new Html5QrcodeScanner(
+          "reader",
+          {
+            fps: 10,
+            qrbox: 250,
+            formatsToSupport: [Html5QrcodeSupportedFormats.QR_CODE],
+            supportedScanTypes: ["camera"]
+          },
+          false
+        );
+
+        scannerRef.current.render(
+          (decodedText) => {
+            setQrData(decodedText);
+            stopScanner();
+            sendToAPI(decodedText);
+          },
+          (error) => console.warn("QR Error:", error)
+        );
+      }
+    } catch (error) {
+      console.error("Error de acceso a la cámara:", error);
+      setCameraError("No se pudo acceder a la cámara. Verifica los permisos.");
     }
   };
 
-  // Función para detener la cámara
   const stopScanner = () => {
     if (scannerRef.current) {
       scannerRef.current.clear();
@@ -32,7 +51,6 @@ export default function QRScanner() {
     }
   };
 
-  // Enviar el QR escaneado a un API GraphQL
   const sendToAPI = async (qrText: string) => {
     try {
       const response = await fetch("https://tu-api.com/graphql", {
@@ -63,10 +81,10 @@ export default function QRScanner() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <h1 className="text-2xl font-bold mb-4">Escáner de QR</h1>
 
-      {/* Contenedor del escáner (se muestra solo cuando está activo) */}
+      {cameraError && <p className="text-red-500">{cameraError}</p>}
+
       {isScanning && <div id="reader" className="w-64 h-64 border border-gray-400"></div>}
 
-      {/* Botón para iniciar la cámara */}
       {!isScanning && (
         <button
           onClick={startScanner}
@@ -76,7 +94,6 @@ export default function QRScanner() {
         </button>
       )}
 
-      {/* Resultado */}
       {qrData && (
         <div className="mt-4 p-3 bg-white rounded-lg shadow">
           <p><strong>QR escaneado:</strong> {qrData}</p>
