@@ -11,7 +11,7 @@ export default function QRScanner() {
   const startScanner = () => {
     if (!isScanning) {
       setIsScanning(true);
-      scannerRef.current = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
+      scannerRef.current = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, false);
 
       scannerRef.current.render(
         (decodedText) => {
