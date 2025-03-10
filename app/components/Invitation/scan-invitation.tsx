@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Html5QrcodeScanner, Html5QrcodeSupportedFormats } from "html5-qrcode";
+import { Html5QrcodeScanner, Html5QrcodeSupportedFormats, Html5QrcodeScanType } from "html5-qrcode";
 
 export default function QRScanner() {
   const scannerRef = useRef<Html5QrcodeScanner | null>(null);
@@ -24,7 +24,7 @@ export default function QRScanner() {
             fps: 10,
             qrbox: 250,
             formatsToSupport: [Html5QrcodeSupportedFormats.QR_CODE],
-            supportedScanTypes: ["camera"]
+            supportedScanTypes: [Html5QrcodeScanType.SCAN_TYPE_CAMERA] // 🛠 FIX
           },
           false
         );
