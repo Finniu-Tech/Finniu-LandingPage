@@ -5,7 +5,7 @@ export default function Invitations() {
     return (
         <main>
             <Invitation />
-            <QRScanner />
+
         </main>
     );
 }
