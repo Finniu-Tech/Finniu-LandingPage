@@ -18,12 +18,14 @@ export default function Home() {
       <SponsoredV2 />
       <MovilOperations />
       <FixedTermsSection />
-      <ToStoresSection />
+
       <HowItWorksSection />
       <StepInvestmentGuideSection />
       <SimulatorInvestmentSection />
+        <Susbcribe />
+        <ToStoresSection />
       <TestimonialsSection />
-      <Susbcribe />
+
       {/* <RegisterSection /> */}
     </main>
   );

@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Section-1/DownloadAppMobileSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-1/DownloadAppMobileSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/evento/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/evento/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2mI97batSy0KscpRsi46WQT0zAS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
@@ -28,7 +33,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;staging&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/diegodelavega/Diego/Finniu-LandingPage/app/components/Button-wsp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -44,10 +49,11 @@
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/Evento/cuadrados mobile" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/images/Evento/cuadrados web" />
+      <recent name="$PROJECT_DIR$/images/Evento" />
       <recent name="$PROJECT_DIR$/images/Popup" />
-      <recent name="$PROJECT_DIR$/images/About/Section-1" />
-      <recent name="$PROJECT_DIR$/app/components" />
-      <recent name="$PROJECT_DIR$/app/about/components" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -76,11 +82,53 @@
       <workItem from="1732313472989" duration="15927000" />
       <workItem from="1733242431542" duration="8265000" />
       <workItem from="1733626625527" duration="200000" />
-      <workItem from="1734991122753" duration="349000" />
+      <workItem from="1734991122753" duration="6414000" />
+      <workItem from="1735056481182" duration="1824000" />
+      <workItem from="1736728067549" duration="17030000" />
+      <workItem from="1737040986459" duration="15097000" />
+      <workItem from="1737125813319" duration="7198000" />
+      <workItem from="1737357591075" duration="67000" />
+      <workItem from="1737479046512" duration="2656000" />
+      <workItem from="1737651052096" duration="15095000" />
+      <workItem from="1737829793511" duration="14449000" />
+      <workItem from="1737854191480" duration="592000" />
+      <workItem from="1737992377624" duration="91000" />
+      <workItem from="1737993094374" duration="93000" />
+      <workItem from="1737993197430" duration="31000" />
+      <workItem from="1738679836247" duration="1485000" />
+      <workItem from="1738788196703" duration="6414000" />
+      <workItem from="1739389084056" duration="8254000" />
+      <workItem from="1739407799382" duration="10000" />
+      <workItem from="1739450513038" duration="223000" />
+      <workItem from="1739471567474" duration="3110000" />
+      <workItem from="1739487528128" duration="6225000" />
+      <workItem from="1739810951980" duration="1233000" />
+      <workItem from="1740069173649" duration="16063000" />
+      <workItem from="1740428845250" duration="7744000" />
+      <workItem from="1740687978828" duration="3025000" />
+      <workItem from="1740771466776" duration="3957000" />
+      <workItem from="1740961383483" duration="1227000" />
+      <workItem from="1741097216640" duration="2401000" />
+      <workItem from="1741132354115" duration="5697000" />
+      <workItem from="1741294637642" duration="641000" />
+      <workItem from="1741355750801" duration="597000" />
+      <workItem from="1741437426572" duration="22249000" />
+      <workItem from="1741577015542" duration="1004000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

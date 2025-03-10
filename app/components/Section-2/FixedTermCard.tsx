@@ -17,9 +17,7 @@ const FixedTermCard = () => {
             <span className="font-bold"> Sin requisitos ocultos </span> y
             <span className="font-bold"> sin comisiones. </span>
             <p>
-              Obtén más ganancias con tus ahorros y disfruta de los beneficios
-              de una renta fija. Genera un ingreso extra al mes. Invertir es
-              para todos.
+              Haz crecer tu patrimonio y disfruta de los beneficios de una renta fija. Genera un ingreso extra al mes. Finniu es para todos.
             </p>
             <a
               href="/TermsFinniu/Terminos_Condiciones.pdf"

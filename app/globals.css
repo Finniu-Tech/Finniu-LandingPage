@@ -314,3 +314,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   animation: marquee 20s linear infinite;
   white-space: nowrap;
 }
+
+.gradiente {
+  background: radial-gradient(circle, #81F3DB 0%, #0D3295 50%, #000000 100%);
+}

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import ListQuestions from "./ListQuestions";
 import {
     questionCapital,
-    questionIdBack,
     questionIdCapital,
     questionIdClient,
     questionIdHolding,
@@ -38,11 +37,10 @@ const faqData: Question[] = [
     { id: 1, question: "¿Cómo consiguen una tasa tan competitiva?", answer: questionIdRate, tag: tagsRate },
     { id: 2, question: "¿Cómo aseguran mi capital? ¿Hay alguna garantía?", answer: questionCapital, tag: tagsCapital },
     { id: 3, question: "¿Quién es su equipo?", answer: questionIdTeam, tag: tagsTeam },
-    { id: 4, question: "¿Cuántos clientes / inversionistas manejan?", answer: questionIdClient, tag: tagsClient },
-    { id: 5, question: "¿Qué riesgo existe al invertir con ustedes?", answer: questionIdRisk, tag: tagsRisk },
+    { id: 4, question: "¿Cuántos clientes manejan?", answer: questionIdClient, tag: tagsClient },
+    { id: 5, question: "¿Qué riesgo existe al trabajar con ustedes?", answer: questionIdRisk, tag: tagsRisk },
     { id: 6, question: "¿Qué empresas componen el holding?", answer: questionIdHolding, tag: tagsHolding },
     { id: 7, question: "¿Comparten información financiera de las empresas del holding?", answer: questionIdInformation, tag: tagsInformation },
-    { id: 8, question: "¿Cuentan con el respaldo de la SBS?", answer: questionIdBack, tag: tagsBack },
     { id: 9, question: "¿Dónde se ubican sus oficinas?", answer: questionIdLocation, tag: tagsLocation },
     { id: 10, question: "💡¿Puedo retirar mi capital en caso de emergencia?", answer: questionIdCapital, tag: tagsIdCapital },
 ];

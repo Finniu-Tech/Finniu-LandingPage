@@ -32,9 +32,7 @@ const FixedTermCardSectionMobile = () => {
               <span className="font-extrabold"> sin comisiones. </span>
             </p>
             <p className="text-[13px] mt-2">
-              Obtén más ganancias con tus ahorros y disfruta de los beneficios
-              de una renta fija. Genera un ingreso extra al mes. Invertir es
-              para todos.
+              Haz crecer tu patrimonio y disfruta de los beneficios de una renta fija. Genera un ingreso extra al mes. Finniu es para todos.
             </p>
             <a
               href="/TermsFinniu/Terminos_Condiciones.pdf"
@@ -49,7 +47,7 @@ const FixedTermCardSectionMobile = () => {
 
       <div className=" m-3">
         <h1 className="text-[28px] text-textSupport text-center mt-5 font-bold">
-          Invierte con confianza
+          y mas si es con Finniu
         </h1>
         <div className="flex flex-row justify-center">
           <Image src={Key} alt="business-money" width={25} height={35} />

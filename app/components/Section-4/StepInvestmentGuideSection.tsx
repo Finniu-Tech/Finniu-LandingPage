@@ -29,7 +29,7 @@ const StepInvestmentGuideSection = () => {
       title: "Informes Trimestrales",
       subtitle: "Optimizamos tu dinero",
       description:
-        "Maximizamos tu inversión. Es por eso que ofrecemos una visibilidad contínua sobre el rendimiento de tus inversiones a través de informes trimestrales.",
+        "Maximizamos tu patrimonio. Es por ello que te ofrecemos una visibilidad continua sobre el rendimiento de tus operaciones a través de informes trimestrales.",
       imageSrc: QuarterlyReports,
       bgColor: "bg-blueDarkColor text-white",
     },
@@ -37,7 +37,7 @@ const StepInvestmentGuideSection = () => {
       title: "Proyecta tus metas",
       subtitle: "Estamos listos para crecer contigo",
       description:
-        "Podrás proyectar los rendimientos mensuales y totales de tu inversión de manera rápida y sencilla.",
+        "Podrás proyectar los rendimientos mensuales y totales de tus operaciones de manera rápida y sencilla.",
       imageSrc: ProjectYourGoals,
       bgColor: "bg-white text-blackColorText",
     },

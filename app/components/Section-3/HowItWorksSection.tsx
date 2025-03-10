@@ -112,7 +112,7 @@ const HowItWorksSection = () => {
       alt: "register",
     },
     {
-      text: "Elige el plan de inversión que más se ajuste a ti (soles o dólares).",
+      text: "Elige el fondo que más se ajuste a ti (soles o dólares).",
       image: [ChoosePlan],
       alt: "choose-plan",
     },
@@ -122,7 +122,7 @@ const HowItWorksSection = () => {
       alt: "step-3",
     },
     {
-      text: "Realiza la inversión a la cuenta corriente de Finniu y adjunta tu comprobante.",
+      text: "Realiza la transferencia a la cuenta corriente de Finniu y adjunta tu comprobante.",
       image: [Step4],
       alt: "step-4",
     },

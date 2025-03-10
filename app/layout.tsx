@@ -23,13 +23,13 @@ const DMSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Finniu - Inversiones fáciles y seguras",
+  title: "Finniu - Simplificamos tu presente, potenciamos tu futuro",
   description:
-    "Finniu te ayuda a invertir de manera simple y con bajo riesgo para crear riqueza a largo plazo.",
+    "Con Finniu simplificamos tu presente, potenciamos tu futuro.",
   openGraph: {
-    title: "Finniu - Inversiones fáciles y seguras",
+    title: "Finniu - Simplificamos tu presente, potenciamos tu futuro",
     description:
-      "Invierte tu dinero de manera simple y segura con Finniu. Obtén ganancias mensuales con nuestras soluciones.",
+      "Con Finniu simplificamos tu presente, potenciamos tu futuro.",
     url: "https://www.finniu.com",
     siteName: "Finniu",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "https://finniu-statics.s3.amazonaws.com/finniu/images/finniu-seo.png",
         width: 1200,
         height: 630,
-        alt: "Finniu - Personal Money App",
+        alt: "Finniu - Simplificamos tu presente, potenciamos tu futuro",
       },
     ],
     locale: "es_ES",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Finniu - Inversiones fáciles y seguras",
+    title: "Finniu - Simplificamos tu presente, potenciamos tu futuro",
     description:
-      "Invierte tu dinero de manera simple y segura con Finniu. Obtén ganancias mensuales con nuestras soluciones.",
+      "Con Finniu simplificamos tu presente, potenciamos tu futuro.",
     images: [
       "https://finniu-statics.s3.amazonaws.com/finniu/images/finniu-seo.png",
     ],
@@ -56,17 +56,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-    <head>
-      <GTM />
-    </head>
-      <body className={DMSans.className}>
-        <NavComponent />
-        {children}
-        <Popup />
-        <FloatingWhatsappButton />
-        <FooterPageComponent />
-      </body>
-    </html>
+
+        <html lang="en">
+        <head>
+          <GTM />
+        </head>
+          <body className={DMSans.className}>
+            <NavComponent />
+            {children}
+            <Popup />
+            <FloatingWhatsappButton />
+            <FooterPageComponent />
+          </body>
+        </html>
+
   );
 }

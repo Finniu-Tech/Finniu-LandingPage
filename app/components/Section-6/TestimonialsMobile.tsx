@@ -54,13 +54,13 @@ const TestimonialsMobile = () => {
 
   const testimonials: Testimonial[] = [
     {
-      text: "Con Finniu he empezado mi camino a mi objetivo, libertad financiera. Además, ofrece facilidades para el tracking de tus inversiones, ingresos y egresos. Y lo más importante es que te ofrece tasas con puntos extras para maximizar tus ingresos pasivos.",
+      text: "Con Finniu he empezado mi camino a mi objetivo, libertad financiera. Además, ofrece facilidades para el tracking de tus operaciones, ingresos y egresos. Y lo más importante es que te ofrece tasas con puntos extras para maximizar tus ingresos pasivos.",
       name: "Daniel Alberca",
       title: "Analista de Control de Gestión",
       image: InvestorOne,
     },
     {
-      text: "Para diversificar mi portafolio de inversiones probé con Finniu y superó mis expectativas, ganaron mi confianza y ahora volví a invertir con ellos, me tranquiliza saber que mi dinero está creciendo.",
+      text: "Para diversificar mi portafolio probé con Finniu y superó mis expectativas, ganaron mi confianza y ahora volví a trabajar con ellos, me tranquiliza saber que mi dinero está creciendo.",
       name: "Claudia Salas",
       title: "Diseñadora, Marketing Digital",
       image: InvestorTwo,
