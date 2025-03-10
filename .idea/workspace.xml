@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Invitation/scan-invitation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Invitation/scan-invitation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/evento/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/evento/page.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +109,7 @@
       <workItem from="1741355750801" duration="597000" />
       <workItem from="1741437426572" duration="22249000" />
       <workItem from="1741577015542" duration="1004000" />
-      <workItem from="1741644039045" duration="1321000" />
+      <workItem from="1741644039045" duration="1805000" />
     </task>
     <servers />
   </component>
