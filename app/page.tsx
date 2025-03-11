@@ -15,15 +15,15 @@ export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col items-center  justify-between   ">
       <DownloadAppSection />
-      <SponsoredV2 />
+        <ToStoresSection />
       <MovilOperations />
       <FixedTermsSection />
-
+        <SponsoredV2 />
       <HowItWorksSection />
       <StepInvestmentGuideSection />
       <SimulatorInvestmentSection />
         <Susbcribe />
-        <ToStoresSection />
+
       <TestimonialsSection />
 
       {/* <RegisterSection /> */}
