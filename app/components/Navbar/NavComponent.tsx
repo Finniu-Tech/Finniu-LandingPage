@@ -55,12 +55,20 @@ const NavComponent = () => {
         </Link>
         <div className="hidden xl:flex flex-row justify-between items-center space-x-20 text-white text-[18px]">
           <Link
-            href="/#HowItWorks"
-            className={`transition-transform duration-300 ${selectedNavItemState === "how-it-works" ? "text-lightTextNavBar" : ""
+            href="/about"
+            className={`transition-transform duration-300 ${selectedNavItemState === "about" ? " text-lightTextNavBar" : ""
               } hover:scale-110`}
-            onClick={() => handleItemSelect("how-it-works")}
+            onClick={() => handleItemSelect("about")}
           >
-            ¿Cómo funciona?
+            Nosotros
+          </Link>
+          <Link
+            href="/#"
+            className={`transition-transform duration-300 ${selectedNavItemState === "#" ? " text-lightTextNavBar" : ""
+              } hover:scale-110`}
+            onClick={() => handleItemSelect("#")}
+          >
+            Productos
           </Link>
           <Link
             href="/transparencia-y-seguridad-finniu"
@@ -69,6 +77,30 @@ const NavComponent = () => {
             onClick={() => handleItemSelect("transparencia-y-seguridad-finniu")}
           >
             Transparencia y Seguridad
+          </Link>
+          <Link
+            href="/#"
+            className={`transition-transform duration-300 ${selectedNavItemState === "#" ? "text-lightTextNavBar" : ""
+              } hover:scale-110`}
+            onClick={() => handleItemSelect("#")}
+          >
+            Compara
+          </Link>
+          <Link
+            href="/#"
+            className={`transition-transform duration-300 ${selectedNavItemState === "#" ? "text-lightTextNavBar" : ""
+              } hover:scale-110`}
+            onClick={() => handleItemSelect("#")}
+          >
+            Contacto
+          </Link>
+          {/* <Link
+            href="/#HowItWorks"
+            className={`transition-transform duration-300 ${selectedNavItemState === "how-it-works" ? "text-lightTextNavBar" : ""
+              } hover:scale-110`}
+            onClick={() => handleItemSelect("how-it-works")}
+          >
+            ¿Cómo funciona?
           </Link>
           <Link
             href="/#simulatorInvestment"
@@ -95,19 +127,16 @@ const NavComponent = () => {
             onClick={() => handleItemSelect("finantips")}
           >
             Blog
-          </Link>
-          <Link
-            href="/about"
-            className={`transition-transform duration-300 ${selectedNavItemState === "about" ? " text-lightTextNavBar" : ""
-              } hover:scale-110`}
-            onClick={() => handleItemSelect("about")}
-          >
-            Nosotros
-          </Link>
+          </Link> */}
         </div>
-        <div className="hidden xl:flex">
+        <div className="hidden xl:flex space-x-6">
           <ButtonComponent
             text="Ingresar"
+            className="h-12 w-36 text-blueDarkColor bg-lightBlueColor text-[18px] rounded-lg"
+            onClick={handleButton}
+          />
+          <ButtonComponent
+            text="Crear cuenta"
             className="h-12 w-36 text-blueDarkColor bg-lightBlueColor text-[18px] rounded-lg"
             onClick={handleButton}
           />
