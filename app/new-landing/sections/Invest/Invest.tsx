@@ -1,11 +1,12 @@
 import Image from "next/image"
 import ButtonLink from "@/app/new-landing/components/ButtonLink"
 import LlamaCool from "@/app/new-landing/sections/Invest/images/Llama.webp"
+import InvestmentForm from "@/app/components/Section-5/InvestmentForm"
 
 const Invest = () => {
   return (
     <section className="pt-40 bg-black text-white w-full flex flex-col justify-center items-center">
-      <section className="w-full flex flex-col justify-center items-center">
+      <section className="w-full flex flex-col justify-center items-center gap-8">
         <div className="flex flex-col justify-center items-center gap-8">
           <h3 className="font-bold">CALCULA TU PRESUPUESTO</h3>
           <h3 className="text-6xl">Proyecta tus Metas</h3>
@@ -13,8 +14,8 @@ const Invest = () => {
             Consulta nuestra calculadora de interés compuesto para ver cuanto pueden ayudar el poder del tiempo y el interés compuesto a hacer crecer su dinero
           </h3>
         </div>
-        <div>
-          {/* calculadora */}
+        <div className="">
+          <InvestmentForm />
         </div>
       </section>
       <section className="pt-40 w-full flex justify-center items-center gap-40">

@@ -12,6 +12,7 @@ import Hero from "@/app/new-landing/sections/Hero/Hero"
 import Whoweare from "@/app/new-landing/sections/Whoweare/Whoweare"
 import Ready from "@/app/new-landing/sections/Ready/Ready"
 import Invest from "@/app/new-landing/sections/Invest/Invest"
+import Theysay from "@/app/new-landing/sections/Theysay/Theysay"
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <Whoweare />
       <Ready />
       <Invest />
+      <Theysay />
     </main>
   );
 }
