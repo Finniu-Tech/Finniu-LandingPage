@@ -61,7 +61,9 @@ const config: Config = {
         titleTransparency: "#0B3257",
         textSupport: "#051926",
         bgOperations: "#D5F4FF",
-        bgOperationsContianer: "#C1ECFB"
+        bgOperationsContianer: "#C1ECFB",
+        purplePrincipal: "#17165E",
+        purpleSecondary: "#1814B2"
       },
 
       screens: {
