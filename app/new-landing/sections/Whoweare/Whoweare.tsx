@@ -22,8 +22,8 @@ const Whoweare = () => {
       </section>
       <section className="mt-28 grid grid-cols-2 justify-center items-center gap-40">
         <div className="col-span-1 flex flex-col justify-start items-start gap-4">
-          <h3 className="text-7xl">¿Quiénes somos?</h3>
-          <p className="w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  
+            <h3 className="text-7xl">¿Quiénes somos?</h3>
+            <p className="w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu, impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  
         </div>
         <div className="col-span-1 grid grid-cols-2 gap-4">
           <div>
