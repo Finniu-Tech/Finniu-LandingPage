@@ -4,7 +4,7 @@ import LogoFinniu from "@/app/new-landing/images/logos/LogoFinniuLigth.svg"
 
 const Navbar = () => {
   return (
-    <header className="fixed w-full h-20 px-10 bg-black border-b-[0.5px] border-solid flex items-center">
+    <header className="fixed z-10 w-full h-20 px-10 bg-black border-b-[0.5px] border-solid flex items-center">
       <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
       <nav className="w-full flex justify-between items-center pl-10">
         <ul className="text-white flex items-center gap-16">
