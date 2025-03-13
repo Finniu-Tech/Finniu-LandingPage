@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavComponent from "./components/Navbar/NavComponent";
+// import NavComponent from "./components/Navbar/NavComponent";
+import Navbar from "@/app/new-landing/sections/Navbar/Navbar"
 import FooterPageComponent from "./components/Footer/FooterPageComponent";
 import FloatingWhatsappButton from "./components/Button-wsp/FloatingWhatsappButtonComponent";
 import GTM from "./components/GTM";
@@ -62,7 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <GTM />
           </head>
           <body className={DMSans.className}>
-            <NavComponent />
+            {/* <NavComponent /> */}
+            <Navbar />
             {children}
             {/*<Popup />*/}
             <FloatingWhatsappButton />
