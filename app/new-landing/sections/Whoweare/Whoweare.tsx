@@ -1,0 +1,68 @@
+"use client"
+
+import Image from "next/image"
+import LogoEmprelatam from "@/app/new-landing/sections/Whoweare/images/logos/emprelatam.webp"
+import LogoIncubagraria from "@/app/new-landing/sections/Whoweare/images/logos/incubagraria.webp"
+import LogoInnovaul from "@/app/new-landing/sections/Whoweare/images/logos/innovaul.webp"
+import LogoInversionsimple from "@/app/new-landing/sections/Whoweare/images/logos/inversionsimple.webp"
+import CountUp from "react-countup"
+
+
+const Whoweare = () => {
+  return (
+    <section className="pb-40 bg-black text-white w-full flex flex-col justify-center items-center">
+      <section className="mt-40 flex flex-col justify-center items-center gap-6">
+        <h3 className="text-lg text-gray-400">NOS RESPALDAN</h3>
+        <div className="flex justify-center items-center gap-20">
+          <Image src={LogoInnovaul} alt="Logo de Innovaul" className="w-40" />
+          <Image src={LogoIncubagraria} alt="Logo de Incubagraria" className="w-40" />
+          <Image src={LogoEmprelatam} alt="Logo de Emprelatam" className="w-40" />
+          <Image src={LogoInversionsimple} alt="Logo de Inversiones Simple" className="w-40" />
+        </div>
+      </section>
+      <section className="mt-28 grid grid-cols-2 justify-center items-center gap-40">
+        <div className="col-span-1 flex flex-col justify-start items-start gap-4">
+          <h3 className="text-7xl">¿Quiénes somos?</h3>
+          <p className="w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  
+        </div>
+        <div className="col-span-1 grid grid-cols-2 gap-4">
+          <div>
+            <CountUp
+              start={0}
+              end={820}
+              duration={2.5}
+              suffix="+"
+              style={{ fontSize: "100px" }}
+            />
+            <h4>OPERACIONES</h4>
+          </div>
+          <div>
+            <CountUp
+              start={0}
+              end={400}
+              duration={2.5}
+              suffix="+"
+              style={{ fontSize: "100px" }}
+            />
+            <h4>INVERSIONISTAS</h4>
+          </div>
+          <div>
+            <CountUp
+              start={0}
+              end={12.1}
+              duration={2.5}
+              separator=""
+              decimals={1}
+              decimal=","
+              suffix="M+"
+              style={{ fontSize: "100px" }}
+            />
+            <h4>SOLES INVERTIDOS</h4>
+          </div>
+        </div>
+      </section>
+    </section>
+  )
+}
+
+export default Whoweare

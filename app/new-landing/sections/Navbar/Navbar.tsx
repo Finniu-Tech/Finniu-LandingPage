@@ -1,10 +1,10 @@
 import Image from "next/image"
-import LogoFinniu from "@/images/NavBar/LogoFinniu.png"
 import ButtonLink from "@/app/new-landing/components/ButtonLink"
+import LogoFinniu from "@/app/new-landing/images/logos/LogoFinniuLigth.svg"
 
 const Navbar = () => {
   return (
-    <header className="bg-black border-b-[0.5px] border-solid flex items-center h-20 px-10">
+    <header className="fixed w-full h-20 px-10 bg-black border-b-[0.5px] border-solid flex items-center">
       <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
       <nav className="w-full flex justify-between items-center pl-10">
         <ul className="text-white flex items-center gap-16">
