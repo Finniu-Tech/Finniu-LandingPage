@@ -32,7 +32,12 @@ const Whoweare = () => {
               end={820}
               duration={2.5}
               suffix="+"
-              style={{ fontSize: "100px" }}
+              style={{
+                fontSize: "100px",
+                background: "linear-gradient(260.33deg, #0049FF -13.37%, #00BFD8 109.53%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
             />
             <h4>OPERACIONES</h4>
           </div>
@@ -42,7 +47,12 @@ const Whoweare = () => {
               end={400}
               duration={2.5}
               suffix="+"
-              style={{ fontSize: "100px" }}
+              style={{
+                fontSize: "100px",
+                background: "linear-gradient(265.11deg, #00FFB8 -5.84%, #005C90 111.58%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
             />
             <h4>INVERSIONISTAS</h4>
           </div>
@@ -55,8 +65,12 @@ const Whoweare = () => {
               decimals={1}
               decimal=","
               suffix="M+"
-              style={{ fontSize: "100px" }}
-            />
+              style={{
+                fontSize: "100px",
+                background: "linear-gradient(261.81deg, #00FF91 -8.01%, #9A00FF 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}            />
             <h4>SOLES INVERTIDOS</h4>
           </div>
         </div>
