@@ -6,16 +6,19 @@ import Instagram from "@/app/new-landing/sections/Footer/images/icons/Instagram"
 import LinkendIn from "@/app/new-landing/sections/Footer/images/icons/LinkendIn"
 import Tiktok from "@/app/new-landing/sections/Footer/images/icons/Tiktok"
 import Youtube from "@/app/new-landing/sections/Footer/images/icons/Youtube"
+import Mappin from "@/app/new-landing/sections/Footer/images/icons/Mappin"
+import Phone from "@/app/new-landing/sections/Footer/images/icons/Phone"
+import Mail from "@/app/new-landing/sections/Footer/images/icons/Mail"
 import AppStore from "@/app/new-landing/sections/Footer/images/logos/AppStoreLigth.svg"
 import GooglePlay from "@/app/new-landing/sections/Footer/images/logos/GooglePlayLigth.svg"
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-8 flex flex-col justify-center items-center w-full">
-      <div className="w-full text-white pb-8 flex justify-between items-center border-b-[1px] border-solid border-gray-700">
-        <nav>
-          <h4>Acerca de</h4>
-          <ul>
+    <footer className="bg-black px-40 py-8 flex flex-col justify-center items-center w-full">
+      <div className="w-full text-white pb-8 flex justify-between items-start border-b-[1px] border-solid border-gray-700">
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Acerca de</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
             <li>
               <ButtonLink href="#" text="Blog" className=""/>
             </li>
@@ -33,9 +36,9 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <nav>
-          <h4>Nosotros</h4>
-          <ul>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Nosotros</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
             <li>
               <ButtonLink href="#" text="La empresa" className=""/>
             </li>
@@ -47,17 +50,17 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <nav>
-          <h4>Producto</h4>
-          <ul>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Producto</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
             <li>
               <ButtonLink href="#" text="Fondo a plazo fijo" className=""/>
             </li>
           </ul>
         </nav>
-        <nav>
-          <h4>Legal</h4>
-          <ul>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Legal</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
             <li>
               <ButtonLink href="#" text="Términos de servicio" className=""/>
             </li>
@@ -66,16 +69,19 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <nav>
-          <h4>Contactos</h4>
-          <ul>
-            <li>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Contactos</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
+            <li className="flex items-center gap-2">
+              <Mappin />
               <ButtonLink href="#" text="Términos de servicio" className=""/>
             </li>
-            <li>
+            <li className="flex items-center gap-2">
+              <Phone />
               <ButtonLink href="#" text="+51 983 796 139" className=""/>
             </li>
-            <li>
+            <li className="flex items-center gap-2">
+              <Mail />
               <ButtonLink href="#" text="hola@finniu.com" className=""/>
             </li>
           </ul>
