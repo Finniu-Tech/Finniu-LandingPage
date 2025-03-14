@@ -1,13 +1,16 @@
 import Bounce from "@/app/new-landing/sections/Hero/components/Bounce"
 import ButtonLink from "@/app/new-landing/components/ButtonLink"
-
+import Background01 from "@/app/new-landing/images/backgrounds/background01.png"
 
 const Hero = () => {
   return (
-    <section className="pt-20 bg-black text-white w-full h-dvh flex flex-col justify-center items-center">
+    <section 
+      className="pt-20 text-white w-full h-dvh flex flex-col justify-center items-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${Background01.src})` }}
+    >
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="font-bold text-2xl">HAZ CRECER TU PATRIMONIO Y</h2>
-        <h1 className="text-center text-8xl">Logra tus metas <br /> financieras</h1>
+        <h1 className="text-center text-8xl leading-tight">Logra tus metas <br /> financieras</h1>
         <h2 className="text-2xl text-gray-400">Somos Finniu, una empresa gestora de fondos privados</h2>
         <ButtonLink href="#" text="Proyecta tus Metas" className="mt-4 text-white py-4 px-6 rounded-full bg-purpleSecondary"/>
       </div>

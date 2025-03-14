@@ -2,10 +2,14 @@ import Image from "next/image"
 import ButtonLink from "@/app/new-landing/components/ButtonLink"
 import LlamaCool from "@/app/new-landing/sections/Invest/images/Llama.webp"
 import InvestmentForm from "@/app/components/Section-5/InvestmentForm"
+import Background01 from "@/app/new-landing/images/backgrounds/background01.png"
 
 const Invest = () => {
   return (
-    <section className="pt-40 bg-black text-white w-full flex flex-col justify-center items-center">
+    <section
+      className="pt-40 bg-black text-white w-full flex flex-col justify-center items-center"
+      style={{ backgroundImage: `url(${Background01})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <section className="w-full flex flex-col justify-center items-center gap-10">
         <div className="flex flex-col justify-center items-center gap-8">
           <h3 className="font-bold">CALCULA TU PRESUPUESTO</h3>

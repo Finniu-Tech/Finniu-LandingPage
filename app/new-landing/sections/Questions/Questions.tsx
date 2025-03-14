@@ -1,9 +1,13 @@
 import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
 import ButtonLink from "@/app/new-landing/components/ButtonLink"
+import Background01 from "@/app/new-landing/images/backgrounds/background01.png"
 
 const Questions = () => {
   return (
-    <section className="py-40 bg-black text-white w-full flex flex-col justify-center items-center gap-8">
+    <section
+      className="py-40 text-white w-full flex flex-col justify-center items-center gap-8"
+      style={{ backgroundImage: `url(${Background01})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <div className="flex flex-col justify-center items-center gap-6">
         <h3 className="text-6xl">Preguntas frecuentes</h3>
         <h3 className="text-xl">Obtén las respuestas a tus preguntas sobre Finniu</h3>
