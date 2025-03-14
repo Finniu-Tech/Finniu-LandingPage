@@ -1,125 +1,54 @@
 import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
+import ButtonLink from "@/app/new-landing/components/ButtonLink"
 
 const Questions = () => {
   return (
-    <section className="bg-black text-white w-full flex flex-col">
-      <div>
-        <h3>Preguntas frecuentes</h3>
-        <h3>Obtén las respuestas a tus preguntas sobre Finniu</h3>
+    <section className="py-40 bg-black text-white w-full flex flex-col justify-center items-center gap-8">
+      <div className="flex flex-col justify-center items-center gap-6">
+        <h3 className="text-6xl">Preguntas frecuentes</h3>
+        <h3 className="text-xl">Obtén las respuestas a tus preguntas sobre Finniu</h3>
       </div>
-      <div>
-        <Accordion>
-          <AccordionPanel>
+      <div className="w-[35rem] flex flex-col justify-center items-center gap-4">
+        <Accordion className="border-0 w-full">
+          <AccordionPanel className="text-white">
             <AccordionTitle>
               ¿Cuál es el monto mínimo de inversión?
             </AccordionTitle>
             <AccordionContent>
-              asd
+              <p>
+                El monto mínimo de inversión en Finniu es de <span className="font-semibold">S/ 1,000</span> para el Fondo Soles y <span className="font-semibold">USD 1,000</span> para el Fondo Dólares
+              </p>
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle>
-              ¿Cuál es el monto mínimo de inversión?
+              ¿Por qué las tasa pueden cambiar?
             </AccordionTitle>
             <AccordionContent>
-              asd
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nam quibusdam odio laborum accusamus? Enim eveniet aliquam ullam ea, mollitia ipsam saepe fugit odio distinctio nesciunt iusto ipsa assumenda doloribus.
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle>
-              ¿Cuál es el monto mínimo de inversión?
+              ¿Cuándo pagan los intereses?
             </AccordionTitle>
             <AccordionContent>
-              asd
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla, suscipit in dolore error ex magni maxime labore aliquam consectetur velit soluta reprehenderit repudiandae veritatis laudantium sunt assumenda est iste!
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle>
-              ¿Cuál es el monto mínimo de inversión?
+              ¿Cómo contacto con Finniu si tengo más preguntas?
             </AccordionTitle>
             <AccordionContent>
-              asd
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae saepe est eos delectus? Ea consequuntur alias blanditiis eaque? Doloremque reiciendis cum modi corporis labore asperiores commodi aspernatur dignissimos est incidunt.
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
+        <ButtonLink href="#" text="Ver más preguntas" className="mt-4 text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent"/>
       </div>
     </section>
   )
 }
 
 export default Questions
-
-
-
-export function Component() {
-  return (
-    <Accordion>
-      <AccordionPanel>
-        <AccordionTitle>What is Flowbite?</AccordionTitle>
-        <AccordionContent>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons,
-            dropdowns, modals, navbars, and more.
-          </p>
-          <p className="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to&nbsp;
-            <a
-              href="https://flowbite.com/docs/getting-started/introduction/"
-              className="text-cyan-600 hover:underline dark:text-cyan-500"
-            >
-              get started&nbsp;
-            </a>
-            and start developing websites even faster with components on top of Tailwind CSS.
-          </p>
-        </AccordionContent>
-      </AccordionPanel>
-      <AccordionPanel>
-        <AccordionTitle>Is there a Figma file available?</AccordionTitle>
-        <AccordionContent>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
-            has a design equivalent in our Figma file.
-          </p>
-          <p className="text-gray-500 dark:text-gray-400">
-            Check out the
-            <a href="https://flowbite.com/figma/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-              Figma design system
-            </a>
-            based on the utility classes from Tailwind CSS and components from Flowbite.
-          </p>
-        </AccordionContent>
-      </AccordionPanel>
-      <AccordionPanel>
-        <AccordionTitle>What are the differences between Flowbite and Tailwind UI?</AccordionTitle>
-        <AccordionContent>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            The main difference is that the core components from Flowbite are open source under the MIT license, whereas
-            Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone
-            components, whereas Tailwind UI offers sections of pages.
-          </p>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no
-            technical reason stopping you from using the best of two worlds.
-          </p>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-          <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-            <li>
-              <a href="https://flowbite.com/pro/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                Flowbite Pro
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindui.com/"
-                rel="nofollow"
-                className="text-cyan-600 hover:underline dark:text-cyan-500"
-              >
-                Tailwind UI
-              </a>
-            </li>
-          </ul>
-        </AccordionContent>
-      </AccordionPanel>
-    </Accordion>
-  );
-}
