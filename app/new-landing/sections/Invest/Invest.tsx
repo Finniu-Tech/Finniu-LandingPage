@@ -18,7 +18,7 @@ const Invest = () => {
           <InvestmentForm />
         </div>
       </section>
-      <section className="pt-40 w-full flex justify-center items-center gap-40">
+      <section className="pt-40 px-80 w-full flex justify-between items-center gap-40">
         <div className="w-[30rem] flex flex-col justify-center items-start gap-6">
           <h3 className="text-6xl leading-tight">Invierte con confianza:</h3>
           <p>
