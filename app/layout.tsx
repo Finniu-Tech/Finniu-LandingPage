@@ -3,7 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 // import NavComponent from "./components/Navbar/NavComponent";
 import Navbar from "@/app/new-landing/sections/Navbar/Navbar"
-import FooterPageComponent from "./components/Footer/FooterPageComponent";
+// import FooterPageComponent from "./components/Footer/FooterPageComponent";
+import Footer from "@/app/new-landing/sections/Footer/Footer"
 import FloatingWhatsappButton from "./components/Button-wsp/FloatingWhatsappButtonComponent";
 import GTM from "./components/GTM";
 import Popup from "./components/Popup/Popup";
@@ -68,7 +69,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
             {/*<Popup />*/}
             <FloatingWhatsappButton />
-            <FooterPageComponent />
+            {/* <FooterPageComponent /> */}
+            <Footer />
           </body>
         </html>
 

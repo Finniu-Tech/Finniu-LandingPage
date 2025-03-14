@@ -13,6 +13,7 @@ import Whoweare from "@/app/new-landing/sections/Whoweare/Whoweare"
 import Ready from "@/app/new-landing/sections/Ready/Ready"
 import Invest from "@/app/new-landing/sections/Invest/Invest"
 import Theysay from "@/app/new-landing/sections/Theysay/Theysay"
+import Questions from "@/app/new-landing/sections/Questions/Questions"
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <Ready />
       <Invest />
       <Theysay />
+      <Questions />
     </main>
   );
 }
