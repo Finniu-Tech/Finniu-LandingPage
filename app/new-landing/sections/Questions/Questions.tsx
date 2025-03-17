@@ -1,12 +1,13 @@
 import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
-import ButtonLink from "@/app/new-landing/components/ButtonLink"
+import ButtonLinkIcon from "@/app/new-landing/components/ButtonLinkIcon"
 import Background01 from "@/app/new-landing/images/backgrounds/background01.png"
+import ArrowUpLeft from "@/app/new-landing/sections/Invest/images/icons/ArrowUpLeft"
 
 const Questions = () => {
   return (
     <section
       className="py-40 text-white w-full flex flex-col justify-center items-center gap-8"
-      style={{ backgroundImage: `url(${Background01})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="flex flex-col justify-center items-center gap-6">
         <h3 className="text-6xl">Preguntas frecuentes</h3>
@@ -49,7 +50,7 @@ const Questions = () => {
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
-        <ButtonLink href="#" text="Ver más preguntas" className="mt-4 text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent"/>
+        <ButtonLinkIcon href="#" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent"/>
       </div>
     </section>
   )
