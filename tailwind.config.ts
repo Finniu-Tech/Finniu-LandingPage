@@ -64,7 +64,9 @@ const config: Config = {
         bgOperations: "#D5F4FF",
         bgOperationsContianer: "#C1ECFB",
         purplePrincipal: "#1a69ff",
-        purpleSecondary: "#1814B2"
+        purpleSecondary: "#1814B2",
+        whitePrimary: "#F9FBFC",
+        whiteSecondary: "#EFEFEF"
       },
 
       screens: {
