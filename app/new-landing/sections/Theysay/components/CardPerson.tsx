@@ -12,12 +12,12 @@ interface Props {
 const CardPerson = ({imgSrc, imgAlt, title, phrase, name, occupation}:Props) => {
   return (
     <div className="max-w-sm h-full rounded-3xl border-[1px] border-solid bg-white border-whiteSecondary px-8 py-6 flex flex-col justify-between items-start">
-      <div className="w-full flex flex-col gap-2 items-start">
-        <Image src={imgSrc} alt={imgAlt} className="w-10" />
-        <h4 className="text-lg font-bold">
+      <div className="w-full flex flex-col items-start">
+        <Image src={imgSrc} alt={imgAlt} className="w-14" />
+        <h4 className="text-lg font-bold mt-4">
           “{title}”
         </h4>
-        <p>
+        <p className="mt-2">
           {phrase}
         </p>
       </div>
