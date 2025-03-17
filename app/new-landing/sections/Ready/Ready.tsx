@@ -4,7 +4,7 @@ import Mackbook from "@/app/new-landing/sections/Ready/images/Macbook.webp"
 
 const Ready = () => {
   return (
-    <section className="py-40 pl-80 w-full bg-white text-black flex justify-between items-center">
+    <section className="py-40 pl-80 w-full bg-whitePrimary text-black flex justify-between items-center">
       <div className="flex flex-col justify-center items-start gap-8">
         <h3 className="font-bold text-base">LISTOS PARA CRECER CONTIGO</h3>
         <h3 className="w-[30rem] text-6xl leading-tight">Sin requisitos ocultos y sin comisiones</h3>
