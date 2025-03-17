@@ -15,38 +15,38 @@ const Questions = () => {
       </div>
       <div className="w-[35rem] flex flex-col justify-center items-center gap-4">
         <Accordion className="border-0 w-full">
-          <AccordionPanel className="text-white">
-            <AccordionTitle>
+          <AccordionPanel>
+            <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
               ¿Cuál es el monto mínimo de inversión?
             </AccordionTitle>
-            <AccordionContent>
+            <AccordionContent className="px-0">
               <p>
                 El monto mínimo de inversión en Finniu es de <span className="font-semibold">S/ 1,000</span> para el Fondo Soles y <span className="font-semibold">USD 1,000</span> para el Fondo Dólares
               </p>
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
-            <AccordionTitle>
+            <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
               ¿Por qué las tasa pueden cambiar?
             </AccordionTitle>
-            <AccordionContent>
+            <AccordionContent className="px-0">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nam quibusdam odio laborum accusamus? Enim eveniet aliquam ullam ea, mollitia ipsam saepe fugit odio distinctio nesciunt iusto ipsa assumenda doloribus.
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
-            <AccordionTitle>
+            <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
               ¿Cuándo pagan los intereses?
             </AccordionTitle>
-            <AccordionContent>
+            <AccordionContent className="px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla, suscipit in dolore error ex magni maxime labore aliquam consectetur velit soluta reprehenderit repudiandae veritatis laudantium sunt assumenda est iste!
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
-            <AccordionTitle>
-              ¿Cómo contacto con Finniu si tengo más preguntas?
+            <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
+              ¿Garantizan la devolución de capital?
             </AccordionTitle>
-            <AccordionContent>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae saepe est eos delectus? Ea consequuntur alias blanditiis eaque? Doloremque reiciendis cum modi corporis labore asperiores commodi aspernatur dignissimos est incidunt.
+            <AccordionContent className="px-0">
+              Sí, bajo contrato de mutuo dinerario Finniu garantiza el capital invertido. Pregunta por nuestros contratos de mutuo o cheque diferido.
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
