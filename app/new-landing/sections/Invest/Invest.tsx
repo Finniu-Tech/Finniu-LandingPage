@@ -1,14 +1,15 @@
 import Image from "next/image"
-import ButtonLink from "@/app/new-landing/components/ButtonLink"
+import ButtonLinkIcon from "@/app/new-landing/components/ButtonLinkIcon"
 import LlamaCool from "@/app/new-landing/sections/Invest/images/Llama.webp"
 import InvestmentForm from "@/app/components/Section-5/InvestmentForm"
 import Background01 from "@/app/new-landing/images/backgrounds/background01.png"
+import ArrowUpLeft from "@/app/new-landing/sections/Invest/images/icons/ArrowUpLeft"
 
 const Invest = () => {
   return (
     <section
       className="pt-40 bg-black text-white w-full flex flex-col justify-center items-center"
-      style={{ backgroundImage: `url(${Background01})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <section className="w-full flex flex-col justify-center items-center gap-10">
         <div className="flex flex-col justify-center items-center gap-8">
@@ -34,7 +35,7 @@ const Invest = () => {
           <p>
             Si tienes dudas, agenda una videollamada con uno de nuestros asesores y descubre cómo puede hacer crecer tu dinero de manera segura y estratégica
           </p>
-          <ButtonLink href="#" text="Agendar videollamada" className="mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal" />
+          <ButtonLinkIcon href="#" icon={<ArrowUpLeft />} text="Agendar videollamada" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full bg-purplePrincipal" />
         </div>
         <div className="w-[30rem]">
           <Image src={LlamaCool} alt="Llama Cool" className="w-full" />

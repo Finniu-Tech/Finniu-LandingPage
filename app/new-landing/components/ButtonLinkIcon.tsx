@@ -1,15 +1,16 @@
 import Link from "next/link"
 
 interface Props {
+  text?: string
   href: string
   className?: string
   icon: JSX.Element
 }
 
-const ButtonLinkIcon = ({href, className, icon}:Props) => {
+const ButtonLinkIcon = ({href, className, icon, text}:Props) => {
   return (
     <Link href={href} className={className}>
-      {icon}
+      {text}{icon}
     </Link>
   )
 }
