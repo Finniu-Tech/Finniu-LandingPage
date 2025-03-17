@@ -25,13 +25,13 @@ const Whoweare = () => {
             <h3 className="text-7xl">¿Quiénes somos?</h3>
             <p className="w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu, impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  
         </div>
-        <div className="col-span-1 grid grid-cols-2 gap-4">
+        <div className="col-span-1 grid grid-cols-2 gap-12">
           <div>
             <CountUp
               start={0}
-              end={820}
+              end={1200}
               duration={2.5}
-              suffix="+"
+              prefix="+"
               style={{
                 fontSize: "100px",
                 background: "linear-gradient(260.33deg, #0049FF -13.37%, #00BFD8 109.53%)",
@@ -44,9 +44,9 @@ const Whoweare = () => {
           <div>
             <CountUp
               start={0}
-              end={400}
+              end={550}
               duration={2.5}
-              suffix="+"
+              prefix="+"
               style={{
                 fontSize: "100px",
                 background: "linear-gradient(265.11deg, #00FFB8 -5.84%, #005C90 111.58%)",
@@ -59,12 +59,11 @@ const Whoweare = () => {
           <div>
             <CountUp
               start={0}
-              end={12.1}
+              end={22}
               duration={2.5}
               separator=""
-              decimals={1}
-              decimal=","
-              suffix="M+"
+              prefix="+"
+              suffix="M"
               style={{
                 fontSize: "100px",
                 background: "linear-gradient(261.81deg, #00FF91 -8.01%, #9A00FF 100%)",

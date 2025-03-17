@@ -16,8 +16,8 @@ const Navbar = () => {
           <li>Contacto</li>
         </ul>
         <ul className="flex justify-center items-center gap-4">
-          <ButtonLink href="#" text="Ingresar" className="text-black py-4 px-6 rounded-full bg-white"/>
-          <ButtonLink href="#" text="Crear cuenta" className="text-white py-4 px-6 rounded-full bg-purplePrincipal"/>
+          <ButtonLink href="#" text="Ingresar" className="text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
+          <ButtonLink href="#" text="Crear cuenta" className="text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
         </ul>
       </nav>
     </header>

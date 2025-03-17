@@ -20,19 +20,19 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Acerca de</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Blog" className=""/>
+              <ButtonLink href="#" text="Blog" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Preguntas frecuentes" className=""/>
+              <ButtonLink href="#" text="Preguntas frecuentes" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Compara" className=""/>
+              <ButtonLink href="#" text="Compara" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Simulador" className=""/>
+              <ButtonLink href="#" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="La mejor tasa" className=""/>
+              <ButtonLink href="#" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -40,13 +40,13 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Nosotros</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="La empresa" className=""/>
+              <ButtonLink href="#" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Portafolio" className=""/>
+              <ButtonLink href="#" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Transparencia" className=""/>
+              <ButtonLink href="#" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -54,7 +54,7 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Producto</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Fondo a plazo fijo" className=""/>
+              <ButtonLink href="#" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -62,10 +62,10 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Legal</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Términos de servicio" className=""/>
+              <ButtonLink href="#" text="Términos de servicio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Política de privacidad" className=""/>
+              <ButtonLink href="#" text="Política de privacidad" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -74,15 +74,15 @@ const Footer = () => {
           <ul className="flex flex-col justify-center items-start gap-4">
             <li className="flex items-center gap-2">
               <Mappin />
-              <ButtonLink href="#" text="Términos de servicio" className=""/>
+              <ButtonLink href="#" text="Términos de servicio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Phone />
-              <ButtonLink href="#" text="+51 983 796 139" className=""/>
+              <ButtonLink href="#" text="+51 983 796 139" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Mail />
-              <ButtonLink href="#" text="hola@finniu.com" className=""/>
+              <ButtonLink href="#" text="hola@finniu.com" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -91,10 +91,10 @@ const Footer = () => {
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <div className="flex justify-center items-center gap-8">
           <div className="flex justify-center items-center gap-4">
-            <ButtonLinkIcon href="#" icon={<Youtube />} className="text-white"/>
-            <ButtonLinkIcon href="#" icon={<Instagram />} className="text-white"/>
-            <ButtonLinkIcon href="#" icon={<LinkendIn />} className="text-white"/>
-            <ButtonLinkIcon href="#" icon={<Tiktok />} className="text-white"/>
+            <ButtonLinkIcon href="#" icon={<Youtube />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="#" icon={<Instagram />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="#" icon={<LinkendIn />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="#" icon={<Tiktok />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
           </div>
           <div className="flex justify-center items-center gap-4">
             <ButtonLinkIcon href="#" icon={<Image src={AppStore} alt="Logo App Store"/>} className=""/>

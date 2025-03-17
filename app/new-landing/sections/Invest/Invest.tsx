@@ -35,7 +35,7 @@ const Invest = () => {
           <p>
             Si tienes dudas, agenda una videollamada con uno de nuestros asesores y descubre cómo puede hacer crecer tu dinero de manera segura y estratégica
           </p>
-          <ButtonLinkIcon href="#" icon={<ArrowUpLeft />} text="Agendar videollamada" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full bg-purplePrincipal" />
+          <ButtonLinkIcon href="#" icon={<ArrowUpLeft />} text="Agendar videollamada" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
         </div>
         <div className="w-[30rem]">
           <Image src={LlamaCool} alt="Llama Cool" className="w-full" />
