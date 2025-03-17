@@ -8,6 +8,7 @@ import Footer from "@/app/new-landing/sections/Footer/Footer"
 import FloatingWhatsappButton from "./components/Button-wsp/FloatingWhatsappButtonComponent";
 import GTM from "./components/GTM";
 import Popup from "./components/Popup/Popup";
+import FlyonuiScript from "@/app/new-landing/scripts/FlyonuiScript"
 
 const DMSans = localFont({
   src: [
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* <FooterPageComponent /> */}
             <Footer />
           </body>
+          <FlyonuiScript />
         </html>
 
   );

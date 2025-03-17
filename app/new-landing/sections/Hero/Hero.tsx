@@ -12,7 +12,7 @@ const Hero = () => {
         <h2 className="font-bold text-2xl">HAZ CRECER TU PATRIMONIO Y</h2>
         <h1 className="text-center text-8xl leading-tight">Logra tus metas <br /> financieras</h1>
         <h2 className="text-2xl text-gray-400">Somos Finniu, una empresa gestora de fondos privados</h2>
-        <ButtonLink href="#" text="Proyecta tus Metas" className="mt-4 text-white py-4 px-6 rounded-full bg-purpleSecondary"/>
+        <ButtonLink href="#" text="Proyecta tus Metas" className="mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal"/>
       </div>
       <div className="mt-20">
         <Bounce />
