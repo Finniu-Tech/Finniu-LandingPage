@@ -233,15 +233,6 @@ const InvestmentForm = () => {
         </div>
       ) : (
         <div>
-          <div className=" flex flex-row items-center gap-2 xl:hidden absolute -top-[55px] z-20">
-            <h1 className=" text-[28px] lg:text-[30px] font-bold">
-              Proyecta tus metas
-            </h1>
-            <div className="h-[38px] mb-3">
-              <Image src={Bill} alt="bill" height={38} />
-            </div>
-          </div>
-
           <div className="flex flex-row justify-between items-center w-full">
             <h2 className="text-[16px] 2xl:text-[26px] font-bold text-black">
               Quiero simular en
