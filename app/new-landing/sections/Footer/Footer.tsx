@@ -14,8 +14,8 @@ import GooglePlay from "@/app/new-landing/sections/Footer/images/logos/GooglePla
 
 const Footer = () => {
   return (
-    <footer className="bg-black px-40 py-8 flex flex-col justify-center items-center w-full">
-      <div className="w-full text-white pb-8 flex justify-between items-start border-b-[1px] border-solid border-gray-700">
+    <footer className="bg-black px-8 md:px-40 py-8 flex flex-col justify-center items-center w-full">
+      <div className="w-full text-white pb-8 grid grid-cols-2 gap-y-10 gap-x-4 md:gap-0 md:flex justify-between items-start border-b-[1px] border-solid border-gray-700">
         <nav className="flex flex-col gap-4">
           <h4 className="font-semibold text-lg">Acerca de</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
@@ -87,7 +87,7 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-      <div className="w-full flex pt-8 justify-between items-center">
+      <div className="w-full flex flex-col gap-8 md:gap-0 md:flex-row pt-8 justify-between items-center">
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <div className="flex justify-center items-center gap-8">
           <div className="flex justify-center items-center gap-4">
@@ -97,8 +97,8 @@ const Footer = () => {
             <ButtonLinkIcon href="#" icon={<Tiktok />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
           </div>
           <div className="flex justify-center items-center gap-4">
-            <ButtonLinkIcon href="#" icon={<Image src={AppStore} alt="Logo App Store"/>} className=""/>
-            <ButtonLinkIcon href="#" icon={<Image src={GooglePlay} alt="Logo GooglePlay"/>} className=""/>
+            <ButtonLinkIcon href="#" icon={<Image src={AppStore} alt="Logo App Store"/>} className="w-full"/>
+            <ButtonLinkIcon href="#" icon={<Image src={GooglePlay} alt="Logo GooglePlay"/>} className="w-full"/>
           </div>
         </div>
       </div>

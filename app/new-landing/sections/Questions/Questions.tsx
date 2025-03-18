@@ -6,14 +6,14 @@ import ArrowUpLeft from "@/app/new-landing/sections/Invest/images/icons/ArrowUpL
 const Questions = () => {
   return (
     <section
-      className="py-40 text-white w-full flex flex-col justify-center items-center gap-8"
+      className="py-10 md:py-40 px-8 md:px-0 text-white w-full flex flex-col justify-center items-center gap-2 md:gap-8"
       style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className="flex flex-col justify-center items-center gap-6">
-        <h3 className="text-6xl">Preguntas frecuentes</h3>
-        <h3 className="text-xl">Obtén las respuestas a tus preguntas sobre Finniu</h3>
+      <div className="flex flex-col justify-center items-center text-center gap-2 md:gap-6">
+        <h3 className="text-4xl md:text-6xl">Preguntas frecuentes</h3>
+        <h3 className="text-lg md:text-xl">Obtén las respuestas a tus preguntas sobre Finniu</h3>
       </div>
-      <div className="w-[35rem] flex flex-col justify-center items-center gap-4">
+      <div className="w-full md:w-[35rem] flex flex-col justify-center items-center gap-2 md:gap-4">
         <Accordion className="border-0 w-full">
           <AccordionPanel>
             <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
