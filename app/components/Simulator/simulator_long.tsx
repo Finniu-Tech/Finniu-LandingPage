@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 const InvestmentCalculator = () => {
-  const [initialAmount, setInitialAmount] = useState(50000);
-  const [recurringAmount, setRecurringAmount] = useState(5000);
-  const [years, setYears] = useState(5);
-  const [result, setResult] = useState([]);
-  const [currency, setCurrency] = useState("S/");
-  const [recurrence, setRecurrence] = useState("annual");
-  const recurrenceOptions = ["monthly", "bimonthly", "semiannual", "annual"]; // Nuevas opciones
+  const [initialAmount, setInitialAmount] = useState<number>(50000);
+  const [recurringAmount, setRecurringAmount] = useState<number>(5000);
+  const [years, setYears] = useState<number>(5);
+  const [result, setResult] = useState<{ year: number; initialAmount: number; additionalCapital: number; interestEarned: string; accumulatedInterest: string; }[]>([]);
+  const [currency, setCurrency] = useState<string>("S/");
+  const [recurrence, setRecurrence] = useState<string>("annual");
+  const recurrenceOptions: string[] = ["monthly", "bimonthly", "semiannual", "annual"];
 
   const interestRates = {
     PEN: [
@@ -136,7 +136,7 @@ const InvestmentCalculator = () => {
             <BarChart data={result}>
               <XAxis dataKey="year" />
               <YAxis tickFormatter={(tick) => new Intl.NumberFormat().format(tick)} domain={[0, Math.max(...result.map(d => Number(d.initialAmount) + Number(d.additionalCapital) + Number(d.accumulatedInterest) || 0)) || 10000]} allowDecimals={false} tick={{ fontSize: 10 }} ticks={[0, 5000, 10000, 20000, 30000, 40000, 50000, 75000, 100000, 150000, 200000, 300000, 400000, 500000, 750000, 1000000]} allowDataOverflow={true} />
-              <Tooltip formatter={(value) => `${currency} ${new Intl.NumberFormat().format(value)}`} />
+              <Tooltip formatter={(value: number | string) => `${currency} ${new Intl.NumberFormat().format(typeof value === 'number' ? value : parseFloat(value))}`} />
               <Bar dataKey="initialAmount" stackId="a" fill="#93C5FD" name="Monto Inicial" />
               <Bar dataKey="additionalCapital" stackId="a" fill="#4F46E5" name="Capital Adicional Colocado" />
               <Bar dataKey="interestEarned" stackId="a" fill="#FACC15" name="Intereses Ganados" />
