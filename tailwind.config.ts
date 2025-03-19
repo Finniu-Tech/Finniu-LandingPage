@@ -6,6 +6,8 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flyonui/dist/js/carousel.js",
+    "./node_modules/flyonui/dist/js/dropdown.js",
+    "./node_modules/flyonui/dist/js/navbar.js",
   ],
   theme: {
     extend: {
@@ -66,7 +68,8 @@ const config: Config = {
         purplePrincipal: "#1a69ff",
         purpleSecondary: "#1814B2",
         whitePrimary: "#F9FBFC",
-        whiteSecondary: "#EFEFEF"
+        whiteSecondary: "#EFEFEF",
+        purpleTercero: "#17165E"
       },
 
       screens: {
