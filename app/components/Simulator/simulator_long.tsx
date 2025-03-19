@@ -27,7 +27,7 @@ const InvestmentCalculator = () => {
     ]
   };
 
-  const getInterestRate = (amount) => {
+  const getInterestRate = (amount: number): number => {
     const rates = interestRates[currency === "S/" ? "PEN" : "USD"];
     for (let i = rates.length - 1; i >= 0; i--) {
       if (amount >= rates[i].min) {
