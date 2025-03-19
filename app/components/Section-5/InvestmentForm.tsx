@@ -168,7 +168,7 @@ const InvestmentForm = () => {
   };
 
   return (
-    <div className="w-[351px] 2xl:w-[618px] mt-4 2xl:mt-0 bg-white relative flex flex-col justify-center items-center p-12 rounded-3xl h-[474px] 2xl:h-[620px] leading-[49px] shadow-lg">
+    <div className="w-full 2xl:w-[30rem] mt-4 2xl:mt-0 bg-white relative flex flex-col justify-center items-center p-8 rounded-3xl h-full 2xl:h-full leading-[49px] shadow-lg">
       {isCalculatedState ? (
         <div className="text-center">
           <div className="flex flex-col justify-center items-center">
@@ -232,46 +232,66 @@ const InvestmentForm = () => {
           </button>
         </div>
       ) : (
-        <div>
-          <div className="flex flex-row justify-between items-center w-full">
-            <h2 className="text-[16px] 2xl:text-[26px] font-bold text-black">
-              Quiero simular en
+        <div className="w-full">
+          <div className="flex flex-col justify-center items-start w-full">
+            <h2 className="text-2xl text-black">
+              Quiero invertir en
             </h2>
 
-            <div
-              className={`flex flex-row m-2 w-[162px] 2xl:w-[242px] items-center 2xl:h-[60px] h-[45px] p-2 bg-blueColorBackground justify-around rounded-full ${isWhereToFindButtonActiveState
-                ? "bg-lightBlueColor"
-                : "bg-blueDarkColor"
-                }`}
-            >
-              <ButtonComponent
-                text="Soles"
-                onClick={() => handleButtonClick("Soles")}
-                className={`2xl:h-[45px] h-[33px] text-[15px] 2xl:text-[20px] shadow-md w-[73px] 2xl:w-[111px] gap-2 flex justify-center items-center rounded-full ${isWhereToFindButtonActiveState
-                  ? "bg-lightColor text-blackColorText"
-                  : "bg-blueDarkColor text-white"
+            <div className="flex gap-8 mt-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="currency"
+                  value="Soles"
+                  checked={currencyState === "nuevo sol"}
+                  onChange={() => handleButtonClick("Soles")}
+                  className="hidden"
+                />
+                <div
+                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                    currencyState === "nuevo sol" ? "border-purpleTercero" : "border-gray-400"
                   }`}
-              ></ButtonComponent>
-              <ButtonComponent
-                text="Dólares"
-                onClick={() => handleButtonClick("Dólares")}
-                className={`2xl:h-[45px] h-[37px] w-[73px] 2xl:w-[111px] m-1 flex justify-center items-center gap-2 rounded-full text-[15px] 2xl:text-[20px] ${isWhereToFindButtonActiveState
-                  ? "bg-lightBlueColor text-blueDarkColor"
-                  : "bg-blueColorButton text-white"
+                >
+                  {currencyState === "nuevo sol" && (
+                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                  )}
+                </div>
+                <span className="text-black text-xl">Soles</span>
+              </label>
+
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="currency"
+                  value="Dólares"
+                  checked={currencyState === "dolar"}
+                  onChange={() => handleButtonClick("Dólares")}
+                  className="hidden"
+                />
+                <div
+                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                    currencyState === "dolar" ? "border-purpleTercero" : "border-gray-400"
                   }`}
-              ></ButtonComponent>
+                >
+                  {currencyState === "dolar" && (
+                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                  )}
+                </div>
+                <span className="text-black text-xl">Dólares</span>
+              </label>
             </div>
           </div>
 
-          <div>
+          <div className="mt-8">
             <label
-              className="block text-black text-[15px] xl:text-[20px] font-bold mb-0 2xl:mb-2"
+              className="block text-black text-2xl"
               htmlFor="investmentAmount"
             >
               ¿Cuál es el monto?
             </label>
-            <div className="relative">
-              <span className="absolute mt-2 left-0 pl-3  text-lg 2xl:text-2xl text-grayColorBackground flex items-center">
+            <div className="relative mt-2">
+              <span className="absolute mt-2 text-2xl text-black flex items-center">
                 {currencySymbol}
               </span>
               <input
@@ -279,8 +299,8 @@ const InvestmentForm = () => {
                 type="text"
                 value={calculateParamsState.ammount}
                 onChange={onChangeInputAmout}
-                className={`pl-10 pr-3 py-2 2xl:text-[18px] border-t-0 border-l-0 border-r-0 text-sm border-b-[5px] ${errorState ? "border-red-500" : "border-grayColorLine"
-                  } 2xl:w-full w-[320px]`}
+                className={`pl-7 text-xl border-0 border-b-2 ${errorState ? "border-red-500" : "border-grayColorLine"
+                  } 2xl:w-full w-full`}
                 placeholder="Ingrese el monto"
               />
 
@@ -291,16 +311,13 @@ const InvestmentForm = () => {
           </div>
 
           <div>
-            <div className="flex flex-row w-full items-center text-center mt-[10px] justify-between">
-              <label className="block text-black text-[15px] 2xl:text-[20px] font-bold mb-2">
+            <div className="flex flex-row w-full items-center text-center mt-8 justify-between">
+              <label className="block text-black text-2xl mb-4">
                 ¿Por cuánto tiempo?
               </label>
-              <h2 className="text-[15px]">
-                {calculateParamsState.deadline} meses
-              </h2>
             </div>
             <div className="flex items-center relative">
-              <div className="2xl:w-full w-[320px] mt-0 2xl:mt-[20px]">
+              <div className="w-full mt-0">
                 <input
                   type="range"
                   min="0"
@@ -316,7 +333,7 @@ const InvestmentForm = () => {
                   className="w-full"
                   style={{ direction: "ltr" }}
                 />
-                <div className="flex justify-between text-sm text-black mt-1">
+                <div className="flex justify-between text-base text-black mt-1">
                   {steps.map((step) => (
                     <span key={step}>{step} meses</span>
                   ))}
@@ -325,11 +342,11 @@ const InvestmentForm = () => {
             </div>
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-8">
             <ButtonComponent
               text="Calcular"
               onClick={handleCalculateButtonClick}
-              className="w-full bg-blueColorButton text-white rounded-full py-2 mt-4"
+              className="text-lg py-4 px-6 w-full bg-purpleTercero text-white border-solid border-[1px] border-purpleTercero hover:bg-white hover:text-purpleTercero hover:border-solid hover:border-[1px] hover:border-purpleTercero transition duration-150 ease rounded-full"
             />
           </div>
 

@@ -96,11 +96,15 @@ const Footer = () => {
             <ButtonLinkIcon href="#" icon={<LinkendIn />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
             <ButtonLinkIcon href="#" icon={<Tiktok />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
           </div>
-          <div className="flex justify-center items-center gap-4">
+          <div className="hidden md:flex justify-center items-center gap-4">
             <ButtonLinkIcon href="#" icon={<Image src={AppStore} alt="Logo App Store"/>} className="w-full"/>
             <ButtonLinkIcon href="#" icon={<Image src={GooglePlay} alt="Logo GooglePlay"/>} className="w-full"/>
           </div>
         </div>
+      </div>
+      <div className="mt-8 w-full flex sm:hidden justify-between items-center gap-4">
+        <ButtonLinkIcon href="#" icon={<Image className="w-full" src={AppStore} alt="Logo App Store"/>} className="w-full"/>
+        <ButtonLinkIcon href="#" icon={<Image className="w-full" src={GooglePlay} alt="Logo GooglePlay"/>} className="w-full"/>
       </div>
     </footer>
   )
