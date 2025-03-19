@@ -13,7 +13,7 @@ export default function Popup() {
     // Mostrar el popup después de 45 segundos (cambiado a 45000ms = 45s)
     const timer = setTimeout(() => {
       setIsPopupOpen(true);
-    }, 45);
+    }, 45000);
 
     // Verificar la hora y el día en tiempo real
     const checkTime = () => {

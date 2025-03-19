@@ -5,6 +5,9 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flyonui/dist/js/carousel.js",
+    "./node_modules/flyonui/dist/js/dropdown.js",
+    "./node_modules/flyonui/dist/js/navbar.js",
   ],
   theme: {
     extend: {
@@ -61,7 +64,12 @@ const config: Config = {
         titleTransparency: "#0B3257",
         textSupport: "#051926",
         bgOperations: "#D5F4FF",
-        bgOperationsContianer: "#C1ECFB"
+        bgOperationsContianer: "#C1ECFB",
+        purplePrincipal: "#1a69ff",
+        purpleSecondary: "#1814B2",
+        whitePrimary: "#F9FBFC",
+        whiteSecondary: "#EFEFEF",
+        purpleTercero: "#17165E"
       },
 
       screens: {
@@ -76,6 +84,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [
+    require("flowbite/plugin"),
+    require("flyonui"),
+    require("flyonui/plugin")
+  ],
 };
 export default config;

@@ -1,11 +1,14 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavComponent from "./components/Navbar/NavComponent";
-import FooterPageComponent from "./components/Footer/FooterPageComponent";
+// import NavComponent from "./components/Navbar/NavComponent";
+import NavBar from "@/app/new-landing/sections/Navbar/Navbar"
+// import FooterPageComponent from "./components/Footer/FooterPageComponent";
+import Footer from "@/app/new-landing/sections/Footer/Footer"
 import FloatingWhatsappButton from "./components/Button-wsp/FloatingWhatsappButtonComponent";
 import GTM from "./components/GTM";
 import Popup from "./components/Popup/Popup";
+import FlyonuiScript from "@/app/new-landing/scripts/FlyonuiScript"
 
 const DMSans = localFont({
   src: [
@@ -58,16 +61,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
 
         <html lang="en">
-        <head>
-          <GTM />
-        </head>
+          <head>
+            <GTM />
+          </head>
           <body className={DMSans.className}>
-            <NavComponent />
+            {/* <NavComponent /> */}
+            <NavBar />
             {children}
             <Popup />
             <FloatingWhatsappButton />
-            <FooterPageComponent />
+            {/* <FooterPageComponent /> */}
+            <Footer />
           </body>
+          <FlyonuiScript />
         </html>
 
   );

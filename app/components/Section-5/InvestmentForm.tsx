@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ButtonComponent from "@/components/ButtonComponent";
-import LogoFinniuLight from "@/images/Section-5/LogoFinniuLight.png";
-import Bill from "@/images/Section-5/Bill.png";
+// import LogoFinniuLight from "@/images/Section-5/LogoFinniuLight.png";
+// import Bill from "@/images/Section-5/Bill.png";
 import { calculateInvestment } from "@/app/actions/calculateInvestment";
 import ModalComponent from "@/components/ModalComponent";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import handMoney from "@/images/Section-5/handMoney.svg"
+import upMoney from "@/images/Section-5/upMoney.svg"
 
 
 interface CalculateParams {
@@ -168,30 +170,35 @@ const InvestmentForm = () => {
   };
 
   return (
-    <div className="w-[351px] 2xl:w-[618px] mt-4 2xl:mt-0 bg-white relative flex flex-col justify-center items-center p-12 rounded-3xl h-[474px] 2xl:h-[620px] leading-[49px] shadow-lg">
-      {isCalculatedState ? (
-        <div className="text-center">
-          <div className="flex flex-col justify-center items-center">
-            <Image src={LogoFinniuLight} alt="Logo" width={80} />
-          </div>
+    <div className="w-full h-full relative flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-10 md:gap-20">
+      
+        <div className="bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
+          <div className="w-full flex flex-col md:flex-row gap-6 justify-between mt-0">
+            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
+              <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
+              <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">recibirás</span></p>
+              <div className="flex justify-start items-center gap-2">
+                <p className="text-3xl">
+                  {currencySymbol}{" "}
+                  {calculatedResultState.finalAmount.toLocaleString()}
+                </p>
+                <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
+                  + {calculatedResultState.finalRestabilityPercent ?? "---"}%
+                </span>
+              </div>
+            </div>
 
-          <div className="flex flex-row gap-6 justify-between mt-0">
-            <div>
-              <p className="text-[16px] text-black ">Si comienzas con</p>
-              <p className="text-[25px] font-bold text-black text-start">
+            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
+              <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
+              <p className="">Cada mes <span className="text-gray-400">recibirás</span></p>
+              <p className="text-3xl text-[#1AFFB0]">
                 {currencySymbol}{" "}
-                {calculatedResultState.initialAmount.toLocaleString()}
+                {calculatedResultState.rentabilityPerMonth ?? "---"}
               </p>
             </div>
-            <div>
-              <p className="text-[16px] text-black ">con un % de retorno</p>
-              <p className="text-[25px] font-bold text-simulatorText text-center ">
-                {calculatedResultState.finalRestabilityPercent ?? "---"}%
-              </p>
-            </div>
-
           </div>
-          <div className="flex flex-col justify-start items-start">
+
+          {/* <div className="flex flex-col justify-start items-start">
             <p className="text-[20px] 2xl:text-[32px] text-black font-bold ">
               <span >En </span>
               <span className="text-lighBlueColorSimulador text-[20px] 2xl:text-[32px] font-bold">
@@ -202,9 +209,9 @@ const InvestmentForm = () => {
                 &#128184;
               </span>
             </p>
-          </div>
+          </div> */}
 
-          <div className="bg-sumulatorContainer  flex justify-center items-center  2xl:h-[92px] m-auto p-0 2xl:p-2 rounded-xl my-2">
+          {/* <div className="bg-sumulatorContainer  flex justify-center items-center  2xl:h-[92px] m-auto p-0 2xl:p-2 rounded-xl my-2">
             <p className="text-[35px] font-bold text-simulatorText">
               {currencySymbol}{" "}
               {calculatedResultState.finalAmount.toLocaleString()}
@@ -215,72 +222,81 @@ const InvestmentForm = () => {
             <p className="ml-2 text-[18px]  font-bold">
               Cada mes recibiras {currencySymbol}{calculatedResultState.rentabilityPerMonth ?? "---"}
             </p>
-          </div>
+          </div> */}
 
-
-          <ButtonComponent
+          {/* <ButtonComponent
             text="Me interesa"
             onClick={handleInvestClick}
             className="w-[314px] 2xl:w-[441px] 2xl:h-[77px] h-12 text-[16px] mt-3 2xl:mt-0 2xl:text-[24px] bg-blueColorButton text-white rounded-xl mb-4"
           />
-
           <button
             onClick={handleRecalculateClick}
             className="text-blueColorButton font-semibold text-[16px] 2xl:text-[24px]"
           >
             Volver a calcular
-          </button>
+          </button> */}
         </div>
-      ) : (
-        <div>
-          <div className=" flex flex-row items-center gap-2 xl:hidden absolute -top-[55px] z-20">
-            <h1 className=" text-[28px] lg:text-[30px] font-bold">
-              Proyecta tus metas
-            </h1>
-            <div className="h-[38px] mb-3">
-              <Image src={Bill} alt="bill" height={38} />
-            </div>
-          </div>
 
-          <div className="flex flex-row justify-between items-center w-full">
-            <h2 className="text-[16px] 2xl:text-[26px] font-bold text-black">
-              Quiero simular en
+        <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
+          <div className="flex flex-col justify-center items-start w-full">
+            <h2 className="text-2xl text-black">
+              Quiero invertir en
             </h2>
 
-            <div
-              className={`flex flex-row m-2 w-[162px] 2xl:w-[242px] items-center 2xl:h-[60px] h-[45px] p-2 bg-blueColorBackground justify-around rounded-full ${isWhereToFindButtonActiveState
-                ? "bg-lightBlueColor"
-                : "bg-blueDarkColor"
-                }`}
-            >
-              <ButtonComponent
-                text="Soles"
-                onClick={() => handleButtonClick("Soles")}
-                className={`2xl:h-[45px] h-[33px] text-[15px] 2xl:text-[20px] shadow-md w-[73px] 2xl:w-[111px] gap-2 flex justify-center items-center rounded-full ${isWhereToFindButtonActiveState
-                  ? "bg-lightColor text-blackColorText"
-                  : "bg-blueDarkColor text-white"
+            <div className="flex gap-8 mt-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="currency"
+                  value="Soles"
+                  checked={currencyState === "nuevo sol"}
+                  onChange={() => handleButtonClick("Soles")}
+                  className="hidden"
+                />
+                <div
+                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                    currencyState === "nuevo sol" ? "border-purpleTercero" : "border-gray-400"
                   }`}
-              ></ButtonComponent>
-              <ButtonComponent
-                text="Dólares"
-                onClick={() => handleButtonClick("Dólares")}
-                className={`2xl:h-[45px] h-[37px] w-[73px] 2xl:w-[111px] m-1 flex justify-center items-center gap-2 rounded-full text-[15px] 2xl:text-[20px] ${isWhereToFindButtonActiveState
-                  ? "bg-lightBlueColor text-blueDarkColor"
-                  : "bg-blueColorButton text-white"
+                >
+                  {currencyState === "nuevo sol" && (
+                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                  )}
+                </div>
+                <span className="text-black text-xl">Soles</span>
+              </label>
+
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="currency"
+                  value="Dólares"
+                  checked={currencyState === "dolar"}
+                  onChange={() => handleButtonClick("Dólares")}
+                  className="hidden"
+                />
+                <div
+                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                    currencyState === "dolar" ? "border-purpleTercero" : "border-gray-400"
                   }`}
-              ></ButtonComponent>
+                >
+                  {currencyState === "dolar" && (
+                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                  )}
+                </div>
+                <span className="text-black text-xl">Dólares</span>
+              </label>
             </div>
           </div>
 
-          <div>
+          <div className="mt-8">
             <label
-              className="block text-black text-[15px] xl:text-[20px] font-bold mb-0 2xl:mb-2"
+              className="block text-black text-2xl"
               htmlFor="investmentAmount"
             >
               ¿Cuál es el monto?
             </label>
-            <div className="relative">
-              <span className="absolute mt-2 left-0 pl-3  text-lg 2xl:text-2xl text-grayColorBackground flex items-center">
+            <div className="relative mt-2">
+              <span className="absolute mt-2 text-2xl text-black flex items-center">
                 {currencySymbol}
               </span>
               <input
@@ -288,8 +304,8 @@ const InvestmentForm = () => {
                 type="text"
                 value={calculateParamsState.ammount}
                 onChange={onChangeInputAmout}
-                className={`pl-10 pr-3 py-2 2xl:text-[18px] border-t-0 border-l-0 border-r-0 text-sm border-b-[5px] ${errorState ? "border-red-500" : "border-grayColorLine"
-                  } 2xl:w-full w-[320px]`}
+                className={`pl-7 text-xl border-0 border-b-2 ${errorState ? "border-red-500" : "border-grayColorLine"
+                  } 2xl:w-full w-full`}
                 placeholder="Ingrese el monto"
               />
 
@@ -300,16 +316,13 @@ const InvestmentForm = () => {
           </div>
 
           <div>
-            <div className="flex flex-row w-full items-center text-center mt-[10px] justify-between">
-              <label className="block text-black text-[15px] 2xl:text-[20px] font-bold mb-2">
+            <div className="flex flex-row w-full items-center text-center mt-8 justify-between">
+              <label className="block text-black text-2xl mb-4">
                 ¿Por cuánto tiempo?
               </label>
-              <h2 className="text-[15px]">
-                {calculateParamsState.deadline} meses
-              </h2>
             </div>
             <div className="flex items-center relative">
-              <div className="2xl:w-full w-[320px] mt-0 2xl:mt-[20px]">
+              <div className="w-full mt-2">
                 <input
                   type="range"
                   min="0"
@@ -325,7 +338,7 @@ const InvestmentForm = () => {
                   className="w-full"
                   style={{ direction: "ltr" }}
                 />
-                <div className="flex justify-between text-sm text-black mt-1">
+                <div className="flex justify-between text-base text-black mt-4">
                   {steps.map((step) => (
                     <span key={step}>{step} meses</span>
                   ))}
@@ -334,11 +347,11 @@ const InvestmentForm = () => {
             </div>
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-8">
             <ButtonComponent
               text="Calcular"
               onClick={handleCalculateButtonClick}
-              className="w-full bg-blueColorButton text-white rounded-full py-2 mt-4"
+              className="text-lg py-4 px-6 w-full bg-purpleTercero text-white border-solid border-[1px] border-purpleTercero hover:bg-white hover:text-purpleTercero hover:border-solid hover:border-[1px] hover:border-purpleTercero transition duration-150 ease rounded-full"
             />
           </div>
 
@@ -351,7 +364,7 @@ const InvestmentForm = () => {
             handleCalculateClick={handleCalculate}
           />
         </div>
-      )}
+  
     </div>
   );
 };
