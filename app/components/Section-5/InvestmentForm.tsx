@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ButtonComponent from "@/components/ButtonComponent";
-import LogoFinniuLight from "@/images/Section-5/LogoFinniuLight.png";
-import Bill from "@/images/Section-5/Bill.png";
+// import LogoFinniuLight from "@/images/Section-5/LogoFinniuLight.png";
+// import Bill from "@/images/Section-5/Bill.png";
 import { calculateInvestment } from "@/app/actions/calculateInvestment";
 import ModalComponent from "@/components/ModalComponent";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import handMoney from "@/images/Section-5/handMoney.svg"
+import upMoney from "@/images/Section-5/upMoney.svg"
 
 
 interface CalculateParams {
@@ -168,30 +170,35 @@ const InvestmentForm = () => {
   };
 
   return (
-    <div className="w-full 2xl:w-[30rem] mt-4 2xl:mt-0 bg-white relative flex flex-col justify-center items-center p-8 rounded-3xl h-full 2xl:h-full leading-[49px] shadow-lg">
-      {isCalculatedState ? (
-        <div className="text-center">
-          <div className="flex flex-col justify-center items-center">
-            <Image src={LogoFinniuLight} alt="Logo" width={80} />
-          </div>
+    <div className="w-full h-full relative flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-10 md:gap-20">
+      
+        <div className="bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
+          <div className="w-full flex flex-col md:flex-row gap-6 justify-between mt-0">
+            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
+              <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
+              <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">recibirás</span></p>
+              <div className="flex justify-start items-center gap-2">
+                <p className="text-3xl">
+                  {currencySymbol}{" "}
+                  {calculatedResultState.finalAmount.toLocaleString()}
+                </p>
+                <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
+                  + {calculatedResultState.finalRestabilityPercent ?? "---"}%
+                </span>
+              </div>
+            </div>
 
-          <div className="flex flex-row gap-6 justify-between mt-0">
-            <div>
-              <p className="text-[16px] text-black ">Si comienzas con</p>
-              <p className="text-[25px] font-bold text-black text-start">
+            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
+              <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
+              <p className="">Cada mes <span className="text-gray-400">recibirás</span></p>
+              <p className="text-3xl text-[#1AFFB0]">
                 {currencySymbol}{" "}
-                {calculatedResultState.initialAmount.toLocaleString()}
+                {calculatedResultState.rentabilityPerMonth ?? "---"}
               </p>
             </div>
-            <div>
-              <p className="text-[16px] text-black ">con un % de retorno</p>
-              <p className="text-[25px] font-bold text-simulatorText text-center ">
-                {calculatedResultState.finalRestabilityPercent ?? "---"}%
-              </p>
-            </div>
-
           </div>
-          <div className="flex flex-col justify-start items-start">
+
+          {/* <div className="flex flex-col justify-start items-start">
             <p className="text-[20px] 2xl:text-[32px] text-black font-bold ">
               <span >En </span>
               <span className="text-lighBlueColorSimulador text-[20px] 2xl:text-[32px] font-bold">
@@ -202,9 +209,9 @@ const InvestmentForm = () => {
                 &#128184;
               </span>
             </p>
-          </div>
+          </div> */}
 
-          <div className="bg-sumulatorContainer  flex justify-center items-center  2xl:h-[92px] m-auto p-0 2xl:p-2 rounded-xl my-2">
+          {/* <div className="bg-sumulatorContainer  flex justify-center items-center  2xl:h-[92px] m-auto p-0 2xl:p-2 rounded-xl my-2">
             <p className="text-[35px] font-bold text-simulatorText">
               {currencySymbol}{" "}
               {calculatedResultState.finalAmount.toLocaleString()}
@@ -215,24 +222,22 @@ const InvestmentForm = () => {
             <p className="ml-2 text-[18px]  font-bold">
               Cada mes recibiras {currencySymbol}{calculatedResultState.rentabilityPerMonth ?? "---"}
             </p>
-          </div>
+          </div> */}
 
-
-          <ButtonComponent
+          {/* <ButtonComponent
             text="Me interesa"
             onClick={handleInvestClick}
             className="w-[314px] 2xl:w-[441px] 2xl:h-[77px] h-12 text-[16px] mt-3 2xl:mt-0 2xl:text-[24px] bg-blueColorButton text-white rounded-xl mb-4"
           />
-
           <button
             onClick={handleRecalculateClick}
             className="text-blueColorButton font-semibold text-[16px] 2xl:text-[24px]"
           >
             Volver a calcular
-          </button>
+          </button> */}
         </div>
-      ) : (
-        <div className="w-full">
+
+        <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
           <div className="flex flex-col justify-center items-start w-full">
             <h2 className="text-2xl text-black">
               Quiero invertir en
@@ -317,7 +322,7 @@ const InvestmentForm = () => {
               </label>
             </div>
             <div className="flex items-center relative">
-              <div className="w-full mt-0">
+              <div className="w-full mt-2">
                 <input
                   type="range"
                   min="0"
@@ -333,7 +338,7 @@ const InvestmentForm = () => {
                   className="w-full"
                   style={{ direction: "ltr" }}
                 />
-                <div className="flex justify-between text-base text-black mt-1">
+                <div className="flex justify-between text-base text-black mt-4">
                   {steps.map((step) => (
                     <span key={step}>{step} meses</span>
                   ))}
@@ -359,7 +364,7 @@ const InvestmentForm = () => {
             handleCalculateClick={handleCalculate}
           />
         </div>
-      )}
+  
     </div>
   );
 };
