@@ -87,7 +87,7 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-      <div className="w-full flex flex-col gap-8 md:gap-0 md:flex-row pt-8 justify-between items-center">
+      <div className="w-full flex flex-row gap-8 md:gap-0 md:flex-row pt-8 justify-between items-center">
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <div className="flex justify-center items-center gap-8">
           <div className="flex justify-center items-center gap-4">
