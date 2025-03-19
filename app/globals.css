@@ -228,10 +228,10 @@ input[type="range"] {
 }
 
 input[type="range"]::-moz-range-thumb {
-  width: 50px;
+  width: 24px;
   height: 24px;
-  /* border-radius: 50%; */
-  background: url(../images/Section-5/moneyicon.svg);
+  border-radius: 0%;
+  background: url(../images/Section-5/billeteFinniu.svg);
   background-size: contain;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -240,10 +240,10 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* delite thumb */
 
-  height: 60px;
-  width: 60px;
-  /* border-radius: 50%; */
-  background: url(../images/Section-5/moneyicon.svg);
+  height: 50px;
+  width: 50px;
+  border-radius: 0%;
+  background: url(../images/Section-5/billeteFinniu.svg);
   background-size: contain;
   cursor: pointer;
   background-repeat: no-repeat;
