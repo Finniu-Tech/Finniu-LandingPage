@@ -130,7 +130,7 @@ const NavBar = () => {
             <ButtonLink href="#" text="Crear cuenta" className="text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
           </ul>
         </nav>
-        <nav className="flex md:hidden navbar w-full">
+        <nav className="hidden navbar w-full">
           <div className="navbar-start">
             <button type="button" className="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square" data-collapse="#multilevel-navbar-collapse" aria-controls="multilevel-navbar-collapse" aria-label="Toggle navigation">
               <span className="icon-[tabler--menu-2] collapse-open:hidden size-4"></span>
