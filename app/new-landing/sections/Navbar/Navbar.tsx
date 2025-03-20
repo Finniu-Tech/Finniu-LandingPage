@@ -12,7 +12,7 @@ import Burger from "@/app/new-landing/sections/Navbar/images/icons/Burger"
 
 const NavBar = () => {
   return (
-    <header className="fixed z-10 w-full h-20 px-8 md:px-40 bg-black border-b-[1px] border-solid border-gray-700 flex justify-between md:justify-normal items-center">
+    <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black border-b-[1px] border-solid border-gray-700 flex justify-between md:justify-normal items-center">
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <nav className="w-full h-full hidden md:flex justify-between items-center pl-16">
           <ul className="h-full text-white flex items-center gap-16">

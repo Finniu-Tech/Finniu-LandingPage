@@ -79,8 +79,7 @@ const config: Config = {
         lg: "1024px",
         xl: "1280px",
         xxl: "1536px",
-
-        //"2xl": "1400px",
+        xxxl: "1920"
       },
     },
   },
