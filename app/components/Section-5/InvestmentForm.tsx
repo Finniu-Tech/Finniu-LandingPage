@@ -10,6 +10,7 @@ import ModalComponent from "@/components/ModalComponent";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import handMoney from "@/images/Section-5/handMoney.svg"
 import upMoney from "@/images/Section-5/upMoney.svg"
+import Chart from "@/app/new-landing/sections/Invest/images/Chart.webp"
 
 
 interface CalculateParams {
@@ -173,29 +174,31 @@ const InvestmentForm = () => {
     <div className="w-full h-full relative flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-10 md:gap-20">
       
         <div className="bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
-          <div className="w-full flex flex-col md:flex-row gap-6 justify-between mt-0">
-            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
-              <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
-              <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">recibirás</span></p>
-              <div className="flex justify-start items-center gap-2">
-                <p className="text-3xl">
+          <div className="w-full flex flex-col gap-6 justify-between mt-0">
+            <div className="flex flex-col md:flex-row gap-6 justify-between">
+              <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
+                <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
+                <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">recibirás</span></p>
+                <div className="flex justify-start items-center gap-2">
+                  <p className="text-3xl">
+                    {currencySymbol}{" "}
+                    {calculatedResultState.finalAmount.toLocaleString()}
+                  </p>
+                  <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
+                    + {calculatedResultState.finalRestabilityPercent ?? "---"}%
+                  </span>
+                </div>
+              </div>
+              <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
+                <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
+                <p className="">Cada mes <span className="text-gray-400">recibirás</span></p>
+                <p className="text-3xl text-[#1AFFB0]">
                   {currencySymbol}{" "}
-                  {calculatedResultState.finalAmount.toLocaleString()}
+                  {calculatedResultState.rentabilityPerMonth ?? "---"}
                 </p>
-                <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
-                  + {calculatedResultState.finalRestabilityPercent ?? "---"}%
-                </span>
               </div>
             </div>
-
-            <div className="flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
-              <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
-              <p className="">Cada mes <span className="text-gray-400">recibirás</span></p>
-              <p className="text-3xl text-[#1AFFB0]">
-                {currencySymbol}{" "}
-                {calculatedResultState.rentabilityPerMonth ?? "---"}
-              </p>
-            </div>
+            <Image src={Chart} alt="Analítica de barras" />
           </div>
 
           {/* <div className="flex flex-col justify-start items-start">
