@@ -7,7 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flyonui/dist/js/carousel.js",
     "./node_modules/flyonui/dist/js/dropdown.js",
-    "./node_modules/flyonui/dist/js/drawer.js",
+    "./node_modules/flyonui/dist/js/navbar.js",
   ],
   theme: {
     extend: {
@@ -79,7 +79,7 @@ const config: Config = {
         lg: "1024px",
         xl: "1280px",
         xxl: "1536px",
-        xxxl: "1920px"
+        xxxl: "1920"
       },
     },
   },
