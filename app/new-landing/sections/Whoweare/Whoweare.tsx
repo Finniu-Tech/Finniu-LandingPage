@@ -20,7 +20,7 @@ const Whoweare = () => {
           <Image src={LogoInversionsimple} alt="Logo de Inversiones Simple" className="w-40" />
         </div>
       </section>
-      <section className="mt-14 md:mt-28 px-8 sm:px-80 w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+      <section className="mt-14 md:mt-28 px-8 md:px-40 xxxl:px-80 w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
         <div className="col-span-1 flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 text-center md:text-start">
           <h3 className="text-4xl md:text-7xl">¿Quiénes somos?</h3>
           <p className="w-full md:w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu, impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  

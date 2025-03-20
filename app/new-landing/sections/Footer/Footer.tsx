@@ -14,7 +14,7 @@ import GooglePlay from "@/app/new-landing/sections/Footer/images/logos/GooglePla
 
 const Footer = () => {
   return (
-    <footer className="bg-black px-8 md:px-40 py-8 flex flex-col justify-center items-center w-full">
+    <footer className="bg-black px-8 md:px-20 xxxl:px-40 py-8 flex flex-col justify-center items-center w-full">
       <div className="w-full text-white pb-8 grid grid-cols-2 gap-y-10 gap-x-4 md:gap-0 md:flex justify-between items-start border-b-[1px] border-solid border-gray-700">
         <nav className="flex flex-col gap-4">
           <h4 className="font-semibold text-lg">Acerca de</h4>
