@@ -19,7 +19,7 @@ const Invest = () => {
             Consulta nuestra calculadora de interés compuesto para ver cuanto pueden ayudar el poder del tiempo y el interés compuesto a hacer crecer su dinero
           </h3>
         </div>
-        <div className="w-full md:px-80 text-black mt-2">
+        <div className="w-full md:px-40 xxxl:px-80 text-black mt-2">
           <InvestmentForm />
         </div>
       </section>

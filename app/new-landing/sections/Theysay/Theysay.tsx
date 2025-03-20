@@ -6,7 +6,7 @@ import ArrowRight from "@/app/new-landing/sections/Theysay/images/icons/ArrowRig
 
 const Theysay = () => {
   return (
-    <section className="py-10 pb-24 md:py-40 px-8 md:px-80 z-10 md:z-0 w-full flex items-start justify-center bg-whitePrimary text-black ">
+    <section className="py-10 pb-24 md:py-40 px-8 md:px-40 xxxl:px-80 z-10 md:z-0 w-full flex items-start justify-center bg-whitePrimary text-black ">
       <div
         id="multi-slide"
         data-carousel='{ "loadingClasses": "opacity-0", "isInfiniteLoop": true, "isDraggable": true, "isAutoPlay": true, "speed": 2000, "slidesQty": { "xs": 1, "lg": 3 } }'
