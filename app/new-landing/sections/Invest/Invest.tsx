@@ -47,6 +47,3 @@ const Invest = () => {
 }
 
 export default Invest
-
-        {/* <div className="w-full h-[25rem] bg-cover bg-bottom relative -bottom-20 -right-20" style={{ backgroundImage: `url(${LlamaCool.src})` }}>
-        </div> */}
