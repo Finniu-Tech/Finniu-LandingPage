@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(new-landing)/comunicacion/Sections/Hero/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(new-landing)/comunicacion/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +14,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="simulator" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -37,8 +31,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;staging&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/diegodelavega/Diego/Finniu-LandingPage/app/(new-landing)/comunicacion/Sections/Hero&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/diegodelavega/Diego/Finniu-LandingPage/app/components/Button-wsp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,16 +44,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/(new-landing)/comunicacion/Sections/Hero" />
-      <recent name="$PROJECT_DIR$/app/(new-landing)/comunicacion" />
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images/icons" />
-      <recent name="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images" />
-      <recent name="$PROJECT_DIR$/images/Evento/cuadrados mobile" />
       <recent name="$PROJECT_DIR$/images/Evento/cuadrados web" />
+      <recent name="$PROJECT_DIR$/images/Evento/cuadrados mobile" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/images/Evento" />
+      <recent name="$PROJECT_DIR$/images/Popup" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -120,11 +112,7 @@
       <workItem from="1741355750801" duration="597000" />
       <workItem from="1741437426572" duration="22249000" />
       <workItem from="1741577015542" duration="1004000" />
-      <workItem from="1744754172350" duration="26465000" />
-      <workItem from="1745245297206" duration="1542000" />
-      <workItem from="1745340231531" duration="2651000" />
-      <workItem from="1746039068433" duration="7290000" />
-      <workItem from="1746302440638" duration="659000" />
+      <workItem from="1741644039045" duration="5178000" />
     </task>
     <servers />
   </component>
