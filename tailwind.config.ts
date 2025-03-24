@@ -7,7 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flyonui/dist/js/carousel.js",
     "./node_modules/flyonui/dist/js/dropdown.js",
-    "./node_modules/flyonui/dist/js/navbar.js",
+    "./node_modules/flyonui/dist/js/drawer.js",
   ],
   theme: {
     extend: {
