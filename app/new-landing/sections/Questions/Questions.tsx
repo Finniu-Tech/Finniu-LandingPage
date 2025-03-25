@@ -27,10 +27,10 @@ const Questions = () => {
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
-              ¿Por qué las tasa pueden cambiar?
+              ¿Cobran algún tipo de comisión?
             </AccordionTitle>
             <AccordionContent className="px-0">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nam quibusdam odio laborum accusamus? Enim eveniet aliquam ullam ea, mollitia ipsam saepe fugit odio distinctio nesciunt iusto ipsa assumenda doloribus.
+              Finniu no cobra comisiones por mantener, retirar o invertir tu capital.
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
@@ -38,7 +38,7 @@ const Questions = () => {
               ¿Cuándo pagan los intereses?
             </AccordionTitle>
             <AccordionContent className="px-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla, suscipit in dolore error ex magni maxime labore aliquam consectetur velit soluta reprehenderit repudiandae veritatis laudantium sunt assumenda est iste!
+              Al invertir en Finniu, nos proporcionas una cuenta de ahorros para programar el pago de intereses. Recibirás tu primer pago 30-45 días después de la validación de tu inversión y, luego, cada 30-45 días durante la vigencia de tu contrato.
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
