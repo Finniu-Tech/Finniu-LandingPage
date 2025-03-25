@@ -11,6 +11,7 @@ const Invest = () => {
     <section
       className="pt-10 md:pt-40 pb-10 md:pb-0 px-8 md:px-0 text-white w-full flex flex-col justify-center items-center relative"
       style={{ backgroundImage: `url(${Background02.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      id="invest"
     >
       <section className="w-full flex flex-col justify-center items-center gap-6 md:gap-10">
         <div className="flex flex-col justify-center items-center gap-2 md:gap-8">
