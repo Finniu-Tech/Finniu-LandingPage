@@ -20,7 +20,8 @@ interface CalculateParams {
   email: string;
   name: string;
   phone: string;
-  discoverySource: string
+  discoverySource: string;
+  DniCi: string;
 }
 
 interface CalculateResult {
@@ -55,7 +56,8 @@ const InvestmentForm = () => {
       email: "",
       name: "",
       phone: "",
-      discoverySource: ""
+      discoverySource: "",
+      DniCi: ""
     });
 
   const onChangeInputAmout = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -11,6 +11,7 @@ import CustomSelect from "./SelectAbout";
 interface FormData {
   fullName: string;
   email: string;
+  DniCi: string;
   phoneNumber: string;
   phonePrefix: string;
   aboutUs: string;
@@ -19,6 +20,7 @@ interface FormData {
 interface FormErrors {
   fullName?: string;
   email?: string;
+  DniCi?: string;
   phoneNumber?: string;
   aboutUs?: string;
 }
@@ -27,6 +29,7 @@ interface CalculateParams {
   deadline: number;
   currency: string;
   email: string;
+  DniCi: string;
   name: string;
   phone: string;
   discoverySource: string
@@ -54,6 +57,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
+    DniCi: "",
     phoneNumber: "",
     phonePrefix: "+51",
     aboutUs: "¿Como te enteraste de nosotros?",
@@ -62,6 +66,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
 
   const fullNameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
+  const DniCi = useRef<HTMLInputElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -72,6 +77,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
         ...prev, ...{
           fullName: parsedData.fullName,
           email: parsedData.email,
+          DniCi: parsedData.DniCi ,
           phoneNumber: parsedData.phoneNumber,
           phonePrefix: parsedData.phonePrefix
         }
@@ -93,6 +99,14 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormErrors((prev) => ({ ...prev, [name]: undefined }));
+    if (name === "DniCi") {
+      const numericValue = value.replace(/\D/g, ""); 
+      setFormData((prev) => ({ ...prev, [name]: numericValue }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
+  
     setFormErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
@@ -121,6 +135,9 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     if (!formData.email) {
       errors.email = "El correo electrónico es obligatorio.";
     }
+    if (!formData.DniCi) {
+      errors.DniCi = "El DNI o C.E es obligatorio.";
+    }
     if (!formData.phoneNumber) {
       errors.phoneNumber = "El número telefónico es obligatorio.";
     }
@@ -140,6 +157,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     saveRegisterStorage(JSON.stringify({
       fullName: formData.fullName,
       email: formData.email,
+      DniCi: formData.DniCi,
       phoneNumber: formData.phoneNumber,
       phonePrefix: formData.phonePrefix
     }));
@@ -149,12 +167,14 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
       ...prevState,
       name: formData.fullName,
       email: formData.email,
+      DniCi: formData.DniCi,
       phone: formData.phoneNumber,
       discoverySource: formData.aboutUs
     }));
     setFormData({
       aboutUs: "¿Como te enteraste de nosotros?",
       email: "",
+      DniCi: "",
       fullName: "",
       phonePrefix: "+51",
       phoneNumber: ""
@@ -171,11 +191,13 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
   return (
     <div className="fixed inset-0 backdrop-blur-md bg-opacity-70 flex items-center justify-center z-50">
       <div className="bg-white rounded-xl  flex flex-col justify-center p-8 w-[90%] max-w-md relative">
-        <h2 className="text-center text-xl mb-10 font-bold">
-          Regístrate para recibir <br />
-          mayor información
-        </h2>
-        <form onSubmit={handleContinue}>
+        <div className="flex flex-col items-center justify-center mb-6 gap-2">
+          <h2 className="text-center text-4xl">
+            Regístrate
+          </h2>
+          <p>para recibir mayor información</p>
+        </div>
+        <form className="selected:" onSubmit={handleContinue}>
           <div className="mb-4">
             <input
               type="text"
@@ -183,7 +205,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
               name="fullName"
               placeholder="Nombres y apellidos"
               className={`w-full px-3 border-r-0 border-l-0 border-t-0 py-2 border-2 ${formErrors.fullName ? "border-red-500" : "border-gray-300"
-                } rounded-sm bg-white text-black`}
+                } rounded-sm bg-white text-black focus:outline-none focus:ring-0`}
               value={formData.fullName}
               onChange={handleInputChange}
               onKeyDown={(e) => handleKeyDown(e, emailRef)}
@@ -201,7 +223,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
               name="email"
               placeholder="Correo electrónico"
               className={`w-full px-3 border-r-0 border-l-0 border-t-0 py-2 border-2 ${formErrors.email ? "border-red-500" : "border-gray-300"
-                } rounded-sm bg-white text-black`}
+                } rounded-sm bg-white text-black focus:outline-none focus:ring-0`}
               value={formData.email}
               onChange={handleInputChange}
               onKeyDown={(e) => handleKeyDown(e, phoneInputRef)}
@@ -212,6 +234,23 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
             )}
           </div>
 
+          <div className="mb-4">
+            <input
+              type="text"
+              id="DniCi"
+              name="DniCi"
+              placeholder="DNI o C.E"
+              className={`w-full px-3 border-r-0 border-l-0 border-t-0 py-2 border-2 ${formErrors.fullName ? "border-red-500" : "border-gray-300"
+                } rounded-sm bg-white text-black focus:outline-none focus:ring-0`}
+              value={formData.DniCi}
+              onChange={handleInputChange}
+              onKeyDown={(e) => handleKeyDown(e, emailRef)}
+              ref={fullNameRef}
+            />
+            {formErrors.fullName && (
+              <p className="text-red-500 text-sm">{formErrors.DniCi}</p>
+            )}
+          </div>
 
           <div className="mb-10">
             <div className="relative phone-input-container">
@@ -227,7 +266,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
                   className: `w-full px-3 border-2 border-l-0 border-t-0 border-r-0 ${formErrors.phoneNumber
                     ? "border-red-500"
                     : "border-gray-300"
-                    } rounded-sm bg-white text-black`,
+                    } rounded-sm bg-white text-black focus:outline-none focus:ring-0`,
                 }}
                 containerStyle={{
                   width: "100%",
@@ -242,15 +281,12 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
                 <p className="text-red-500 text-sm">{formErrors.phoneNumber}</p>
               )}
             </div>
-            <div className="h-4"></div>
-
-
           </div>
           <div className="text-center mt-10">
             <ButtonComponent
               text="Continuar"
               type="submit"
-              className="w-full bg-blueColorButton text-white rounded-full py-2 "
+              className="w-full bg-purpleTercero text-white rounded-full py-4 px-6"
             />
           </div>
         </form>

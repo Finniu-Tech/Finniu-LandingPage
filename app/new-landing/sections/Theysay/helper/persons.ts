@@ -33,7 +33,7 @@ const PERSONS = [
   {
     imgSrc: testigo04,
     imgAlt: "Perfil Araceli Ramos",
-    title: "title que todavía no se que poner",
+    title: "La mejor decisión para hacer crecer mis ahorros",
     phrase: "No sabía dónde invertir mis ahorros, debido a la baja rentabilidad en varios bancos; sin embargo, Finniu me ha retornado hasta el 18% en un año y además, me ofrece las mejores herramientas para hacerle seguimiento a mis inversiones.",
     name: "Araceli Ramos",
     occupation: "Analista Senior de Reclutamiento"
@@ -41,7 +41,7 @@ const PERSONS = [
   {
     imgSrc: testigo05,
     imgAlt: "Perfil Guillermo Rosas",
-    title: "title que todavía no se que poner",
+    title: "Mejores retornos que en los bancos tradicionales",
     phrase: "Estoy muy satisfecho con Finniu y los retornos que he obtenido en comparación con muchos bancos tradicionales. La plataforma es fácil de usar y ha sido una excelente manera de hacer crecer mi dinero de manera segura y confiable.",
     name: "Guillermo Rosas",
     occupation: "Ingeniero de Planeamiento"
@@ -49,7 +49,7 @@ const PERSONS = [
   {
     imgSrc: testigo06,
     imgAlt: "Perfil Alexis Pariente",
-    title: "title que todavía no se que poner",
+    title: "La tranquilidad que buscaba para invertir",
     phrase: "Antes desconfiaba en dónde invertir mi dinero, hasta que conocí Finniu. Con ellos, encontré la seguridad de que mi inversión está trabajándose para obtener altos intereses. Además, que permiten hacer seguimiento a todas tus inversiones de manera fácil en su App.",
     name: "Alexis Pariente",
     occupation: "Contadora y Empresaria"
