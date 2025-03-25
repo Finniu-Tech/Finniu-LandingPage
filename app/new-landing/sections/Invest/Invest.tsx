@@ -26,7 +26,7 @@ const Invest = () => {
       </section>
       <section className="pt-10 md:pt-40 px-0 md:px-80 w-full flex justify-between items-center">
         <div className="w-[70%] md:w-[30rem] flex flex-col justify-center items-start gap-4 md:gap-6">
-          <h3 className="text-[2.90rem] md:text-6xl leading-none md:leading-tight">
+          <h3 className="text-[2.50rem] md:text-6xl leading-none md:leading-tight">
             Haz crecer tu capital con confianza
           </h3>
           <p>

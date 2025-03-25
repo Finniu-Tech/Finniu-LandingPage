@@ -72,9 +72,11 @@ const Footer = () => {
         <nav className="flex flex-col gap-4">
           <h4 className="font-semibold text-lg">Contactos</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
-            <li className="flex items-center gap-2">
-              <Mappin />
-              <ButtonLink href="#" text="Términos de servicio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <li className="flex items-start gap-2">
+              <div>
+                <Mappin />
+              </div>
+              <ButtonLink href="#" text="Av. San Luis 2076, San Borja, Lima - Perú." className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Phone />
