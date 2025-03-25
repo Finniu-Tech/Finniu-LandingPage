@@ -23,9 +23,11 @@ const Whoweare = () => {
       <section className="mt-14 md:mt-28 px-8 md:px-40 xxxl:px-80 w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
         <div className="col-span-1 flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 text-center md:text-start">
           <h3 className="text-4xl md:text-7xl">¿Quiénes somos?</h3>
-          <p className="w-full md:w-[35rem]">Somos una empresa Gestora de Fondos Privados con un producto de renta fija. En Finniu, impulsamos el crecimiento de las empresas de nuestro propio portafolio</p>  
+          <p className="w-full md:w-[40rem]">
+            Somos una <span className="font-bold">empresa gestora de fondos privados</span> que canaliza capital hacia oportunidades reales, sólidas y estratégicas. <span className="font-bold">Gestionamos capital con propósito</span>, impactando en negocios reales, con visión, claridad y seguridad.
+          </p>  
         </div>
-        <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 text-center md:text-start gap-12">
+        <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 text-center md:text-start gap-x-20 gap-y-12">
           <div>
             <CountUp
               start={0}
