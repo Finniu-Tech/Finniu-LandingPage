@@ -16,7 +16,7 @@ import X from "@/app/new-landing/sections/Navbar/images/icons/X"
 
 const NavBar = () => {
   return (
-    <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black border-b-[1px] border-solid border-gray-700 flex justify-between md:justify-normal items-center">
+    <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black flex justify-between md:justify-normal items-center">
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <nav className="w-full h-full hidden md:flex justify-between items-center pl-16">
           <ul className="h-full text-white flex items-center gap-16">
@@ -183,7 +183,7 @@ const NavBar = () => {
           </button>
 
           <aside id="overlay-navigation-example" className="max-w-full h-full z-10 overlay overlay-open:translate-x-0 drawer drawer-start hidden bg-white">
-            <div className="drawer-header h-20 px-8 border-b-[1px] border-solid border-gray-700">
+            <div className="drawer-header h-20 px-8">
               <h2 className="drawer-title">
                 <Image src={LogoFinniuBlue} alt="Logo de Finniu" className="w-20"/>
               </h2>

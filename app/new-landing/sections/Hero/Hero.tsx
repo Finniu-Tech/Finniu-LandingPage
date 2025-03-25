@@ -17,7 +17,7 @@ const Hero = () => {
         <h1 className="text-xl text-center sm:text-2xl text-gray-400">
           Haz crecer tu capital con Finniu, empresa gestora de fondos privados
         </h1>
-        <ButtonLink href="#" text="Proyecta tus Metas" className="mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
+        <ButtonLink href="#invest" text="Proyecta tus Metas" className="mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
       </div>
       <div className="mt-20">
         <Bounce />
