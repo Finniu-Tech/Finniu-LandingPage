@@ -303,9 +303,6 @@ const NavBar = () => {
                   </ul>
                 </li>
                 <li>
-                  <ButtonLink href="#" text="Ayuda" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
-                </li>
-                <li>
                   <ButtonLink href="#" text="Contacto" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
                 </li>
               </ul>
