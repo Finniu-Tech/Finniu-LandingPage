@@ -13,11 +13,12 @@ const Ready = () => {
         <h3 className="w-full text-center md:text-start md:w-[30rem]">
           Haz que tu dinero crezca con propósito y recibe ingresos mensuales al optimizar tu capital de forma segura.
         </h3>
+        <ButtonLink href="#" text="Empieza ahora" className="hidden md:inline-block mt-6 md:mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease"/>
       </div>
       <div className="w-full md:w-[60rem] mt-6 md:mt-0">
         <Image src={Mackbook} alt="Mackbook Finniu" className="w-full"/>
       </div>
-      <ButtonLink href="#" text="Empieza ahora" className="mt-6 md:mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease"/>
+      <ButtonLink href="#" text="Empieza ahora" className="md:hidden mt-6 md:mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease"/>
     </section>
   )
 }
