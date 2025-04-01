@@ -10,7 +10,7 @@ import ModalComponent from "@/components/ModalComponent";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import handMoney from "@/images/Section-5/handMoney.svg"
 import upMoney from "@/images/Section-5/upMoney.svg"
-import Chart from "@/app/new-landing/sections/Invest/images/Chart.webp"
+import Chart from "@/app/(new-landing)/Home/Invest/images/Chart.webp"
 
 
 interface CalculateParams {

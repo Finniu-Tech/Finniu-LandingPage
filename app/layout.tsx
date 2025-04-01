@@ -2,13 +2,13 @@ import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 // import NavComponent from "./components/Navbar/NavComponent";
-import NavBar from "@/app/new-landing/sections/Navbar/Navbar"
+import NavBar from "@/app/(new-landing)/Navbar/Navbar"
 // import FooterPageComponent from "./components/Footer/FooterPageComponent";
-import Footer from "@/app/new-landing/sections/Footer/Footer"
+import Footer from "@/app/(new-landing)/Footer/Footer"
 import FloatingWhatsappButton from "./components/Button-wsp/FloatingWhatsappButtonComponent";
 import GTM from "./components/GTM";
 import Popup from "./components/Popup/Popup";
-import FlyonuiScript from "@/app/new-landing/scripts/FlyonuiScript"
+import FlyonuiScript from "@/app/(new-landing)/scripts/FlyonuiScript"
 
 const DMSans = localFont({
   src: [

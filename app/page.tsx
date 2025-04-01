@@ -8,28 +8,26 @@
 // import ToStoresSection from "./about/components/Section-2/ToStoresSection";
 // import Susbcribe from "./components/Section-8/Susbcribe";
 // import MovilOperations from "@/components/MovilOperations";
-import Hero from "@/app/new-landing/sections/Hero/Hero"
-import Whoweare from "@/app/new-landing/sections/Whoweare/Whoweare"
-import Ready from "@/app/new-landing/sections/Ready/Ready"
-import Invest from "@/app/new-landing/sections/Invest/Invest"
-import Theysay from "@/app/new-landing/sections/Theysay/Theysay"
-import Questions from "@/app/new-landing/sections/Questions/Questions"
+import Hero from "@/app/(new-landing)/Home/Hero/Hero"
+import Whoweare from "@/app/(new-landing)/Home/Whoweare/Whoweare"
+import Ready from "@/app/(new-landing)/Home/Ready/Ready"
+import Invest from "@/app/(new-landing)/Home/Invest/Invest"
+import Theysay from "@/app/(new-landing)/Home/Theysay/Theysay"
+import Questions from "@/app/(new-landing)/Home/Questions/Questions"
 
 export default function Home() {
   return (
-    <main className=" flex min-h-screen flex-col items-center  justify-between   ">
-      {/* <DownloadAppSection />
-        <ToStoresSection />
+    <main className="flex min-h-screen flex-col items-center justify-between">
+  {/* <DownloadAppSection />
+      <ToStoresSection />
       <MovilOperations />
       <FixedTermsSection />
-        <SponsoredV2 />
+      <SponsoredV2 />
       <HowItWorksSection />
       <StepInvestmentGuideSection />
       <SimulatorInvestmentSection />
-        <Susbcribe />
-
+      <Susbcribe />
       <TestimonialsSection /> */}
-
       {/* <RegisterSection /> */}
 
       <Hero />
