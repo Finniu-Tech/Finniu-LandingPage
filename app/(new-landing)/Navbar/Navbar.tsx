@@ -13,8 +13,41 @@ import Bar from "@/app/(new-landing)/Navbar/images/icons/Bar"
 import Pie from "@/app/(new-landing)/Navbar/images/icons/Pie"
 import Burger from "@/app/(new-landing)/Navbar/images/icons/Burger"
 import X from "@/app/(new-landing)/Navbar/images/icons/X"
+import { useEffect } from "react"
 
 const NavBar = () => {
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+
+      const isNavLink = target.closest("a") || target.closest("button")
+
+      if (!isNavLink) return
+
+      const isCollapseToggle = (isNavLink as HTMLElement).hasAttribute("data-collapse")
+      if (isCollapseToggle) return
+
+      const overlay = document.getElementById("overlay-navigation-example")
+      if (overlay) {
+        overlay.classList.add("hidden")
+      }
+    }
+
+    const nav = document.getElementById("overlay-navigation-example")
+    if (nav) {
+      nav.addEventListener("click", handleClick)
+    }
+
+    return () => {
+      if (nav) {
+        nav.removeEventListener("click", handleClick)
+      }
+    }
+  }, [])
+
+  
+
+  
   return (
     <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black flex justify-between md:justify-normal items-center">
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
@@ -314,7 +347,6 @@ const NavBar = () => {
           </aside>
         </nav>
 
-        
     </header>
   )
 }
