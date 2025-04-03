@@ -8,7 +8,7 @@ const OurNumbers = () => {
       <h3 className="text-4xl md:text-7xl w-full md:w-[60rem] text-center">
         Nuestros números hablan por sí mismos
       </h3>
-      <div className="grid grid-cols-1 justify-items-center content-center gap-4 md:grid-cols-4 md:gap-10">
+      <div className="grid grid-cols-1 justify-items-center content-center gap-4 md:grid-cols-4 md:gap-0">
         <div>
           <CountUp
             start={0}
@@ -56,7 +56,7 @@ const OurNumbers = () => {
           />
           <h4 className="mt-2 text-center">INVERSIONISTAS <br /> ACTIVOS</h4>
         </div>
-        <div>
+        <div className="text-center">
           <CountUp
             start={0}
             end={18}
