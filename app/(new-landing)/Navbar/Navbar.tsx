@@ -17,33 +17,29 @@ import { useEffect } from "react"
 
 const NavBar = () => {
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
+    const overlay = document.getElementById("overlay-navigation-example")
+  
+    const handleOverlayLinkClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement
-
-      const isNavLink = target.closest("a") || target.closest("button")
-
-      if (!isNavLink) return
-
-      const isCollapseToggle = (isNavLink as HTMLElement).hasAttribute("data-collapse")
-      if (isCollapseToggle) return
-
-      const overlay = document.getElementById("overlay-navigation-example")
-      if (overlay) {
-        overlay.classList.add("hidden")
+      const link = target.closest("a") as HTMLAnchorElement | null
+  
+      if (link && link.href) {
+        e.preventDefault()
+  
+        const href = link.getAttribute("href")
+        if (!href || href.startsWith("#")) return
+  
+        // Forzar reload
+        window.location.href = href
       }
     }
-
-    const nav = document.getElementById("overlay-navigation-example")
-    if (nav) {
-      nav.addEventListener("click", handleClick)
-    }
-
+  
+    overlay?.addEventListener("click", handleOverlayLinkClick)
+  
     return () => {
-      if (nav) {
-        nav.removeEventListener("click", handleClick)
-      }
+      overlay?.removeEventListener("click", handleOverlayLinkClick)
     }
-  }, [])
+  }, [])  
   
   return (
     <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black flex justify-between md:justify-normal items-center">

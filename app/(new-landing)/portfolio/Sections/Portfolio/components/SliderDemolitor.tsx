@@ -23,7 +23,7 @@ const SliderDemolitor = ({arrowLeft, arrowRight, cardPortfolio}:Props) => {
             WebkitTextFillColor: "transparent",
           }}
         >
-          Nuestros Clientes: Demolitor / Piruw
+          Nuestros Clientes: Demolitor/Piruw
         </h3>
         <div className="absolute w-[12rem] md:w-48 bottom-0 md:top-0 md:right-9">
           <button className="carousel-prev size-14 bg-purplePrincipal rounded-full text-white border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease ">
