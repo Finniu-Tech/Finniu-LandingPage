@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Hero from "@/app/(new-landing)/about/Sections/Hero/Hero"
 import OurNumbers from "@/app/(new-landing)/about/Sections/OurNumbers/OurNumbers"
 import Private from "@/app/(new-landing)/about/Sections/Private/Private"
