@@ -29,7 +29,8 @@ const NavBar = () => {
         const href = link.getAttribute("href")
         if (!href || href.startsWith("#")) return
   
-        // Forzar reload
+        window.scrollTo({ top: 0, behavior: "auto" })
+
         window.location.href = href
       }
     }
