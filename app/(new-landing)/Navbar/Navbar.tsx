@@ -18,7 +18,7 @@ import { useEffect } from "react"
 const NavBar = () => {
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
+      const target = e.target as HTMLElement
 
       const isNavLink = target.closest("a") || target.closest("button")
 
@@ -44,9 +44,6 @@ const NavBar = () => {
       }
     }
   }, [])
-
-  
-
   
   return (
     <header className="fixed z-10 w-full h-20 px-8 md:px-20 xxxl:px-40 bg-black flex justify-between md:justify-normal items-center">
@@ -89,7 +86,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                      href="#"
+                      href="/portfolio"
                     >
                       <div className="mt-[0.30rem]">
                         <News />
@@ -209,6 +206,7 @@ const NavBar = () => {
             <ButtonLink href="#" text="Crear cuenta" className="text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
           </ul>
         </nav>
+        
 
         <nav className="md:hidden mt-2">
           <button className="text-white" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="overlay-navigation-example" data-overlay="#overlay-navigation-example" >
@@ -252,7 +250,7 @@ const NavBar = () => {
                     <li>
                       <Link
                         className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                        href="#"
+                        href="/portfolio"
                       >
                         <div className="mt-[0.30rem]">
                           <News />
@@ -346,7 +344,6 @@ const NavBar = () => {
             </div>
           </aside>
         </nav>
-
     </header>
   )
 }
