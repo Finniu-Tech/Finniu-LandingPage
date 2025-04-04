@@ -14,7 +14,7 @@ const SliderDemolitor = ({arrowLeft, arrowRight, cardPortfolio}:Props) => {
       data-carousel='{ "loadingClasses": "opacity-0", "isInfiniteLoop": true, "isDraggable": true, "isAutoPlay": true, "speed": 2000, "slidesQty": { "xs": 1, "lg": 5 } }'
       className="relative w-full"
     >
-      <div className="flex flex-col text-center md:text-start items-center md:items-start gap-2 md:gap-4 mb-4 md:mb-6">
+      <div className="flex flex-col text-center md:text-start items-center md:items-start gap-2 md:gap-4 mb-4 md:mb-10">
         <h3
           className="text-4xl md:text-6xl font-semibold"
           style={{
