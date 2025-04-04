@@ -19,9 +19,9 @@ const Card = ({imgSrc, imgAlt, name, position, phrase} : Props) => {
   }
  
   return (
-    <div className="flip-card max-w-sm h-full rounded-3xl border-[1px] border-solid bg-white border-whiteSecondary flex flex-col justify-between items-start shadow-sm">
+    <div className="max-w-sm h-full rounded-3xl border-[1px] border-solid bg-white border-whiteSecondary flex flex-col justify-between items-start shadow-sm">
       <Image src={imgSrc} alt={imgAlt} className="rounded-t-3xl"/>
-      <div className="w-full h-full flex justify-between items-center px-6 py-6">
+      <div className="w-full h-full flex justify-between items-center p-6">
         <div className="h-full flex flex-col justify-center items-start">
           <h4 className="text-xl md:text-2xl font-bold">
             {name}

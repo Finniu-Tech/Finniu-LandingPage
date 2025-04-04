@@ -11,8 +11,8 @@ const Companies = () => {
         data-carousel='{ "loadingClasses": "opacity-0", "isInfiniteLoop": true, "isDraggable": true, "isAutoPlay": true, "speed": 2000, "slidesQty": { "xs": 1, "lg": 3 } }'
         className="relative w-full"
       >
-        <div className="flex flex-col text-center md:text-start items-center md:items-start gap-2 md:gap-4 mb-4 md:mb-6">
-          <h3 className="text-4xl md:text-6xl">Empresas que Componen <br /> Nuestro Portafolio</h3>
+        <div className="flex flex-col text-center md:text-start items-center md:items-start gap-2 md:gap-4 mb-4 md:mb-10">
+          <h3 className="text-4xl md:text-6xl">Empresas que Conforman <br /> Nuestro Portafolio</h3>
           <div className="absolute w-[12rem] md:w-48 bottom-0 md:top-5 md:right-9">
             <button className="carousel-prev size-14 bg-purplePrincipal rounded-full text-white border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease ">
               <ArrowLeft />

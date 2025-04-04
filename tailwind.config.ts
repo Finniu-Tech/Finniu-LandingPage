@@ -79,7 +79,8 @@ const config: Config = {
         purpleSecondary: "#1814B2",
         whitePrimary: "#F9FBFC",
         whiteSecondary: "#EFEFEF",
-        purpleTercero: "#17165E"
+        purpleTercero: "#17165E",
+        grayBlack: "#292929"
       },
 
       screens: {
