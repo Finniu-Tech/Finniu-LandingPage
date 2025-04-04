@@ -131,7 +131,7 @@ const Optimization = () => {
             ></iframe>
           </div>
           <div className="p-10 md:px-10 flex flex-col gap-4 items-center justify-center">
-            <h4 className="text-3xl md:text-4xl">
+            <h4 className="text-2xl md:text-4xl">
               Descubre Finniu: Cómo Funciona nuestra gestora de fondos privados
             </h4>
             <p className="text-lg md:text-xl">

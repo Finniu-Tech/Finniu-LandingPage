@@ -12,12 +12,12 @@ const FloatingWhatsappButton = () => {
       >
         <div className="relative">
           {/* Ícono de WhatsApp con borde blanco y relleno verde */}
-          <div className="w-16 h-16 bg-green-500 rounded-full border-4 border-white flex items-center justify-center hover:scale-105 transition-transform duration-300 animate-bounce-slow">
+          <div className="size-14 md:w-16 md:h-16 bg-green-500 rounded-full border-4 border-white flex items-center justify-center hover:scale-105 transition-transform duration-300 animate-bounce-slow">
             <FontAwesomeIcon icon={faWhatsapp} className="text-white text-3xl" />
           </div>
 
           {/* Tooltip que aparece al pasar el mouse */}
-          <div className="absolute right-full -translate-x-2 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 bg-white text-black text-base px-3 py-2 rounded-md transition-opacity duration-300 shadow-lg whitespace-nowrap">
+          <div className=" hidden md:absolute right-full -translate-x-2 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 bg-white text-black text-base px-3 py-2 rounded-md transition-opacity duration-300 shadow-lg whitespace-nowrap">
             <span className="relative">
               Conversa con nosotros
               {/* Flecha que apunta al ícono */}
