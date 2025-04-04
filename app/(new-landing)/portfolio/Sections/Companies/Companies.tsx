@@ -8,7 +8,7 @@ const Companies = () => {
     <section className="py-10 pb-24 md:py-40 px-8 md:px-40 xxxl:px-80 w-full flex items-start justify-center bg-whitePrimary text-black">
       <div
         id="multi-slide"
-        data-carousel='{ "loadingClasses": "opacity-0", "isInfiniteLoop": true, "isDraggable": true, "isAutoPlay": true, "speed": 2000, "slidesQty": { "xs": 1, "lg": 3 } }'
+        data-carousel='{ "loadingClasses": "opacity-0", "isInfiniteLoop": true, "isDraggable": true, "isAutoPlay": true, "speed": 4000, "slidesQty": { "xs": 1, "lg": 3 } }'
         className="relative w-full"
       >
         <div className="flex flex-col text-center md:text-start items-center md:items-start gap-2 md:gap-4 mb-4 md:mb-10">
