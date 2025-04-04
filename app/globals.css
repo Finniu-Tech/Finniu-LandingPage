@@ -321,3 +321,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .gradiente {
   background: radial-gradient(circle, #81F3DB 0%, #0D3295 50%, #000000 100%);
 }
+
+textarea:focus, input:focus{
+  outline: none;
+}
