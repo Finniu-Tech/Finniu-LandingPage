@@ -50,7 +50,7 @@ const Questions = () => {
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
-        <ButtonLinkIcon href="#" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
+        <ButtonLinkIcon href="/transparency" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
       </div>
     </section>
   )

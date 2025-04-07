@@ -148,7 +148,7 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <ButtonLink href="#" text="Transparencia" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
+          <ButtonLink href="/transparency" text="Transparencia" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
           <div className="relative group flex h-full rtl:[--placement:bottom-end]">
             <button
               type="button"
@@ -296,7 +296,7 @@ const NavBar = () => {
                 </ul>
               </li>
               <li>
-                <ButtonLink href="#" text="Transparencia" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
+                <ButtonLink href="/transparency" text="Transparencia" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
               </li>
               <li className="text-2xl">
                 <button className="text-black collapse-toggle collapse-open:bg-base-content/10" id="compara-collapse" data-collapse="#compara-collapse-menu" >
