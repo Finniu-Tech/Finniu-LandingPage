@@ -13,11 +13,11 @@ interface Props {
 const CardEvent = ({imgSrc, imgAlt, title, phrase} : Props) => {
   return (
     <div
-      className="w-full h-full flex flex-col md:flex-row justify-center items-center rounded-3xl text-white"
+      className="w-full h-full flex flex-col md:flex-row justify-start md:justify-center items-center rounded-3xl text-white"
       style={{ backgroundImage: `url(${Background.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className="w-full h-full md:w-[1800px]">
-        <Image src={imgSrc} alt={imgAlt} className="h-full rounded-t-3xl md:rounded-none md:rounded-l-3xl" />
+      <div className="w-full md:h-full md:w-[1800px]">
+        <Image src={imgSrc} alt={imgAlt} className="md:h-full rounded-t-3xl md:rounded-none md:rounded-l-3xl" />
       </div>
       <div className="p-10 md:px-10 flex flex-col gap-4 items-center md:items-start justify-center">
         <h4 className=" text-3xl md:text-4xl">

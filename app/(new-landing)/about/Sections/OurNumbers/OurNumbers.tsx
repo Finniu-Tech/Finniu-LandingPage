@@ -44,7 +44,7 @@ const OurNumbers = () => {
         <div>
           <CountUp
             start={0}
-            end={400}
+            end={450}
             duration={2.5}
             prefix="+"
             style={{
