@@ -134,7 +134,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="#"
+                    href="/invest"
                   >
                     <div className="mt-[0.30rem]">
                       <Desktop />
@@ -283,7 +283,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="#"
+                      href="/invest"
                     >
                       <div className="mt-[0.30rem]">
                         <Desktop />
