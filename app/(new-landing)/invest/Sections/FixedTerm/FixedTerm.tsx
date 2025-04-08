@@ -16,7 +16,7 @@ const FixedTerm = () => {
           <br />
           Ofrecemos una rentabilidad de hasta 18% anual, con pagos mensuales fijos y la posibilidad de empezar desde S/1,000.
         </h3>
-        <ButtonLink href="#" text="Empieza ahora" className="hidden md:inline-block mt-6 md:mt-4 text-white py-4 px-6 rounded-full bg-purplePrincipal border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease"/>
+        <ButtonLink href="#" text="Empieza ahora" className="w-fit mt-2 md:mt-4 text-center text-white py-4 px-6 rounded-full bg-purplePrincipal border-solid border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal hover:border-solid hover:border-[1px] hover:border-purplePrincipal transition duration-150 ease"/>
       </div>
     </section>
   )
