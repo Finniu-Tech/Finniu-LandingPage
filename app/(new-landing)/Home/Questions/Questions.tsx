@@ -6,10 +6,11 @@ import ArrowUpLeft from "@/app/(new-landing)/Home/Invest/images/icons/ArrowUpLef
 const Questions = () => {
   return (
     <section
-      className="py-10 md:py-40 px-8 md:px-0 text-white w-full flex flex-col justify-center items-center gap-2 md:gap-8"
+      id="questions"
+      className="py-10 md:py-40 px-8 md:px-0 text-white w-full flex flex-col justify-center items-center gap-4 md:gap-8"
       style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className="flex flex-col justify-center items-center text-center gap-2 md:gap-6">
+      <div className="flex flex-col justify-center items-center text-center gap-4 md:gap-8">
         <h3 className="text-4xl md:text-6xl">Preguntas frecuentes</h3>
         <h3 className="text-lg md:text-xl">Obtén las respuestas a tus preguntas sobre Finniu</h3>
       </div>

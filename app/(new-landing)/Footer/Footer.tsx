@@ -20,14 +20,47 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Acerca de</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Blog" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://blog.finniu.com" text="Blog" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Preguntas frecuentes" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/#questions" text="Preguntas frecuentes" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Compara" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/transparency" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
+            <li>
+              <ButtonLink href="/" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+            <li>
+              <ButtonLink href="/" text="Ayuda" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+          </ul>
+        </nav>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Nosotros</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
+            <li>
+              <ButtonLink href="/about" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+            <li>
+              <ButtonLink href="/portfolio" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+            <li>
+              <ButtonLink href="/news" text="Noticias y Eventos" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+          </ul>
+        </nav>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Producto</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
+            <li>
+              <ButtonLink href="/invest" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            </li>
+          </ul>
+        </nav>
+        <nav className="flex flex-col gap-4">
+          <h4 className="font-semibold text-lg">Compara</h4>
+          <ul className="flex flex-col justify-center items-start gap-4">
             <li>
               <ButtonLink href="#" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
@@ -37,35 +70,13 @@ const Footer = () => {
           </ul>
         </nav>
         <nav className="flex flex-col gap-4">
-          <h4 className="font-semibold text-lg">Nosotros</h4>
-          <ul className="flex flex-col justify-center items-start gap-4">
-            <li>
-              <ButtonLink href="#" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            </li>
-            <li>
-              <ButtonLink href="#" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            </li>
-            <li>
-              <ButtonLink href="#" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            </li>
-          </ul>
-        </nav>
-        <nav className="flex flex-col gap-4">
-          <h4 className="font-semibold text-lg">Producto</h4>
-          <ul className="flex flex-col justify-center items-start gap-4">
-            <li>
-              <ButtonLink href="#" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            </li>
-          </ul>
-        </nav>
-        <nav className="flex flex-col gap-4">
           <h4 className="font-semibold text-lg">Legal</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Términos de servicio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="#" text="Términos & Condiciones" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Política de privacidad" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="#" text="Política & privacidad" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -76,15 +87,15 @@ const Footer = () => {
               <div>
                 <Mappin />
               </div>
-              <ButtonLink href="#" text="Av. San Luis 2076, San Borja, Lima - Perú." className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://www.google.com/maps/place/Finniu/@-12.090882,-76.9979061,18z/data=!4m6!3m5!1s0x9105c7c6dd9c6801:0x32bb4f0eff87fa1f!8m2!3d-12.0910965!4d-76.9961964!16s%2Fg%2F11wxl5x3hl?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" text="Av. San Luis 2076, San Borja, Lima - Perú" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Phone />
-              <ButtonLink href="#" text="+51 983 796 139" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://api.whatsapp.com/send?phone=51983796139&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20" text="+51 983 796 139" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Mail />
-              <ButtonLink href="#" text="hola@finniu.com" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hola@finniu.com" text="hola@finniu.com" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -93,14 +104,14 @@ const Footer = () => {
         <Image src={LogoFinniu} alt="Logo de Finniu" className="w-20"/>
         <div className="flex justify-center items-center gap-8">
           <div className="flex justify-center items-center gap-4">
-            <ButtonLinkIcon href="#" icon={<Youtube />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            <ButtonLinkIcon href="#" icon={<Instagram />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            <ButtonLinkIcon href="#" icon={<LinkendIn />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            <ButtonLinkIcon href="#" icon={<Tiktok />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="https://www.youtube.com/channel/UCgVwc69xSrUxicjf3VIJpig" icon={<Youtube />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="https://www.instagram.com/finniu.app/" icon={<Instagram />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="https://www.linkedin.com/company/finniu/" icon={<LinkendIn />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
+            <ButtonLinkIcon href="https://www.tiktok.com/@finniu.app" icon={<Tiktok />} className="text-gray-400 hover:text-white transition duration-150 ease"/>
           </div>
           <div className="hidden md:flex justify-center items-center gap-4">
-            <ButtonLinkIcon href="#" icon={<Image src={AppStore} alt="Logo App Store"/>} className="w-full"/>
-            <ButtonLinkIcon href="#" icon={<Image src={GooglePlay} alt="Logo GooglePlay"/>} className="w-full"/>
+            <ButtonLinkIcon href="https://apps.apple.com/pe/app/finniu/id6449205870" icon={<Image src={AppStore} alt="Logo App Store"/>} className="w-full"/>
+            <ButtonLinkIcon href="https://play.google.com/store/apps/details?id=com.finniu&hl=es_PE" icon={<Image src={GooglePlay} alt="Logo GooglePlay"/>} className="w-full"/>
           </div>
         </div>
       </div>
