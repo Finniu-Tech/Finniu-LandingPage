@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
 import ButtonLinkIcon from "@/app/(new-landing)/components/ButtonLinkIcon"
+import ButtonLink from "@/app/(new-landing)/components/ButtonLink"
 import Background01 from "@/app/(new-landing)/images/backgrounds/background01.png"
 import ArrowUpLeft from "@/app/(new-landing)/Home/Invest/images/icons/ArrowUpLeft"
 
@@ -28,18 +29,18 @@ const Questions = () => {
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
-              ¿Cobran algún tipo de comisión?
+              ¿Cuánto gano si deposito 1.000 soles a plazo fijo?
             </AccordionTitle>
             <AccordionContent className="px-0">
-              Finniu no cobra comisiones por mantener, retirar o invertir tu capital
+              Si decides que Finniu gestione tu capital y eliges un pazo de 12 meses, puedes recibir hasta S/1120 soles con una tasa del 12% anual
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
             <AccordionTitle className="py-8 px-0 text-white hover:bg-transparent !bg-transparent">
-              ¿Cuándo pagan los intereses?
+              ¿Qué banco paga más intereses a plazo fijo en 2025 en Perú?
             </AccordionTitle>
             <AccordionContent className="px-0">
-              Al invertir en Finniu, nos proporcionas una cuenta de ahorros para programar el pago de intereses. Recibirás tu primer pago 30-45 días después de la validación de tu inversión y, luego, cada 30-45 días durante la vigencia de tu contrato
+              El Banco Ripley, es el banco que paga más intereses a plazo fijo en 2025 para Perú, con tasas de interés hasta de 4.88%
             </AccordionContent>
           </AccordionPanel>
           <AccordionPanel>
@@ -51,7 +52,10 @@ const Questions = () => {
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
-        <ButtonLinkIcon href="/transparency" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
+        <div className="w-full flex justify-center items-center gap-10">
+        <ButtonLink href="#" text="Empieza ahora" className="mt-4 flex gap-2 justify-center items-center text-black py-4 px-6 rounded-full border-[1px] border-solid bg-white hover:bg-transparent hover:text-white transition duration-150 ease"/>
+          <ButtonLinkIcon href="/transparency" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
+        </div>
       </div>
     </section>
   )
