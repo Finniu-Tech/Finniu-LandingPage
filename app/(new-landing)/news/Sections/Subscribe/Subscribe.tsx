@@ -8,7 +8,7 @@ const Subscribe = () => {
         <input
           type="text" 
           placeholder="Ingresa tu correo electrónico"
-          className="bg-transparent border-transparent placeholder-white w-full md:w-[25rem] text-lg"
+          className="bg-transparent border-transparent placeholder-white w-full md:w-[25rem] placeholder:text-sm text-lg"
         />
         <button className="w-full md:w-fit text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease">
           Suscribirse

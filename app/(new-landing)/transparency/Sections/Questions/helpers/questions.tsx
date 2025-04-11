@@ -20,14 +20,12 @@ const capital = () => {
 
 const team = () => {
   return (
-    <div className="flex gap-1">
-      <p>
-        Puedes ver quién compone nuestro equipo desde la sección de
-      </p>
-      <Link href="/about/team" className="border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
+    <p>
+      Puedes ver quién compone nuestro equipo desde la sección de
+      <Link href="/about/team" className="ml-[0.30rem] border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
         Nosotros
       </Link>
-    </div>
+    </p>
   )
 }
 
@@ -59,28 +57,24 @@ const holding = () => {
           RUC: 20604850810
         </li>
       </ul>
-      <div className="flex gap-1">
-        <p>
-          Puedes ver más a detalle las empresas de nuestro portafolio
-        </p>
-        <Link href="/about/team" className="border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
+      <p>
+        Puedes ver más a detalle las empresas de nuestro portafolio
+        <Link href="/about/team" className="ml-[0.30rem] border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
           aquí
         </Link>  
-      </div>
+      </p>
     </div>
   )
 }
 
 const where = () => {
   return (
-    <div className="flex gap-1">
       <p>
         Nuestras oficinas se ubican en
-      </p>
-      <Link href="https://maps.app.goo.gl/bZRWWzyG6fpHmUc87" className="border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
+        <Link href="https://maps.app.goo.gl/bZRWWzyG6fpHmUc87" className="ml-[0.30rem] border-b-[1px] border-black hover:border-b-purplePrincipal hover:text-purplePrincipal transition duration-150 ease">
         Av. San Luis 2076, San Borja - Lima
       </Link>
-    </div>
+      </p>
   )
 }
 
