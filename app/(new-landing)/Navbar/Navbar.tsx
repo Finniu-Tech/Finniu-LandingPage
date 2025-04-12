@@ -307,7 +307,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="#"
+                      href="/simulator"
                     >
                       <div className="mt-[0.30rem]">
                         <Bar />
@@ -320,7 +320,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="#"
+                      href="/bestrate"
                     >
                       <div className="mt-[0.30rem]">
                         <Pie />

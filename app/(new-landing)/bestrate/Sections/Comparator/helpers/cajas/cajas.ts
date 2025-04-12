@@ -3,7 +3,7 @@ const CAJAS = [
     entity: "Caja del Centro",
     rate: "8.96%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/100"
   },
   {
     entity: "Financiera Surgir",
@@ -15,13 +15,13 @@ const CAJAS = [
     entity: "Caja los Andes",
     rate: "6.74%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/100"
   },
   {
     entity: "Financiera Proempresa",
     rate: "6.64%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/100"
   },
   {
     entity: "Financiera Efectiva",
@@ -33,32 +33,26 @@ const CAJAS = [
     entity: "Caja del Santa",
     rate: "6.24%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/50"
   },
   {
     entity: "Caja Paita",
     rate: "6.20%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/100"
   },
   {
     entity: "Caja Maynas",
     rate: "6.14%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/1,000"
   },
   {
     entity: "Caja Tacna",
     rate: "6.01%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/15,000"
   },
-  {
-    entity: "Caja Lima",
-    rate: "5.97%",
-    term: ">360 días",
-    minimum: "S/500"
-  }
 ]
 
 export default CAJAS
