@@ -39,7 +39,7 @@ const BANCOS = [
     bank: "Interbank",
     rate: "4.38%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/2000"
   },
   {
     bank: "BBVA",
@@ -51,7 +51,7 @@ const BANCOS = [
     bank: "Mibanco",
     rate: "4.34%",
     term: ">360 días",
-    minimum: "S/500"
+    minimum: "S/350"
   },
   {
     bank: "Scotiabank",
