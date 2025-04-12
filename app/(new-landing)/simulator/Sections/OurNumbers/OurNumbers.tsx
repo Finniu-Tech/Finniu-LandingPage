@@ -87,7 +87,7 @@ const OurNumbers = () => {
             Consulta nuestra <span className="font-bold">calculadora financiera</span> y visualiza cómo hacer crecer tu dinero de forma estratégica a través del tiempo.
           </h3>
         </div>
-        <div className="w-full md:px-40 xxxl:px-80 text-black mt-2">
+        <div className="w-full md:px-40 xxxl:px-80 text-black mt-2" id="projectYourGoals">
           <InvestmentForm />
         </div>
       </section>
