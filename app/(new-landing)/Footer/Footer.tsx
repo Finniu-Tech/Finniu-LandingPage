@@ -29,7 +29,7 @@ const Footer = () => {
               <ButtonLink href="/transparency" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/contact" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
               <ButtonLink href="/" text="Ayuda" className="text-gray-400 hover:text-white transition duration-150 ease"/>
@@ -62,10 +62,10 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Compara</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/simulator" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/bestrate" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -73,10 +73,10 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Legal</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="#" text="Términos & Condiciones" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/terms" text="Términos & Condiciones" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="#" text="Política & privacidad" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/policy" text="Política & privacidad" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>

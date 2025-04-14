@@ -198,7 +198,7 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <ButtonLink href="#" text="Contacto" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
+          <ButtonLink href="/contact" text="Contacto" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
         </ul>
         <ul className="flex justify-center items-center gap-4">
           <ButtonLink href="#" text="Ingresar" className="text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
@@ -333,7 +333,7 @@ const NavBar = () => {
                 </ul>
               </li>
               <li>
-                <ButtonLink href="#" text="Contacto" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
+                <ButtonLink href="/contact" text="Contacto" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
               </li>
             </ul>
             <ul className="w-full px-8 flex flex-col justify-center items-center gap-4">
