@@ -8,7 +8,7 @@ const Background = () => {
     <section className="py-10 md:py-40 px-8 md:px-0 bg-whitePrimary text-black w-full flex flex-col justify-center items-center gap-4 md:gap-8">
       <div className="w-full flex flex-col items-center justify-center">
         <h3 className="text-4xl md:text-7xl text-center">Fondo de Inversión Soles</h3>
-        <div className="mt-10 max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
+        <div className="mt-10 w-full md:max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
           <table className="w-full">
             <thead className="bg-purpleTercero text-white text-2xl">
               <tr>
@@ -42,7 +42,7 @@ const Background = () => {
             </tfoot>
           </table>
         </div>
-        <div className="mt-10 max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
+        <div className="mt-10 w-full md:max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
           <table>
             <thead className="bg-purpleTercero text-white text-2xl">
               <tr>
@@ -77,9 +77,9 @@ const Background = () => {
           </table>
         </div>
       </div>
-      <div className="mt-10 max-w-5xl md:mt-20 w-full flex flex-col items-center justify-center">
+      <div className="mt-10 md:mt-20 w-full flex flex-col items-center justify-center">
         <h3 className="text-4xl md:text-7xl text-center">Fondo de Inversión Dólares</h3>
-        <div className="mt-10 border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
+        <div className="mt-10 w-full md:max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
           <table>
             <thead className="bg-purpleTercero text-white text-2xl">
               <tr>
@@ -113,7 +113,7 @@ const Background = () => {
             </tfoot>
           </table>
         </div>
-        <div className="mt-10 max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
+        <div className="mt-10 w-full md:max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
           <table>
             <thead className="bg-purpleTercero text-white text-2xl">
               <tr>

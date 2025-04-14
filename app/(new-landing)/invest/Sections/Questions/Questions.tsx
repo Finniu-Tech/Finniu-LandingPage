@@ -52,9 +52,9 @@ const Questions = () => {
             </AccordionContent>
           </AccordionPanel>
         </Accordion>
-        <div className="w-full flex justify-center items-center gap-10">
-        <ButtonLink href="#" text="Empieza ahora" className="mt-4 flex gap-2 justify-center items-center text-black py-4 px-6 rounded-full border-[1px] border-solid bg-white hover:bg-transparent hover:text-white transition duration-150 ease"/>
-          <ButtonLinkIcon href="/transparency" icon={<ArrowUpLeft />} text="Ver más preguntas" className="mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
+        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10">
+          <ButtonLink href="#" text="Empieza ahora" className="w-fit mt-4 flex justify-center items-center text-black py-4 px-6 rounded-full border-[1px] border-solid bg-white hover:bg-transparent hover:text-white transition duration-150 ease"/>
+          <ButtonLinkIcon href="/transparency" icon={<ArrowUpLeft />} text="Ver más preguntas" className="w-fit mt-4 flex gap-2 justify-center items-center text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
         </div>
       </div>
     </section>

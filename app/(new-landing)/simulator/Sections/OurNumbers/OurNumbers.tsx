@@ -81,13 +81,13 @@ const OurNumbers = () => {
         </div>
       </section>
       <section className="pt-10 md:pt-40  w-full flex flex-col justify-center items-center gap-6 md:gap-10">
-        <div className="flex flex-col justify-center items-center gap-2 md:gap-8">
+        <div className="flex flex-col justify-center items-center gap-2 md:gap-8" id="projectYourGoals">
           <h3 className="text-4xl md:text-7xl text-center">Proyecta tus Metas</h3>
           <h3 className="text-center w-full text-base md:text-lg md:w-[38rem] text-gray-400">
             Consulta nuestra <span className="font-bold">calculadora financiera</span> y visualiza cómo hacer crecer tu dinero de forma estratégica a través del tiempo.
           </h3>
         </div>
-        <div className="w-full md:px-40 xxxl:px-80 text-black mt-2" id="projectYourGoals">
+        <div className="w-full md:px-40 xxxl:px-80 text-black mt-2">
           <InvestmentForm />
         </div>
       </section>
