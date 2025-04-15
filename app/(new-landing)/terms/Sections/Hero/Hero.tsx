@@ -176,6 +176,27 @@ const Hero = () => {
             </li>
           </ul>
         </div>
+        <div className="w-full flex flex-col items-start justify-center gap-4">
+          <p className="font-semibold text-xl md:text-2xl">SEGUNDO: Acceso y registro</p>
+          <ul className="flex flex-col items-start justify-center gap-4">
+            <li className="flex flex-col items-start justify-center gap-1">
+              <p>
+                1. Para poder ser Usuario del Sitio, es indispensable que una persona cumpla con cada uno de los siguientes requisitos:
+              </p>
+              <ul>
+                <li>
+                  - Ser mayor de edad y tener capacidad legal para contratar
+                </li>
+                <li>
+                  - Tener domicilio fijo en la República del Perú
+                </li>
+                <li>
+                  - Aceptar los presentes Términos y Condiciones
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   )
