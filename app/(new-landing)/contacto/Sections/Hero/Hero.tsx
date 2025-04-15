@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Background01 from "@/app/(new-landing)/images/backgrounds/background01.png"
 import ButtonLink from "@/app/(new-landing)/components/ButtonLink"
@@ -8,7 +10,7 @@ import Ubication from "@/app/(new-landing)/contacto/Sections/Hero/components/ico
 const Hero = () => {
   return (
     <section
-      className="py-10 md:py-40 px-8 md:px-40 xxxl:px-80 text-white w-full h-full md:h-dvh flex flex-col justify-center items-center"
+      className="py-10 md:py-40 px-8 md:px-40 xxxl:px-80 text-white w-full h-full flex flex-col justify-center items-center"
       style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="mt-20 md:mt-0 w-full flex flex-col md:flex-row justify-center md:justify-between items-center">
@@ -62,13 +64,23 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full pt-10 md:pt-24">
+        <div className="w-full pt-10 md:pt-0">
           <form action="" className="w-full flex flex-col gap-6 md:gap-4">
             <input type="text" placeholder="Nombre y Apellido" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
             <input type="email" placeholder="Email" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
             <input type="text" placeholder="DNI o CE" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
             <input type="text" placeholder="Teléfono" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
-            <input type="text" placeholder="Mensaje" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
+            {/* <input type="text" placeholder="Mensaje" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/> */}
+            <textarea
+              placeholder="Mensaje"
+              className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5 resize-y overflow-hidden"
+              rows="1"
+              onInput={(e) => {
+                e.target.style.height = 'auto';
+                e.target.style.height = `${e.target.scrollHeight}px`;
+              }}
+            />
+
             <ButtonLink href="#" text="Enviar" className="w-full md:w-40 flex justify-center items-center text-black py-4 px-6 rounded-full border-[1px] border-solid bg-white hover:bg-transparent hover:text-white transition duration-150 ease"/>
           </form>
         </div>

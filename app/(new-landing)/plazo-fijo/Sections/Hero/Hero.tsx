@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="w-full md:w-[80rem] text-center text-5xl md:text-8xl leading-tight">
-          Plazo fijo
+          Plazo Fijo
         </h2>
         <p className="text-xl text-center sm:text-2xl w-full sm:w-[60rem] text-gray-400">
           Obtén hasta 18% de rentabilidad anual y percibe tu interés de manera mensual
