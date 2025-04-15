@@ -32,7 +32,7 @@ const Footer = () => {
               <ButtonLink href="/contact" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/" text="Ayuda" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://finniu.tawk.help" text="Ayuda" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>

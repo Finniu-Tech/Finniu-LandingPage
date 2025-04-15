@@ -8,7 +8,7 @@ import Ubication from "@/app/(new-landing)/contact/Sections/Hero/components/icon
 const Hero = () => {
   return (
     <section
-      className="py-10 md:py-40 px-8 md:px-80 text-white w-full h-full md:h-dvh flex flex-col justify-center items-center"
+      className="py-10 md:py-40 px-8 md:px-40 xxxl:px-80 text-white w-full h-full md:h-dvh flex flex-col justify-center items-center"
       style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="mt-20 md:mt-0 w-full flex flex-col md:flex-row justify-center md:justify-between items-center">
