@@ -292,7 +292,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
                 formErrors.aboutUs ? "border-red-500" : "border-gray-300"
               } rounded-sm bg-white text-black focus:outline-none focus:ring-0`}
             >
-              <option selected hidden>¿Cómo se enteraste de nosotros?</option>
+              <option selected hidden>¿Cómo te enteraste de nosotros?</option>
               <option value="En un anuncio en Facebook o Instagram">En un anuncio en Facebook o Instagram</option>
               <option value="Me lo compartió un amigo">Me lo compartió un amigo</option>
               <option value="Lo vi en un Influencer">Lo vi en un Influencer</option>
