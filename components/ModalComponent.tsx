@@ -141,12 +141,12 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     if (!formData.phoneNumber) {
       errors.phoneNumber = "El número telefónico es obligatorio.";
     }
-    // if (!formData.aboutUs) {
-    //   errors.aboutUs = "Debe seleccionar una opcion";
-    // }
-    // if (formData.aboutUs === "¿Como te enteraste de nosotros?") {
-    //   errors.aboutUs = "Debe seleccionar una opcion";
-    // }
+    if (!formData.aboutUs) {
+      errors.aboutUs = "Debe seleccionar una opcion";
+    }
+    if (formData.aboutUs === "¿Como te enteraste de nosotros?") {
+      errors.aboutUs = "Debe seleccionar una opcion";
+    }
 
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
@@ -252,7 +252,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
             )}
           </div>
 
-          <div className="mb-10">
+          <div className="mb-4">
             <div className="relative phone-input-container">
               <PhoneInput
                 country="pe"
@@ -282,6 +282,30 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
               )}
             </div>
           </div>
+          <div className="mb-4">
+            <select
+              id="aboutUs"
+              name="aboutUs"
+              value={formData.aboutUs}
+              onChange={(e) => handleAboutUsChange(e.target.value)}
+              className={`w-full px-3 border-r-0 border-l-0 border-t-0 py-2 border-2 ${
+                formErrors.aboutUs ? "border-red-500" : "border-gray-300"
+              } rounded-sm bg-white text-black focus:outline-none focus:ring-0`}
+            >
+              <option selected hidden>¿Cómo se enteraste de nosotros?</option>
+              <option value="En un anuncio en Facebook o Instagram">En un anuncio en Facebook o Instagram</option>
+              <option value="Me lo compartió un amigo">Me lo compartió un amigo</option>
+              <option value="Lo vi en un Influencer">Lo vi en un Influencer</option>
+              <option value="Lo vi en Inversión Simple">Lo vi en Inversión Simple</option>
+              <option value="Lo vi en Invertir Joven">Lo vi en Invertir Joven</option>
+              <option value="Lo vi en Google">Lo vi en Google</option>
+              <option value="Otro">Otro</option>
+            </select>
+            {formErrors.aboutUs && (
+              <p className="text-red-500 text-sm">{formErrors.aboutUs}</p>
+            )}
+          </div>
+
           <div className="text-center mt-10">
             <ButtonComponent
               text="Continuar"

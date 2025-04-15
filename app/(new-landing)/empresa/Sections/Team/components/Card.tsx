@@ -14,28 +14,37 @@ interface Props {
   phrase: string,
 }
 
-const Card = ({imgSrc, imgAlt, name, position, phrase} : Props) => {
+const Card = ({ imgSrc, imgAlt, name, position, phrase }: Props) => {
   const [flip, setFlip] = useState(false)
   const handleSetFlip = () => {
     setFlip(!flip)
   }
- 
+
   return (
-    <div className="max-w-sm h-full rounded-3xl border-[1px] border-solid bg-white border-whiteSecondary flex flex-col justify-between items-start shadow-sm">
-      {flip ? (
-        <div
-          className="w-full h-full md:h-[382px] rounded-t-3xl flex items-center justify-center text-center p-6"
-          style={{backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+    <div className="max-w-sm h-full rounded-3xl border-[1px] border-solid bg-white border-whiteSecondary flex flex-col justify-between items-start shadow-sm overflow-hidden">
+      <div className="relative w-full h-full md:h-[382px] rounded-t-3xl overflow-hidden">
+        {/* Parte con frase */}
+        <div className={`
+          absolute inset-0 flex items-center justify-center text-center p-6 rounded-t-3xl
+          bg-cover bg-center transition-all duration-500 ease-in-out
+          ${flip ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}
+        `}
+          style={{ backgroundImage: `url(${Background01.src})` }}
         >
           <p className="text-lg text-white">{phrase}</p>
         </div>
-      ) : (
+
+        {/* Imagen (parte frontal) */}
         <Image
           src={imgSrc}
           alt={imgAlt}
-          className="rounded-t-3xl w-full h-full object-cover"
+          className={`
+            rounded-t-3xl w-full h-full object-cover transition-all duration-500 ease-in-out
+            ${flip ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}
+          `}
         />
-      )}
+      </div>
+
       <div className="w-full flex justify-between items-center p-6">
         <div className="flex flex-col justify-center items-start">
           <h4 className="text-xl md:text-2xl font-bold">{name}</h4>
@@ -45,11 +54,7 @@ const Card = ({imgSrc, imgAlt, name, position, phrase} : Props) => {
           onClick={handleSetFlip}
           className="flex items-center justify-center size-14 bg-purplePrincipal rounded-full text-white border-[1px] border-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"
         >
-          {flip ? (
-            <ArrowLeft />
-          ) : (
-            <ArrowRight />
-          )}
+          {flip ? <ArrowLeft /> : <ArrowRight />}
         </button>
       </div>
     </div>
