@@ -71,7 +71,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/about"
+                    href="/empresa"
                   >
                     <div className="mt-[0.30rem]">
                       <Like />
@@ -85,7 +85,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/portfolio"
+                    href="/portafolio-finniu"
                   >
                     <div className="mt-[0.30rem]">
                       <News />
@@ -99,7 +99,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/news"
+                    href="/noticias-y-eventos"
                   >
                     <div className="mt-[0.30rem]">
                       <Portfolio />
@@ -134,13 +134,13 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/invest"
+                    href="/plazo-fijo"
                   >
                     <div className="mt-[0.30rem]">
                       <Desktop />
                     </div>
                     <div className="text-black flex flex-col gap-1 justify-center items-start">
-                      <h6 className="font-bold text-lg">Inversión a plazo fijo</h6>
+                      <h6 className="font-bold text-lg">Plazo fijo</h6>
                       <span>Explora las soluciones de inversión que ofrecemos</span>
                     </div>
                   </Link>
@@ -148,7 +148,7 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <ButtonLink href="/transparency" text="Transparencia" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
+          <ButtonLink href="/transparencia-y-seguridad-finniu" text="Transparencia" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
           <div className="relative group flex h-full rtl:[--placement:bottom-end]">
             <button
               type="button"
@@ -170,7 +170,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/simulator"
+                    href="/simulador-de-interes-a-plazo-fijo"
                   >
                     <div className="mt-[0.30rem]">
                       <Bar />
@@ -184,7 +184,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/bestrate"
+                    href="/mejores-tasas-a-plazo-fijo"
                   >
                     <div className="mt-[0.30rem]">
                       <Pie />
@@ -198,7 +198,7 @@ const NavBar = () => {
               </ul>
             </ul>
           </div>
-          <ButtonLink href="/contact" text="Contacto" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
+          <ButtonLink href="/contacto" text="Contacto" className="h-full px-2 flex items-center hover:border-b-[1px] border-solid border-purplePrincipal transition duration-150 ease"/>
         </ul>
         <ul className="flex justify-center items-center gap-4">
           <ButtonLink href="#" text="Ingresar" className="text-white py-4 px-6 rounded-full border-[1px] border-solid bg-transparent hover:bg-white hover:text-black transition duration-150 ease"/>
@@ -236,7 +236,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/about"
+                      href="/empresa"
                     >
                       <div className="mt-[0.30rem]">
                         <Like />
@@ -249,7 +249,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/portfolio"
+                      href="/portafolio-finniu"
                     >
                       <div className="mt-[0.30rem]">
                         <News />
@@ -262,7 +262,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/news"
+                      href="/noticias-y-eventos"
                     >
                       <div className="mt-[0.30rem]">
                         <Portfolio />
@@ -283,20 +283,20 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/invest"
+                      href="/plazo-fijo"
                     >
                       <div className="mt-[0.30rem]">
                         <Desktop />
                       </div>
                       <div className="text-black flex flex-col gap-1 justify-center items-start">
-                        <h6 className="text-2xl">Inversión a plazo fijo</h6>
+                        <h6 className="text-2xl">Plazo fijo</h6>
                       </div>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <ButtonLink href="/transparency" text="Transparencia" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
+                <ButtonLink href="/transparencia-y-seguridad-finniu" text="Transparencia" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
               </li>
               <li className="text-2xl">
                 <button className="text-black collapse-toggle collapse-open:bg-base-content/10" id="compara-collapse" data-collapse="#compara-collapse-menu" >
@@ -307,7 +307,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/simulator"
+                      href="/simulador-de-interes-a-plazo-fijo"
                     >
                       <div className="mt-[0.30rem]">
                         <Bar />
@@ -320,7 +320,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/bestrate"
+                      href="/mejores-tasas-a-plazo-fijo"
                     >
                       <div className="mt-[0.30rem]">
                         <Pie />
@@ -333,7 +333,7 @@ const NavBar = () => {
                 </ul>
               </li>
               <li>
-                <ButtonLink href="/contact" text="Contacto" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
+                <ButtonLink href="/contacto" text="Contacto" className="text-2xl text-black w-full h-full transition duration-150 ease"/>
               </li>
             </ul>
             <ul className="w-full px-8 flex flex-col justify-center items-center gap-4">

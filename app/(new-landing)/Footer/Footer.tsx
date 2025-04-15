@@ -26,10 +26,10 @@ const Footer = () => {
               <ButtonLink href="/#questions" text="Preguntas frecuentes" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/transparency" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/transparencia-y-seguridad-finniu" text="Transparencia" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/contact" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/contacto" text="Contacto" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
               <ButtonLink href="https://finniu.tawk.help" text="Ayuda" className="text-gray-400 hover:text-white transition duration-150 ease"/>
@@ -40,13 +40,13 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Nosotros</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/about" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/empresa" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/portfolio" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/portafolio-finniu" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/news" text="Noticias y Eventos" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/noticias-y-eventos" text="Noticias y Eventos" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -54,7 +54,7 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Producto</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/invest" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/plazo-fijo" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -62,10 +62,10 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Compara</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/simulator" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/simulador-de-interes-a-plazo-fijo" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
-              <ButtonLink href="/bestrate" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/mejores-tasas-a-plazo-fijo" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
