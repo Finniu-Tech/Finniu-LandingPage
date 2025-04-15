@@ -70,14 +70,14 @@ const Hero = () => {
             <input type="email" placeholder="Email" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
             <input type="text" placeholder="DNI o CE" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
             <input type="text" placeholder="Teléfono" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/>
-            {/* <input type="text" placeholder="Mensaje" className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5"/> */}
             <textarea
               placeholder="Mensaje"
               className="w-full p-3 placeholder-white bg-white border-0 border-b-[1px] bg-opacity-5 resize-y overflow-hidden"
-              rows="1"
+              rows={1}
               onInput={(e) => {
-                e.target.style.height = 'auto';
-                e.target.style.height = `${e.target.scrollHeight}px`;
+                const target = e.target as HTMLTextAreaElement;
+                target.style.height = 'auto';
+                target.style.height = `${target.scrollHeight}px`;
               }}
             />
 
