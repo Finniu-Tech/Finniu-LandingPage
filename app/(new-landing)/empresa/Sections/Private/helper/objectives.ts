@@ -1,8 +1,8 @@
 const OBJECTIVES = [
   {
     number: "01",
-    title: "Gestionamos tu capital con propósito",
-    phrase: "En Finniu, conectamos capital con oportunidades reales. Creemos que acceder al crecimiento no debería ser complejo. Por eso, diseñamos una experiencia transparente, segura y sencilla para que tu dinero trabaje con dirección y propósito"
+    title: "Impulsa tu capital",
+    phrase: "En Finniu, acercamos personas a oportunidades cuidadosamente evaluadas. Creemos que hacer crecer tu dinero no debería ser complejo. Por eso, diseñamos una experiencia clara, ágil y segura que te permite poner tu capital en movimiento con propósito."
   },
   {
     number: "02",

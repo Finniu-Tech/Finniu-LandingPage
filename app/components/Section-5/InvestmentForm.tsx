@@ -180,7 +180,7 @@ const InvestmentForm = () => {
             <div className="flex flex-col md:flex-row gap-6 justify-between">
               <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
                 <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
-                <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">recibirás</span></p>
+                <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">podrías alcanzar</span></p>
                 <div className="flex justify-start items-center gap-2">
                   <p className="text-3xl">
                     {currencySymbol}{" "}
@@ -193,7 +193,7 @@ const InvestmentForm = () => {
               </div>
               <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
                 <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
-                <p className="">Cada mes <span className="text-gray-400">recibirás</span></p>
+                <p className="">Simulación<span className="text-gray-400"> mensual</span></p>
                 <p className="text-3xl text-[#1AFFB0]">
                   {currencySymbol}{" "}
                   {calculatedResultState.rentabilityPerMonth ?? "---"}
@@ -245,7 +245,7 @@ const InvestmentForm = () => {
         <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
           <div className="flex flex-col justify-center items-start w-full">
             <h2 className="text-2xl text-black">
-              Quiero invertir en
+              ¿En qué moneda deseas simular?
             </h2>
 
             <div className="flex gap-8 mt-4">
@@ -354,7 +354,7 @@ const InvestmentForm = () => {
 
           <div className="text-center mt-8">
             <ButtonComponent
-              text="Calcular"
+              text="Ver simulación"
               onClick={handleCalculateButtonClick}
               className="text-lg py-4 px-6 w-full bg-purpleTercero text-white border-solid border-[1px] border-purpleTercero hover:bg-white hover:text-purpleTercero hover:border-solid hover:border-[1px] hover:border-purpleTercero transition duration-150 ease rounded-full"
             />

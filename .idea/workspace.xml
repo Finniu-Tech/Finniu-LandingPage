@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="" />
+    <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Invest/Invest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Invest/Invest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Ready/Ready.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Ready/Ready.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Whoweare/Whoweare.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Whoweare/Whoweare.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/about/Sections/Private/helper/objectives.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/about/Sections/Private/helper/objectives.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/invest/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/invest/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Questions/helpers/questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Questions/helpers/questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +125,7 @@
       <workItem from="1741355750801" duration="597000" />
       <workItem from="1741437426572" duration="22249000" />
       <workItem from="1741577015542" duration="1004000" />
+      <workItem from="1744754172350" duration="5354000" />
     </task>
     <servers />
   </component>
