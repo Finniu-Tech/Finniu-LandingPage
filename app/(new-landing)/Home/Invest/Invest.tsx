@@ -15,13 +15,18 @@ const Invest = () => {
     >
       <section className="w-full flex flex-col justify-center items-center gap-6 md:gap-10">
         <div className="flex flex-col justify-center items-center gap-2 md:gap-8">
-          <h3 className="text-4xl md:text-6xl text-center">Proyecta tus Metas</h3>
+          <h3 className="text-4xl md:text-6xl text-center">Proyecta cómo podría crecer tu dinero</h3>
           <h3 className="text-center w-full md:w-[38rem] text-gray-400">
-            Consulta nuestra <span className="font-bold">calculadora financiera</span> y visualiza cómo hacer crecer tu dinero de forma estratégica a través del tiempo.
+            Usa esta herramienta para explorar ejemplos de crecimiento de capital en experiencias reales. Los valores mostrados son referenciales y pueden variar según cada oportunidad.
           </h3>
         </div>
         <div className="w-full md:px-40 xxxl:px-80 text-black mt-2">
-          <InvestmentForm />
+          <InvestmentForm/>
+          <p className="text-xs text-gray-500 mt-4">
+            * Esta proyección es referencial y no constituye una oferta pública ni garantiza rentabilidad. Las
+            oportunidades presentadas por Finniu son privadas, se evalúan caso por caso, y se realizan bajo contrato
+            directo entre partes.
+          </p>
         </div>
       </section>
       <section className="pt-10 md:pt-40 px-0 md:px-80 w-full flex justify-between items-center">

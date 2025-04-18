@@ -92,40 +92,68 @@ const emergency = () => {
 
 const QUESTIONS = [
   {
-    title: "¿Cómo consiguen una tasa tan competitiva?",
-    phrase: "En Finniu ofrecemos tasas competitivas gracias a nuestra diversificación y a la administración directa de capital en sectores estratégicos del holding, evitando intermediarios bancarios"
+    title: "¿Qué es Finniu Capital S.A.C. y cuál es su modelo de negocio?",
+    phrase: "Finniu Capital es una plataforma digital que conecta a inversionistas con empresas que buscan financiamiento privado mediante contratos estructurados. No administramos directamente el dinero ni captamos fondos del público; facilitamos la conexión entre ambas partes de forma segura, transparente y legal."
   },
   {
-    title: "¿Cómo aseguran mi capital? ¿Hay alguna garantía?",
-    phrase: capital
+    title: "¿Finniu Capital S.A.C. cobra alguna comisión?",
+    phrase: "No. El uso de la plataforma es completamente gratuito para los inversionistas. Los costos operativos son asumidos por las empresas que publican oportunidades de financiamiento."
   },
   {
-    title: "¿Quién es su equipo?",
-    phrase: team
+    title: "¿Ofrecen créditos?",
+    phrase: "No. Finniu no otorga préstamos. Solo conecta a inversionistas con empresas que ofrecen oportunidades de inversión privada mediante contratos formales."
   },
   {
-    title: "¿Cuántos clientes manejan?",
-    phrase: "En Finniu, más de 550 personas han confiado en nuestra gestión a lo largo del tiempo. Con más de 700 operaciones realizadas en nuestros primeros dos años y un volumen gestionado que supera los S/15 millones, seguimos creciendo y desarrollando soluciones financieras estratégicas para quienes buscan optimizar su capital de manera segura y eficiente"
+    title: "¿Finniu Capital S.A.C. está inscrito en la SBS?",
+    phrase: "Sí. Finniu Capital S.A.C. está registrada como entidad de préstamos en la SBS, y supervisada por la UIF en materia de prevención de lavado de activos. No captamos capital como fondo de inversión privado."
   },
   {
-    title: "¿Qué riesgo existe al trabajar con ustedes?",
-    phrase: "Toda decisión financiera conlleva un nivel de riesgo. En Finniu, gestionamos cada operación bajo estructuras claras y acuerdos contractuales que establecen los términos y condiciones de cada operación. A lo largo de estos tres años, hemos mantenido un historial sólido de cumplimiento, asegurando que cada operación siga criterios estratégicos para optimizar resultados. Además, nuestra estrategia de diversificación permite mantener un equilibrio entre estabilidad y rendimiento, reduciendo la exposición a riesgos y brindando mayor tranquilidad a quienes confían en nuestra gestión"
+    title: "¿Finniu está inscrito en la SMV?",
+    phrase: "No. Finniu opera bajo el régimen de oferta privada, por lo que no requiere inscripción ante la SMV. No difundimos condiciones específicas de inversión públicamente y respetamos los límites normativos."
   },
   {
-    title: "¿Qué empresas componen el holding?",
-    phrase: holding
+    title: "¿Cómo seleccionan a las empresas que solicitan financiamiento?",
+    phrase: "Cada empresa pasa por un proceso de análisis que evalúa sus estados financieros, historial crediticio, modelo de negocio, capacidad de pago y reputación de sus representantes legales antes de ser aprobada."
   },
   {
-    title: "Comparten información financiera de las empresas del holding?",
-    phrase: "Sí, cada trimestre enviamos un informe, detallando el avance del fondo privado y cómo estamos implementando las estrategias"
+    title: "¿Qué tipo de contratos respaldan mi inversión?",
+    phrase: "Las inversiones se respaldan con contratos de facilidades crediticias firmados entre el inversionista y la empresa receptora. Estos pueden incluir pagarés, letras u otras garantías adicionales según cada operación."
   },
   {
-    title: "¿Dónde se ubican sus oficinas?",
-    phrase: where
+    title: "¿Qué pasa si la empresa no cumple con los pagos?",
+    phrase: "El contrato establece mecanismos legales como cobranza judicial, ejecución de pagarés o arbitraje. Finniu ofrece orientación inicial gratuita y puede conectarte con un abogado especializado para iniciar el proceso legal."
   },
   {
-    title: "¿Puedo retirar mi capital en caso de emergencia?",
-    phrase: emergency
+    title: "¿Puedo perder mi dinero?",
+    phrase: "Toda inversión privada conlleva riesgo. Aunque Finniu realiza un análisis riguroso de cada empresa, no se puede garantizar la recuperación total del capital. Recomendamos revisar bien la información y consultar con un asesor financiero si lo consideras necesario."
+  },
+  {
+    title: "¿Qué pasa con mi contrato si fallezco?",
+    phrase: "En caso de fallecimiento, el contrato forma parte del patrimonio del inversionista y será transferido a sus herederos conforme al proceso de sucesión establecido en el Código Civil."
+  },
+  {
+    title: "¿Por qué estas empresas no van a un banco?",
+    phrase: "Muchas empresas encuentran en Finniu mayor agilidad, menores requisitos y condiciones más flexibles que las ofrecidas por la banca tradicional."
+  },
+  {
+    title: "¿Tengo que declarar esta renta ante SUNAT?",
+    phrase: "Si la empresa retiene y paga el Impuesto a la Renta a nombre del inversionista, no es necesario declarar. Finniu solicita a las empresas cumplir con esta obligación y entregar el certificado respectivo. Recomendamos siempre consultar con tu contador."
+  },
+  {
+    title: "¿Qué sucede si la empresa cambia de representante legal?",
+    phrase: "El contrato sigue siendo válido mientras el representante haya estado facultado al momento de la firma. Si se desea extender la relación contractual, el nuevo representante debe firmar una adenda."
+  },
+  {
+    title: "¿Qué nivel de respaldo tienen las operaciones en la plataforma?",
+    phrase: "Cada operación se formaliza mediante contrato de facilidades crediticias, con evaluación previa de la empresa. Algunas incorporan pagarés o garantías adicionales, aunque el riesgo no se elimina por completo."
+  },
+  {
+    title: "¿Qué ocurre si la empresa no cumple con el contrato?",
+    phrase: "El inversionista puede ejecutar las acciones legales contempladas en el contrato, como arbitraje o cobranza judicial. La recuperación del capital dependerá de la solvencia de la empresa al momento de la ejecución."
+  },
+  {
+    title: "¿Finniu inicia el proceso legal en caso de incumplimiento? ¿Quién asume los costos?",
+    phrase: "Finniu no actúa como parte en los contratos. Brinda orientación inicial y puede referirte a un abogado. Los costos del proceso legal son asumidos por el inversionista, salvo que se indique lo contrario en el contrato."
   }
 ]
 

@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="text-xl text-center sm:text-2xl w-full sm:w-[60rem] text-gray-400">
           Obtén hasta 18% de rentabilidad anual y percibe tu interés de manera mensual
           <br />
-          Empieza desde S/1,000 y accede a una alternativa estructurada para crecer con propósito
+          Empieza desde S/5,000 y accede a una alternativa estructurada para crecer con propósito
         </p>
       </div>
       <div className="mt-20">

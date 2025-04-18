@@ -13,7 +13,7 @@ const Hero = () => {
           seguridad
         </h2>
         <p className="text-xl text-center sm:text-2xl w-full sm:w-[60rem] text-gray-400">
-          Conoce cómo gestionamos tu capital, los riesgos asociados y los procesos que aplicamos para garantizar respaldo y seguridad en cada etapa.
+          Conoce cómo desde Finniu asesoramos y recomendamos oportunidades de rentabilización de capital con empresas previamente evaluadas, detallando los riesgos asociados y los procesos que aplicamos para garantizar respaldo y seguridad en cada etapa.
         </p>
       </div>
       <div className="mt-20">
