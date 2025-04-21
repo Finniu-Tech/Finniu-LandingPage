@@ -11,7 +11,7 @@ const Optimization = () => {
       style={{ backgroundImage: `url(${Background01.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <h3 className="text-4xl md:text-7xl w-full md:w-[60rem] text-center">
-        Optimizamos rentabilidad con inversiones inteligentes
+        Facilitamos colocaciones privadas con impacto y propósito
       </h3>
       <div className="flex flex-col gap-10">
         <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center content-center gap-10 md:gap-20">
@@ -111,7 +111,7 @@ const Optimization = () => {
       </div>
       <section className="w-full flex flex-col justify-center items-center gap-10 md:gap-20">
         <h3 className="flex flex-col gap-6 text-4xl md:text-7xl w-full text-center">
-          Gestión Inteligente de Fondos:
+          Conexión Inteligente de Capital Privado:
           <span className="text-4xl md:text-7xl w-full text-center">
             Descubre Finniu
           </span>
@@ -132,10 +132,10 @@ const Optimization = () => {
           </div>
           <div className="p-10 md:px-10 flex flex-col gap-4 items-center justify-center">
             <h4 className="text-2xl md:text-4xl">
-              Descubre Finniu: Cómo Funciona nuestra gestora de fondos privados
+              Descubre Finniu: Cómo conectamos personas con empresas a través de operaciones privadas
             </h4>
             <p className="text-lg md:text-xl">
-              En este video, te presentamos Finniu, gestora de fondos privados que está redefiniendo la manera de gestionar capital y general valor
+              En este video, te presentamos Finniu, una fintech que facilita operaciones privadas entre personas que desean colocar su capital y empresas que necesitan financiamiento para crecer, bajo una estructura segura, clara y sin intermediarios tradicionales.
             </p>
           </div>
         </div>

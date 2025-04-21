@@ -134,14 +134,14 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/plazo-fijo"
+                    href="/colocacion-privada"
                   >
                     <div className="mt-[0.30rem]">
                       <Desktop />
                     </div>
                     <div className="text-black flex flex-col gap-1 justify-center items-start">
-                      <h6 className="font-bold text-lg">Plazo fijo</h6>
-                      <span>Explora las soluciones de inversión que ofrecemos</span>
+                      <h6 className="font-bold text-lg">Colocación privada</h6>
+                      <span>Canaliza tu capital en operaciones estructuradas con empresas</span>
                     </div>
                   </Link>
                 </li>
@@ -170,7 +170,7 @@ const NavBar = () => {
                 <li>
                   <Link
                     className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/simulador-de-interes-a-plazo-fijo"
+                    href="/simulador-de-interes"
                   >
                     <div className="mt-[0.30rem]">
                       <Bar />
@@ -181,20 +181,20 @@ const NavBar = () => {
                     </div>
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"
-                    href="/mejores-tasas-a-plazo-fijo"
-                  >
-                    <div className="mt-[0.30rem]">
-                      <Pie />
-                    </div>
-                    <div className="text-black flex flex-col gap-1 justify-center items-start">
-                      <h6 className="font-bold text-lg">La mejor tasa</h6>
-                      <span>Consulta y compara nuestras tasas de inversión</span>
-                    </div>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link*/}
+                {/*    className="text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-200 rounded-xl p-2 transition-colors duration-150"*/}
+                {/*    href="/mejores-tasas-a-plazo-fijo"*/}
+                {/*  >*/}
+                {/*    <div className="mt-[0.30rem]">*/}
+                {/*      <Pie />*/}
+                {/*    </div>*/}
+                {/*    <div className="text-black flex flex-col gap-1 justify-center items-start">*/}
+                {/*      <h6 className="font-bold text-lg">La mejor tasa</h6>*/}
+                {/*      <span>Consulta y compara nuestras tasas de inversión</span>*/}
+                {/*    </div>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
               </ul>
             </ul>
           </div>
@@ -205,7 +205,7 @@ const NavBar = () => {
           <ButtonLink href="#" text="Crear cuenta" className="text-white py-4 px-6 rounded-full bg-purplePrincipal hover:bg-white hover:text-purplePrincipal transition duration-150 ease"/>
         </ul>
       </nav>
-        
+
 
       <nav className="md:hidden mt-2">
         <button className="text-white" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="overlay-navigation-example" data-overlay="#overlay-navigation-example" >
@@ -283,13 +283,13 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/plazo-fijo"
+                      href="/colocacion-privada"
                     >
                       <div className="mt-[0.30rem]">
                         <Desktop />
                       </div>
                       <div className="text-black flex flex-col gap-1 justify-center items-start">
-                        <h6 className="text-2xl">Plazo fijo</h6>
+                        <h6 className="text-2xl">Colocación privada</h6>
                       </div>
                     </Link>
                   </li>
@@ -307,7 +307,7 @@ const NavBar = () => {
                   <li>
                     <Link
                       className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/simulador-de-interes-a-plazo-fijo"
+                      href="/simulador-de-interes"
                     >
                       <div className="mt-[0.30rem]">
                         <Bar />
@@ -317,19 +317,19 @@ const NavBar = () => {
                       </div>
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"
-                      href="/mejores-tasas-a-plazo-fijo"
-                    >
-                      <div className="mt-[0.30rem]">
-                        <Pie />
-                      </div>
-                      <div className="text-black flex flex-col gap-1 justify-center items-start">
-                        <h6 className="text-2xl">La mejor tasa</h6>
-                      </div>
-                    </Link>
-                  </li>
+                  {/*<li>*/}
+                  {/*  <Link*/}
+                  {/*    className="mt-4 text-purplePrincipal flex justify-start items-start gap-4 hover:bg-gray-100 rounded-xl p-2 transition-colors duration-150"*/}
+                  {/*    href="/mejores-tasas-a-plazo-fijo"*/}
+                  {/*  >*/}
+                  {/*    <div className="mt-[0.30rem]">*/}
+                  {/*      <Pie />*/}
+                  {/*    </div>*/}
+                  {/*    <div className="text-black flex flex-col gap-1 justify-center items-start">*/}
+                  {/*      <h6 className="text-2xl">La mejor tasa</h6>*/}
+                  {/*    </div>*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                 </ul>
               </li>
               <li>

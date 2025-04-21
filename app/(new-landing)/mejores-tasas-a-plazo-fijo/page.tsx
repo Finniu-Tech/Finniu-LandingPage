@@ -1,7 +1,7 @@
 import Hero from "@/app/(new-landing)/mejores-tasas-a-plazo-fijo/Sections/Hero/Hero"
 import OurNumbers from "@/app/(new-landing)/empresa/Sections/OurNumbers/OurNumbers"
 import Comparator from "@/app/(new-landing)/mejores-tasas-a-plazo-fijo/Sections/Comparator/Comparator"
-import Questions from "@/app/(new-landing)/plazo-fijo/Sections/Questions/Questions"
+import Questions from "@/app/(new-landing)/colocacion-privada/Sections/Questions/Questions"
 
 const page = () => {
   return (

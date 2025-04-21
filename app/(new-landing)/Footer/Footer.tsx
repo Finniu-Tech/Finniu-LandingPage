@@ -54,7 +54,7 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Producto</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/plazo-fijo" text="Fondo a plazo fijo" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/colocacion-privada" text="Colocación privada" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
           </ul>
         </nav>
@@ -62,11 +62,11 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Compara</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/simulador-de-interes-a-plazo-fijo" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/simulador-de-interes" text="Simulador" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
-            <li>
-              <ButtonLink href="/mejores-tasas-a-plazo-fijo" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
-            </li>
+            {/*<li>*/}
+            {/*  <ButtonLink href="/mejores-tasas-a-plazo-fijo" text="La mejor tasa" className="text-gray-400 hover:text-white transition duration-150 ease"/>*/}
+            {/*</li>*/}
           </ul>
         </nav>
         <nav className="flex flex-col gap-4">

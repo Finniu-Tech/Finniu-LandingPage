@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
 import ButtonLinkIcon from "@/app/(new-landing)/components/ButtonLinkIcon"
+import ButtonLink from "@/app/(new-landing)/components/ButtonLink"
 import Background01 from "@/app/(new-landing)/images/backgrounds/background01.png"
 import ArrowUpLeft from "@/app/(new-landing)/Home/Invest/images/icons/ArrowUpLeft"
 

@@ -21,7 +21,7 @@ const Partners = () => {
             Socios Estratégicos
           </h3>
           <p className="text-lg w-full md:w-[30rem] text-center md:text-start">
-            En Finniu, contamos con el respaldo de empresas estratégicas que comparten nuestra visión de democratizar las oportunidades financieras.  Su apoyo y experiencia nos permiten seguir innovando y brindando soluciones seguras y eficientes para nuestros inversionistas
+            En Finniu, trabajamos junto a organizaciones que comparten nuestra visión de facilitar el acceso a oportunidades de colocación privada. Su experiencia y respaldo fortalecen nuestro compromiso de ofrecer procesos estructurados, seguros y transparentes para quienes desean canalizar su capital con propósito.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">

@@ -6,6 +6,7 @@ import ButtonComponent from "@/components/ButtonComponent";
 // import Bill from "@/images/Section-5/Bill.png";
 import { calculateInvestment } from "@/app/actions/calculateInvestment";
 import ModalComponent from "@/components/ModalComponent";
+import InvestmentCards from "@/app/components/Section-5/Oportunities";
 // import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import handMoney from "@/images/Section-5/handMoney.svg"
@@ -173,11 +174,11 @@ const InvestmentForm = () => {
   };
 
   return (
-    <div className="w-full h-full relative flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-10 md:gap-20">
+    <div className="w-full h-full relative flex flex-col md:flex-row-1 justify-center items-center gap-10 md:gap-20">
       
-        <div className="bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
-          <div className="w-full flex flex-col gap-6 justify-between mt-0">
-            <div className="flex flex-col md:flex-row gap-6 justify-between">
+        <div className="hidden bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
+          <div className="w-full flex flex-col gap-6 justify-between mt-0 ">
+            <div className="flex flex-col md:flex-row gap-6 justify-between ">
               <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
                 <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
                 <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">podrías alcanzar</span></p>
@@ -203,43 +204,6 @@ const InvestmentForm = () => {
             <Image src={Chart} alt="Analítica de barras" />
           </div>
 
-          {/* <div className="flex flex-col justify-start items-start">
-            <p className="text-[20px] 2xl:text-[32px] text-black font-bold ">
-              <span >En </span>
-              <span className="text-lighBlueColorSimulador text-[20px] 2xl:text-[32px] font-bold">
-                {calculatedResultState.investmentTimeState} meses
-              </span>
-              <span> recibirás</span>
-              <span className="text-[20px] 2xl:text-[32px] ml-[5px] font-bold">
-                &#128184;
-              </span>
-            </p>
-          </div> */}
-
-          {/* <div className="bg-sumulatorContainer  flex justify-center items-center  2xl:h-[92px] m-auto p-0 2xl:p-2 rounded-xl my-2">
-            <p className="text-[35px] font-bold text-simulatorText">
-              {currencySymbol}{" "}
-              {calculatedResultState.finalAmount.toLocaleString()}
-            </p>
-          </div>
-          <div className="bg-simulatorRecived  flex justify-center items-center  2xl:h-[70px] m-auto p-0 2xl:p-2 rounded-xl my-2">
-            <FontAwesomeIcon icon={faCalendar} className="text-simulatorText text-2xl" />
-            <p className="ml-2 text-[18px]  font-bold">
-              Cada mes recibiras {currencySymbol}{calculatedResultState.rentabilityPerMonth ?? "---"}
-            </p>
-          </div> */}
-
-          {/* <ButtonComponent
-            text="Me interesa"
-            onClick={handleInvestClick}
-            className="w-[314px] 2xl:w-[441px] 2xl:h-[77px] h-12 text-[16px] mt-3 2xl:mt-0 2xl:text-[24px] bg-blueColorButton text-white rounded-xl mb-4"
-          />
-          <button
-            onClick={handleRecalculateClick}
-            className="text-blueColorButton font-semibold text-[16px] 2xl:text-[24px]"
-          >
-            Volver a calcular
-          </button> */}
         </div>
 
         <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
@@ -360,7 +324,7 @@ const InvestmentForm = () => {
             />
           </div>
 
-          <ModalComponent
+        <ModalComponent
             isOpen={isModalVisible}
             setIsCalculatedState={setIsCalculatedState}
             onClose={() => setIsModalVisible(false)}
@@ -368,9 +332,12 @@ const InvestmentForm = () => {
             setCalculateParamsState={setCalculateParamsState}
             handleCalculateClick={handleCalculate}
           />
+
         </div>
-  
+      {isCalculatedState && <InvestmentCards />}
     </div>
+
+
   );
 };
 
