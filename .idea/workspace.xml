@@ -5,15 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/helpers/invest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Questions/Questions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/OurNumbers/OurNumbers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Invest/Invest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Invest/Invest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Ready/Ready.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Ready/Ready.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Whoweare/Whoweare.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Whoweare/Whoweare.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/about/Sections/Private/helper/objectives.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/about/Sections/Private/helper/objectives.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/invest/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/invest/Sections/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Questions/helpers/questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/transparency/Sections/Questions/helpers/questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Home/Questions/Questions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Home/Questions/Questions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Mission/Mission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Mission/Mission.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/OurNumbers/OurNumbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/OurNumbers/OurNumbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Partners/Partners.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Partners/Partners.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Private/Private.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Private/Private.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Private/helper/objectives.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/empresa/Sections/Private/helper/objectives.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/mejores-tasas-a-plazo-fijo/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/mejores-tasas-a-plazo-fijo/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Companies/Companies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Companies/Companies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/FixedTerm/FixedTerm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/FixedTerm/FixedTerm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/FixedTerm/images/FixedTerm.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/FixedTerm/images/FixedTerm.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Invest/Invest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/Invest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Invest/components/CardInvest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/components/CardInvest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Invest/helpers/invest.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Invest/images/icons/dolar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images/icons/dolar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Invest/images/icons/soles.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images/icons/soles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/OurNumbers/OurNumbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/OurNumbers/OurNumbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/Sections/Questions/Questions.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/plazo-fijo/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/policy/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/policy/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/portafolio-finniu/Sections/Optimization/Optimization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/portafolio-finniu/Sections/Optimization/Optimization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/Background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/Background.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/dolares/cases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/dolares/cases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/dolares/table.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/dolares/table.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/soles/cases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/soles/cases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/soles/table.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/soles/table.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/images/money/dolares.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/images/money/dolares.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/images/money/soles.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Background/images/money/soles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/OurNumbers/OurNumbers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes-a-plazo-fijo/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/simulador-de-interes/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/terms/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/terms/Sections/Hero/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Section-5/InvestmentForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +90,11 @@
       <recent name="$PROJECT_DIR$/app/components/Button-wsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images/icons" />
+      <recent name="$PROJECT_DIR$/app/(new-landing)/colocacion-privada/Sections/Invest/images" />
       <recent name="$PROJECT_DIR$/images/Evento/cuadrados mobile" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/images/Evento/cuadrados web" />
-      <recent name="$PROJECT_DIR$/images/Evento" />
-      <recent name="$PROJECT_DIR$/images/Popup" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -125,7 +155,7 @@
       <workItem from="1741355750801" duration="597000" />
       <workItem from="1741437426572" duration="22249000" />
       <workItem from="1741577015542" duration="1004000" />
-      <workItem from="1744754172350" duration="5354000" />
+      <workItem from="1744754172350" duration="26465000" />
     </task>
     <servers />
   </component>

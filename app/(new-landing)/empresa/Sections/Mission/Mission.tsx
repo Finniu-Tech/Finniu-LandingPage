@@ -7,17 +7,17 @@ const Mission = () => {
         <div className="w-full md:w-[30rem] flex flex-col justify-center items-start gap-2">
           <h4 className="font-bold text-2xl">Nuestra misión</h4>
           <p className="text-lg">
-            Simplificar la forma en la que las personas gestionan su capital, brindando soluciones accesibles y seguras que conecten el crecimiento individual con el desarrollo colectivo.
+            Acercar oportunidades de inversión privada estructurada a personas que buscan hacer crecer su capital con propósito.
             <br />
-            Trabajamos cada día para hacer que la planificación financiera sea más clara, cercana y posible
+            Facilitamos conexiones claras y seguras entre personas y empresas, promoviendo un modelo más accesible, transparente y confiable.
           </p>
         </div>
         <div className="w-full md:w-[30rem] flex flex-col justify-center items-start gap-2">
           <h4 className="font-bold text-2xl">Nuestra visión</h4>
           <p className="text-lg">
-            Ser la empresa líder en gestión de capital privado en Latinoamérica, reconocida por construir oportunidades sostenibles, responsables y de alto impacto.
+            Ser la plataforma de referencia en Latinoamérica para quienes desean canalizar su capital hacia empresas reales mediante operaciones privadas estructuradas.
             <br />
-            Queremos transformar la relación de las personas con su dinero, potenciando el bienestar financiero a través de la innovación y la transparencia
+            Aspiramos a transformar el vínculo entre personas y dinero, con impacto social, claridad legal y sostenibilidad financiera.
           </p>
         </div>
       </div>

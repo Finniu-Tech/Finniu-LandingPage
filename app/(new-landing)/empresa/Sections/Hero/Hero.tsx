@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="text-center text-5xl md:text-8xl leading-tight">¿Quiénes Somos?</h2>
         <p className="text-xl text-center sm:text-2xl w-full sm:w-[60rem] text-gray-400">
-          Finniu es una empresa gestora de fondos privados que nace con una misión clara: <span className="font-bold">simplificar la forma en que las personas gestionan su capital</span>. Diseñamos una experiencia clara, segura y accesible para quienes buscan crecimiento, estabilidad y una alternativa distinta a lo tradicional.
+          Finniu es una fintech que facilita la conexión entre personas interesadas en colocar su capital de forma privada y empresas que buscan financiamiento para crecer. <span className="font-bold">Nuestro objetivo es simplificar el acceso a oportunidades reales</span> mediante estructuras claras, seguras y sin intermediarios tradicionales. Todas las operaciones se realizan de manera privada, sin captar fondos del público ni ofrecer productos financieros regulados.
         </p>
       </div>
       <div className="mt-20">

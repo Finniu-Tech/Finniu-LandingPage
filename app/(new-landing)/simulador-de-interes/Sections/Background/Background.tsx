@@ -1,10 +1,10 @@
 import Image from "next/image"
-import TABLESSOLES from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/soles/table"
-import CASESSOLES from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/soles/cases"
-import TABLESDOLARES from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/dolares/table"
-import CASESDOLARES from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/helpers/dolares/cases"
-import dolares from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/images/money/dolares.png"
-import soles from "@/app/(new-landing)/simulador-de-interes-a-plazo-fijo/Sections/Background/images/money/soles.png"
+import TABLESSOLES from "@/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/soles/table"
+import CASESSOLES from "@/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/soles/cases"
+import TABLESDOLARES from "@/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/dolares/table"
+import CASESDOLARES from "@/app/(new-landing)/simulador-de-interes/Sections/Background/helpers/dolares/cases"
+import dolares from "@/app/(new-landing)/simulador-de-interes/Sections/Background/images/money/dolares.png"
+import soles from "@/app/(new-landing)/simulador-de-interes/Sections/Background/images/money/soles.png"
 
 const Background = () => {
   const SOLESPDF = "/pdfs/soles/soles.pdf"
@@ -13,7 +13,7 @@ const Background = () => {
   return ( 
     <section className="py-10 md:py-40 px-8 md:px-0 bg-whitePrimary text-black w-full flex flex-col justify-center items-center gap-4 md:gap-8">
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="text-4xl md:text-7xl text-center">Fondo de Inversión Soles</h3>
+        <h3 className="text-4xl md:text-7xl text-center">Fondo de Issnverrrsión Soles</h3>
         <div className="hidden md:inline-block mt-10 w-full md:max-w-5xl border-4 border-solid border-purpleTercero rounded-3xl overflow-hidden">
           <table className="w-full">
             <thead className="bg-purpleTercero text-white text-2xl">

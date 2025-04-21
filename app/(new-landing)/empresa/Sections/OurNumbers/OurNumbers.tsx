@@ -28,9 +28,9 @@ const OurNumbers = () => {
         <div>
           <CountUp
             start={0}
-            end={18}
+            end={19}
             duration={2.5}
-            prefix="+"
+            prefix="+ S/."
             suffix="M"
             style={{
               background: "linear-gradient(261.81deg, #00FF91 -8.01%, #9A00FF 100%)",
@@ -39,12 +39,12 @@ const OurNumbers = () => {
             }}
             className="text-7xl md:text-[100px]"
           />
-          <h4 className="mt-2 text-center">TOTAL DE CAPITAL <br /> ADMINISTRADO</h4>
+          <h4 className="mt-2 text-center">CAPITAL FACILITADO A EMPRESAS PERUANAS MEDIANTE OPERACIONES PRIVADAS</h4>
         </div>
         <div>
           <CountUp
             start={0}
-            end={450}
+            end={550}
             duration={2.5}
             prefix="+"
             style={{
@@ -54,14 +54,13 @@ const OurNumbers = () => {
             }}
             className="text-7xl md:text-[100px]"
           />
-          <h4 className="mt-2 text-center">INVERSIONISTAS <br /> ACTIVOS</h4>
+          <h4 className="mt-2 text-center">CONEXIONES FINANCIERAS EXITOSAS</h4>
         </div>
         <div className="text-center">
           <CountUp
             start={0}
             end={18}
             duration={2.5}
-            prefix="+"
             suffix="%"
             style={{
               background: "linear-gradient(265.11deg, #00FFB8 -5.84%, #005C90 111.58%)",
@@ -70,9 +69,14 @@ const OurNumbers = () => {
             }}
             className="text-7xl md:text-[100px]"
           />
-          <h4 className="mt-2 text-center">DE RENTABILIDAD BRINDADA</h4>
+          <h4 className="mt-2 text-center">
+            RENTABILIDAD HISTÓRICA PROMEDIO EN OPERACIONES PRIVADAS*
+          </h4>
         </div>
       </div>
+      <p className="text-xs text-center mt-4 text-gray-400">
+        *Rentabilidad referencial basada en operaciones anteriores. No representa una garantía futura ni constituye oferta pública.
+      </p>
     </section>
   )
 }

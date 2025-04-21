@@ -9,12 +9,12 @@ const Hero = () => {
     >
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="w-full md:w-[80rem] text-center text-5xl md:text-8xl leading-tight">
-          Plazo Fijo
+          Colocación Privada
         </h2>
         <p className="text-xl text-center sm:text-2xl w-full sm:w-[60rem] text-gray-400">
-          Obtén hasta 18% de rentabilidad anual y percibe tu interés de manera mensual
+          Conecta tu capital con empresas que buscan financiamiento privado, en operaciones estructuradas y con retornos mensuales, según condiciones pactadas.
           <br />
-          Empieza desde S/5,000 y accede a una alternativa estructurada para crecer con propósito
+          Desde S/5,000 puedes explorar alternativas de colocación privada alineadas a tus objetivos.
         </p>
       </div>
       <div className="mt-20">
