@@ -42,7 +42,11 @@ const Questions = () => {
                     {question.title}
                   </AccordionTitle>
                   <AccordionContent className="px-0">
-                    {typeof question.phrase === 'function' ? question.phrase() : <p>{question.phrase}</p>}
+                    {typeof question.phrase === 'function'
+                      ? question.phrase
+                      : typeof question.phrase === 'string'
+                        ? <p>{question.phrase}</p>
+                        : null}
                   </AccordionContent>
                 </AccordionPanel>
             ))}
@@ -57,7 +61,7 @@ const Questions = () => {
             <p className="text-center text-gray-500">
               Prueba acortar o reformular la búsqueda
             </p>
-            <Image className="mt-4" src={noQuestion} alt="Imagen No question" />
+            <Image className="mt-4" src={noQuestion.src} alt="Imagen No question" width={300} height={200} />
           </div>
         )}
       </div>
