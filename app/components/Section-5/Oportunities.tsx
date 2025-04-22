@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SanBernardo from "@/app/(new-landing)/colocacion-privada/Sections/Invest/images/san_bernardo.png";
 import Medisben from "@/app/(new-landing)/colocacion-privada/Sections/Invest/images/medisben.png";
 import Rtc from "@/app/(new-landing)/colocacion-privada/Sections/Invest/images/rtccorp.png";
@@ -67,16 +68,16 @@ export default function InvestmentCards() {
             <div className="flex flex-col gap-4 p-6">
               <div className="flex justify-end items-start gap-6">
                 <div className="flex flex-col items-center">
-                  <img src={cheque.src} alt="Cheque" className="w-5 h-5 object-contain" />
+                  <Image src={cheque.src} alt="Cheque" width={20} height={20} className="object-contain" />
                   <p className="text-[10px] text-white mt-1">Cheque</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src={contrato.src} alt="Contrato" className="w-5 h-5 object-contain" />
+                  <Image src={contrato.src} alt="Contrato" width={20} height={20} className="object-contain" />
                   <p className="text-[10px] text-white mt-1">Contrato</p>
                 </div>
               </div>
               <div className="flex justify-center items-center">
-              <img src={op.logo.src} alt={op.company} className="w-40 h-40 object-contain"/>
+              <Image src={op.logo.src} alt={op.company} width={160} height={160} className="object-contain" />
 
               </div>
               <div className="text-xs text-center">

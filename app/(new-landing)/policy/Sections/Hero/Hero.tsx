@@ -56,7 +56,7 @@ const Hero = () => {
                     de las finalidades específicas para las cuales procesamos sus datos personales, así como la
                     seguridad que tomamos para que estos datos se encuentren protegidos. Además, detallamos los
                     procedimientos mediante los cuales los titulares de los datos pueden ejercer sus derechos de acceso,
-                    rectificación, cancelación y oposición (en adelante, "derechos ARCO") conforme a la Normativa de
+                    rectificación, cancelación y oposición (en adelante, derechos ARCO) conforme a la Normativa de
                     Protección de Datos Personales.
                   </p>
                   <p className="mt-2">
@@ -229,7 +229,7 @@ const Hero = () => {
                     ● Realizar email marketing: Enviar información o mensajes por correo electrónico sobre nuevos
                     servicios, mostrar publicidad o promociones, banners de interés para nuestros usuarios, y noticias
                     relacionadas con FINNIU. Si el usuario lo prefiere, puede solicitar ser excluido (opt-out) de las
-                    listas para el envío de información promocional o publicitaria a través del enlace "unsuscribe" que
+                    listas para el envío de información promocional o publicitaria a través del enlace unsubscribe que
                     aparece al final de cada correo electrónico. Lamentablemente, no podemos permitir el opt-out de los
                     correos electrónicos enviados por motivos relevantes de seguridad, transacciones, administrativos o
                     legales.

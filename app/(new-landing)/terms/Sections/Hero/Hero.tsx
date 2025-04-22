@@ -29,7 +29,7 @@ const Hero = () => {
               Al acceder, navegar, rastrear, scrapear o utilizar de cualquier forma en la Plataforma, EL USUARIO acepta
               sin reservas todas las disposiciones incluidas en los presentes Términos y Condiciones y la Política de
               Privacidad de FINNIU y todas las demás directrices o políticas a las que se hace referencia en el presente
-              documento (en adelante, el "Acuerdo de Usuario"). Este Acuerdo de Usuario constituye un contrato
+              documento (en adelante, el Acuerdo de Usuario). Este Acuerdo de Usuario constituye un contrato
               legalmente vinculante entre EL USUARIO y FINNIU.
             </p>
           </div>
@@ -234,7 +234,7 @@ const Hero = () => {
 
           <div>
             <h2 className="text-2xl font-semibold">14. Garantías y exenciones</h2>
-            <p>La Plataforma se ofrece "tal cual". FINNIU no garantiza la disponibilidad, exactitud ni resultados
+            <p>La Plataforma se ofrece tal cual. FINNIU no garantiza la disponibilidad, exactitud ni resultados
               derivados del uso del servicio. No se hacen garantías sobre rentabilidad, exactitud de la información, ni
               resultados futuros.</p>
             <p>FINNIU garantiza únicamente el cumplimiento del contrato de gestión de fondos, políticas de inversión y
@@ -380,7 +380,7 @@ const Hero = () => {
               industrial de los Servicios y la Plataforma y de todos sus contenidos que forme o haya formado parte de la
               Plataforma, los mismos que se encuentran debidamente registrados ante el Instituto Nacional de Defensa de
               la Competencia y de la Protección de la Propiedad Intelectual (INDECOPI) y que nos brindan la protección
-              dentro del territorio peruano y países miembros de la Comunidad Andina (los "Derechos de PI"); resultando
+              dentro del territorio peruano y países miembros de la Comunidad Andina (los Derechos de PI); resultando
               de aplicación los tratados internacionales y los derechos de PI aplicables en la República de Perú, según
               la normativa aplicable. EL USUARIO no puede modificar, reproducir, distribuir, crear obras derivadas o
               adaptaciones de, mostrar públicamente o explotar de cualquier manera el Contenido de FINNIU en su
