@@ -174,37 +174,8 @@ const InvestmentForm = () => {
   };
 
   return (
-    <div className="w-full h-full relative flex flex-col md:flex-row-1 justify-center items-center gap-10 md:gap-20">
-      
-        <div className="hidden bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
-          <div className="w-full flex flex-col gap-6 justify-between mt-0 ">
-            <div className="flex flex-col md:flex-row gap-6 justify-between ">
-              <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
-                <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
-                <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">podrías alcanzar</span></p>
-                <div className="flex justify-start items-center gap-2">
-                  <p className="text-3xl">
-                    {currencySymbol}{" "}
-                    {calculatedResultState.finalAmount.toLocaleString()}
-                  </p>
-                  <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
-                    + {calculatedResultState.finalRestabilityPercent ?? "---"}%
-                  </span>
-                </div>
-              </div>
-              <div className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
-                <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
-                <p className="">Simulación<span className="text-gray-400"> mensual</span></p>
-                <p className="text-3xl text-[#1AFFB0]">
-                  {currencySymbol}{" "}
-                  {calculatedResultState.rentabilityPerMonth ?? "---"}
-                </p>
-              </div>
-            </div>
-            <Image src={Chart} alt="Analítica de barras" />
-          </div>
+      <div className="w-full h-full relative flex md:flex-row-2 justify-center items-center gap-10 md:gap-20">
 
-        </div>
 
         <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
           <div className="flex flex-col justify-center items-start w-full">
@@ -215,20 +186,20 @@ const InvestmentForm = () => {
             <div className="flex gap-8 mt-4">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
-                  type="radio"
-                  name="currency"
-                  value="Soles"
-                  checked={currencyState === "nuevo sol"}
-                  onChange={() => handleButtonClick("Soles")}
-                  className="hidden"
+                    type="radio"
+                    name="currency"
+                    value="Soles"
+                    checked={currencyState === "nuevo sol"}
+                    onChange={() => handleButtonClick("Soles")}
+                    className="hidden"
                 />
                 <div
-                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
-                    currencyState === "nuevo sol" ? "border-purpleTercero" : "border-gray-400"
-                  }`}
+                    className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                        currencyState === "nuevo sol" ? "border-purpleTercero" : "border-gray-400"
+                    }`}
                 >
                   {currencyState === "nuevo sol" && (
-                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                      <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
                   )}
                 </div>
                 <span className="text-black text-xl">Soles</span>
@@ -236,20 +207,20 @@ const InvestmentForm = () => {
 
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
-                  type="radio"
-                  name="currency"
-                  value="Dólares"
-                  checked={currencyState === "dolar"}
-                  onChange={() => handleButtonClick("Dólares")}
-                  className="hidden"
+                    type="radio"
+                    name="currency"
+                    value="Dólares"
+                    checked={currencyState === "dolar"}
+                    onChange={() => handleButtonClick("Dólares")}
+                    className="hidden"
                 />
                 <div
-                  className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
-                    currencyState === "dolar" ? "border-purpleTercero" : "border-gray-400"
-                  }`}
+                    className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-150 ${
+                        currencyState === "dolar" ? "border-purpleTercero" : "border-gray-400"
+                    }`}
                 >
                   {currencyState === "dolar" && (
-                    <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
+                      <div className="w-3 h-3 bg-purpleTercero rounded-full"></div>
                   )}
                 </div>
                 <span className="text-black text-xl">Dólares</span>
@@ -259,8 +230,8 @@ const InvestmentForm = () => {
 
           <div className="mt-8">
             <label
-              className="block text-black text-2xl"
-              htmlFor="investmentAmount"
+                className="block text-black text-2xl"
+                htmlFor="investmentAmount"
             >
               ¿Cuál es el monto?
             </label>
@@ -269,17 +240,17 @@ const InvestmentForm = () => {
                 {currencySymbol}
               </span>
               <input
-                id="investmentAmount"
-                type="text"
-                value={calculateParamsState.ammount}
-                onChange={onChangeInputAmout}
-                className={`pl-7 text-xl border-0 border-b-2 ${errorState ? "border-red-500" : "border-grayColorLine"
+                  id="investmentAmount"
+                  type="text"
+                  value={calculateParamsState.ammount}
+                  onChange={onChangeInputAmout}
+                  className={`pl-7 text-xl border-0 border-b-2 ${errorState ? "border-red-500" : "border-grayColorLine"
                   } 2xl:w-full w-full`}
-                placeholder="Ingrese el monto"
+                  placeholder="Ingrese el monto"
               />
 
               {errorState && (
-                <p className="text-red-500 text-sm mt-1">{errorState}</p>
+                  <p className="text-red-500 text-sm mt-1">{errorState}</p>
               )}
             </div>
           </div>
@@ -293,23 +264,23 @@ const InvestmentForm = () => {
             <div className="flex items-center relative">
               <div className="w-full mt-2">
                 <input
-                  type="range"
-                  min="0"
-                  max={steps.length - 1}
-                  step="1"
-                  value={steps.indexOf(calculateParamsState.deadline)}
-                  onChange={(e) =>
-                    setCalculateParamsState((prevState) => ({
-                      ...prevState,
-                      deadline: steps[Number(e.target.value)],
-                    }))
-                  }
-                  className="w-full"
-                  style={{ direction: "ltr" }}
+                    type="range"
+                    min="0"
+                    max={steps.length - 1}
+                    step="1"
+                    value={steps.indexOf(calculateParamsState.deadline)}
+                    onChange={(e) =>
+                        setCalculateParamsState((prevState) => ({
+                          ...prevState,
+                          deadline: steps[Number(e.target.value)],
+                        }))
+                    }
+                    className="w-full"
+                    style={{direction: "ltr"}}
                 />
                 <div className="flex justify-between text-base text-black mt-4">
                   {steps.map((step) => (
-                    <span key={step}>{step} meses</span>
+                      <span key={step}>{step} meses</span>
                   ))}
                 </div>
               </div>
@@ -318,24 +289,58 @@ const InvestmentForm = () => {
 
           <div className="text-center mt-8">
             <ButtonComponent
-              text="Ver simulación"
-              onClick={handleCalculateButtonClick}
-              className="text-lg py-4 px-6 w-full bg-purpleTercero text-white border-solid border-[1px] border-purpleTercero hover:bg-white hover:text-purpleTercero hover:border-solid hover:border-[1px] hover:border-purpleTercero transition duration-150 ease rounded-full"
+                text="Ver simulación"
+                onClick={handleCalculateButtonClick}
+                className="text-lg py-4 px-6 w-full bg-purpleTercero text-white border-solid border-[1px] border-purpleTercero hover:bg-white hover:text-purpleTercero hover:border-solid hover:border-[1px] hover:border-purpleTercero transition duration-150 ease rounded-full"
             />
           </div>
 
-        <ModalComponent
-            isOpen={isModalVisible}
-            setIsCalculatedState={setIsCalculatedState}
-            onClose={() => setIsModalVisible(false)}
-            setIsModalVisible={setIsModalVisible}
-            setCalculateParamsState={setCalculateParamsState}
-            handleCalculateClick={handleCalculate}
+          <ModalComponent
+              isOpen={isModalVisible}
+              setIsCalculatedState={setIsCalculatedState}
+              onClose={() => setIsModalVisible(false)}
+              setIsModalVisible={setIsModalVisible}
+              setCalculateParamsState={setCalculateParamsState}
+              handleCalculateClick={handleCalculate}
           />
 
         </div>
-      {isCalculatedState && <InvestmentCards />}
-    </div>
+        <div
+            className=" bg-opacity-50 bg-black border-white border-opacity-30 border-[1px] text-center p-6 md:p-8 rounded-3xl w-full md:w-auto h-full shadow-lg">
+          <div className="w-full flex flex-col gap-6 justify-between mt-0 ">
+            <div className="flex flex-col md:flex-row gap-6 justify-between ">
+              <div
+                  className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-4 md:p-6">
+                <Image src={handMoney} alt="Money con la mano" className="mb-2"/>
+                <p className="">En {calculatedResultState.investmentTimeState} meses <span className="text-gray-400">podrías alcanzar</span>
+                </p>
+                <div className="flex justify-start items-center gap-2">
+                  <p className="text-3xl">
+                    {currencySymbol}{" "}
+                    {calculatedResultState.finalAmount.toLocaleString()}
+                  </p>
+                  <span className="text-sm rounded-full py-2 px-4 text-[#1AFFB0] bg-[#1AFFB024]">
+                    + {calculatedResultState.finalRestabilityPercent ?? "---"}%
+                  </span>
+                </div>
+              </div>
+              <div
+                  className="w-full flex flex-col justify-center items-start gap-2 border-white border-opacity-30 border-[1px] border-dotted bg-opacity-50 bg-[#17171980] text-white rounded-xl p-6">
+                <Image src={upMoney} alt="Analíticas subiendo" className="mb-2"/>
+                <p className="">Simulación<span className="text-gray-400"> mensual</span></p>
+                <p className="text-3xl text-[#1AFFB0]">
+                  {currencySymbol}{" "}
+                  {calculatedResultState.rentabilityPerMonth ?? "---"}
+                </p>
+              </div>
+            </div>
+            <Image src={Chart} alt="Analítica de barras"/>
+          </div>
+
+        </div>
+
+        {/*{isCalculatedState && <InvestmentCards />}*/}
+      </div>
 
 
   );
