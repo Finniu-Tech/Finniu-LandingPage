@@ -98,11 +98,11 @@ export default function InvestmentCards() {
                 <p className="text-xs text-gray-300 mt-2">{op.interest}</p>
               </div>
               <div className="mt-4">
-                <p className="text-sm">Monto objetivo de colocación: <span className="font-semibold">{op.amount}</span></p>
-                <div className="w-full bg-gray-700 rounded-full h-2.5 mt-2">
-                  <div className="bg-cyan-400 h-2.5 rounded-full" style={{width: `${op.progress}%`}}></div>
-                </div>
-                <p className="text-xs text-gray-400 mt-1">{op.progress}% financiado</p>
+                {/*<p className="text-sm">Monto objetivo de colocación: <span className="font-semibold">{op.amount}</span></p>*/}
+                {/*<div className="w-full bg-gray-700 rounded-full h-2.5 mt-2">*/}
+                {/*  <div className="bg-cyan-400 h-2.5 rounded-full" style={{width: `${op.progress}%`}}></div>*/}
+                {/*</div>*/}
+                {/*<p className="text-xs text-gray-400 mt-1">{op.progress}% financiado</p>*/}
                 <div className="mt-4">
                   <button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium px-4 py-2 rounded-full transition duration-300">
                     Elegir

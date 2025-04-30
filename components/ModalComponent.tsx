@@ -5,6 +5,7 @@ import 'react-phone-input-2/lib/style.css';
 import ButtonComponent from "./ButtonComponent";
 import { saveRegisterStorage } from "../app/helpers/registrationStorage";
 import CustomSelect from "./SelectAbout";
+import { useRouter } from 'next/navigation';
 
 
 
@@ -15,6 +16,7 @@ interface FormData {
   phoneNumber: string;
   phonePrefix: string;
   aboutUs: string;
+  dataConsent: boolean;
 }
 
 interface FormErrors {
@@ -23,6 +25,7 @@ interface FormErrors {
   DniCi?: string;
   phoneNumber?: string;
   aboutUs?: string;
+  dataConsent?: string;
 }
 interface CalculateParams {
   ammount: string;
@@ -53,6 +56,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
   setCalculateParamsState,
   handleCalculateClick,
 }) => {
+  const router = useRouter();
   const [formErrors, setFormErrors] = useState<FormErrors>({});
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
@@ -61,6 +65,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     phoneNumber: "",
     phonePrefix: "+51",
     aboutUs: "¿Como te enteraste de nosotros?",
+    dataConsent: false,
   });
   const [isUpdatingState, setIsUpdatingState] = useState(false);
 
@@ -101,12 +106,12 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     setFormData((prev) => ({ ...prev, [name]: value }));
     setFormErrors((prev) => ({ ...prev, [name]: undefined }));
     if (name === "DniCi") {
-      const numericValue = value.replace(/\D/g, ""); 
+      const numericValue = value.replace(/\D/g, "");
       setFormData((prev) => ({ ...prev, [name]: numericValue }));
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
-  
+
     setFormErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
@@ -147,6 +152,9 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     if (formData.aboutUs === "¿Como te enteraste de nosotros?") {
       errors.aboutUs = "Debe seleccionar una opcion";
     }
+    if (!formData.dataConsent) {
+      errors.dataConsent = "Debe aceptar el tratamiento de datos personales.";
+    }
 
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
@@ -177,8 +185,10 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
       DniCi: "",
       fullName: "",
       phonePrefix: "+51",
-      phoneNumber: ""
-    })
+      phoneNumber: "",
+      dataConsent: false,
+    });
+    window.history.pushState({}, '', '/gracias');
     setIsUpdatingState(true);
   };
   const handleAboutUsChange = (option: string) => {
@@ -303,6 +313,34 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
             </select>
             {formErrors.aboutUs && (
               <p className="text-red-500 text-sm">{formErrors.aboutUs}</p>
+            )}
+          </div>
+
+          <div className="mb-4">
+            <label className="flex items-start gap-2 text-sm text-black">
+              <input
+                type="checkbox"
+                name="dataConsent"
+                checked={formData.dataConsent}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, dataConsent: e.target.checked }))
+                }
+                className="mt-1 accent-purpleTercero"
+              />
+              <span>
+                Autorizo el tratamiento de mis datos personales conforme a la{" "}
+                <a
+                  href="/policy"
+                  target="_blank"
+                  className="text-purpleTercero underline hover:text-purple-700"
+                >
+                  Política de Privacidad
+                </a>
+                .
+              </span>
+            </label>
+            {formErrors.dataConsent && (
+              <p className="text-red-500 text-sm mt-1">{formErrors.dataConsent}</p>
             )}
           </div>
 
