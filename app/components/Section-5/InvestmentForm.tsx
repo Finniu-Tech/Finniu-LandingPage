@@ -174,9 +174,7 @@ const InvestmentForm = () => {
   };
 
   return (
-      <div className="w-full h-full relative flex md:flex-row-2 justify-center items-center gap-10 md:gap-20">
-
-
+      <div className="w-full h-full relative flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
         <div className="w-full md:w-[30rem] bg-white p-8 rounded-3xl h-full shadow-lg">
           <div className="flex flex-col justify-center items-start w-full">
             <h2 className="text-2xl text-black">
