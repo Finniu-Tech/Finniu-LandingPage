@@ -6,7 +6,7 @@ const FloatingWhatsappButton = () => {
   return (
     <div className="fixed bottom-5 right-5 z-50 group">
       <a
-        href="https://api.whatsapp.com/send?phone=51983796139&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20"
+        href="https://api.whatsapp.com/send?phone=51952484612&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20"
         target="_blank"
         rel="noopener noreferrer"
       >

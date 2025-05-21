@@ -41,7 +41,7 @@ const Hero = () => {
               </li>
               <li>
                 <Link
-                  href="https://api.whatsapp.com/send?phone=51983796139&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20"
+                  href="https://api.whatsapp.com/send?phone=51952484612&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20"
                   className="w-fit flex items-center gap-2"
                 >
                   <div className="flex items-center justify-center rounded-full size-8 bg-white">

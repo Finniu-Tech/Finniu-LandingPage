@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2711e060-f8e6-44a8-b959-8c924ae88cb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(new-landing)/contacto/Sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(new-landing)/contacto/Sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Button-wsp/FloatingWhatsappButtonComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Button-wsp/FloatingWhatsappButtonComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Footer/FooterPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer/FooterPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +117,11 @@
       <workItem from="1741437426572" duration="22249000" />
       <workItem from="1741577015542" duration="1004000" />
       <workItem from="1741644039045" duration="5178000" />
+      <workItem from="1746325422217" duration="4443000" />
+      <workItem from="1746477799919" duration="1811000" />
+      <workItem from="1746765061966" duration="4792000" />
+      <workItem from="1746810885727" duration="4992000" />
+      <workItem from="1747850979116" duration="66000" />
     </task>
     <servers />
   </component>

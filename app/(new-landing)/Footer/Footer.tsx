@@ -91,7 +91,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <Phone />
-              <ButtonLink href="https://api.whatsapp.com/send?phone=51983796139&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20" text="+51 983 796 139" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="https://api.whatsapp.com/send?phone=51952484612&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20info%20sobre%20Finniu.%20Mi%20nombre%20es%20" text="+51 983 796 139" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li className="flex items-center gap-2">
               <Mail />
