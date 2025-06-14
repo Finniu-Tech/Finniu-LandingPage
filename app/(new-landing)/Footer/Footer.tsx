@@ -40,7 +40,7 @@ const Footer = () => {
           <h4 className="font-semibold text-lg">Nosotros</h4>
           <ul className="flex flex-col justify-center items-start gap-4">
             <li>
-              <ButtonLink href="/empresa" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
+              <ButtonLink href="/empresa3" text="La empresa" className="text-gray-400 hover:text-white transition duration-150 ease"/>
             </li>
             <li>
               <ButtonLink href="/portafolio-finniu" text="Portafolio" className="text-gray-400 hover:text-white transition duration-150 ease"/>
